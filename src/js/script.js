@@ -38,22 +38,23 @@ const popupImg = document.getElementById('popup-img');
 const popupDownload = document.getElementById('popup-download');
 
 function openPopup(imgSrc, pdfHref) {
-    popupImg.src = imgSrc;
-    popupDownload.href = pdfHref;
-    popup.classList.remove('hidden');
-    document.body.classList.add('overflow-hidden');
+  popupImg.src = imgSrc;
+  popupDownload.href = pdfHref;
+  popup.classList.remove('hidden');
+  document.body.classList.add('overflow-hidden');
 }
 
 function closePopup() {
-    popup.classList.add('hidden');
-    document.body.classList.remove('overflow-hidden');
+  popup.classList.add('hidden');
+  document.body.classList.remove('overflow-hidden');
 }
 
-// Tambahkan event listener ke semua tombol dengan class "open-popup"
+// Event listener untuk tombol
 document.querySelectorAll('.open-popup').forEach(button => {
-    button.addEventListener('click', () => {
-        const img = button.getAttribute('data-img');
-        const pdf = button.getAttribute('data-pdf');
-        openPopup(img, pdf);
-    });
+  button.addEventListener('click', () => {
+    const img = button.getAttribute('data-img');
+    const pdf = button.getAttribute('data-pdf');
+    openPopup(img, pdf);
+  });
 });
+

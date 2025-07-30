@@ -161,7 +161,7 @@
     <section class="grid grid-cols-5 w-full h-[800px] bg-slate-200">
 
         <!-- number 1 -> 50 years = 1Page -->
-        <a href="50years.html" class="relative overflow-hidden group">
+        <a href="/src/html/50years.html" class="relative overflow-hidden group">
             <img class="object-cover w-full h-full" src="/assets/img/50 years since 1975.png" alt="">
             <div
                 class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
@@ -176,7 +176,7 @@
         <div class="flex flex-col h-full ">
 
             <!-- Hakudo | what we have -->
-            <a href="whatWeHave.html"
+            <a href="/src/html/whatWeHave.html"
                 class="cursor-pointer group relative w-full h-[180px] border-[0.25px] border-white ">
                 <div
                     class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
@@ -192,7 +192,7 @@
             </a>
 
             <!-- Nippon Koshuha -->
-            <a href="nipponKoshuha.html"
+            <a href="/src/html/nipponKoshuha.html"
                 class="relative w-full h-[200px] overflow-hidden group border-[0.25px] border-white ">
                 <img class="object-cover w-full h-full" src="/assets/img/nippon kosuha steel22.png" alt="">
                 <div
@@ -205,7 +205,7 @@
             </a>
 
             <!-- Global Leader -->
-            <a href="globalLeader.html"
+            <a href="/src/html/globalLeader.html"
                 class="relative w-full h-[230px] group overflow-hidden border-[0.25px] border-white  ">
                 <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/menu-23.jpeg" alt="">
                 <div
@@ -218,7 +218,7 @@
             </a>
 
             <!-- Metal Product -->
-            <a href="metalProduct.html"
+            <a href="/src/html/metalProduct.html"
                 class="relative w-full group flex-1 overflow-hidden1 border-[0.25px] border-white ">
                 <img class="object-cover w-full h-full object-[0%_center]" src="/assets/img/metalproducts-img2.png"
                     alt="">
@@ -236,7 +236,7 @@
         <div class="flex flex-col">
 
             <!-- What we do -->
-            <a href="machineData.html" class="relative w-full h-[250px] group border-[0.25px] border-white ">
+            <a href="/src/html/machineData.html" class="relative w-full h-[250px] group border-[0.25px] border-white ">
                 <h1
                     class="absolute flex justify-center items-end h-12 inset-0 text-center text-xl text-white tracking-widest">
                     WHAT WE DO</h1>
@@ -251,7 +251,7 @@
             </a>
 
             <!-- MIlling -->
-            <a href="machineData.html#milling" class="relative w-full flex-1 group border-[0.25px] border-white">
+            <a href="/src/html/machineData.html#milling" class="relative w-full flex-1 group border-[0.25px] border-white">
                 <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/milling-img.png" alt="">
                 <div
                     class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
@@ -263,7 +263,7 @@
             </a>
 
             <!-- Grinding-Packaging -->
-            <a href="machineData.html#grinding" class="relative w-full h-[260px] group border-[0.25px] border-white">
+            <a href="/src/html/machineData.html#grinding" class="relative w-full h-[260px] group border-[0.25px] border-white">
                 <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/menu-33.png" alt="">
                 <div
                     class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
@@ -276,7 +276,7 @@
         </div>
 
         <!-- Number 4 -> Aerospacec Division = 1Page -->
-        <a href="aerospace.html" class="relative flex flex-col group border-[0.25px] border-white ">
+        <a href="/src/html/aerospace.html" class="relative flex flex-col group border-[0.25px] border-white ">
             <h1
                 class="absolute flex justify-center items-end text-center h-12 inset-0 text-xl text-white tracking-widest">
                 AEROSPACE DIVISION</h1>
@@ -293,7 +293,7 @@
         </a>
 
         <!-- Number 5 -> SmartWareHouse = 1Page -->
-        <a href="smartWareHouse.html" class="relative group border-[0.25px] border-white ">
+        <a href="/src/html/smartWareHouse.html" class="relative group border-[0.25px] border-white ">
             <div class="absolute flex justify-center items-end h-20 inset-0 text-center tracking-widest ">
                 <ol class="list-disc list-inside text-sm text-white text-start">
                     <li>SMART WAREHOUSE</li>
@@ -321,46 +321,61 @@
 
         <!-- certificate list -->
         <div class="flex justify-center items-center space-x-40">
-
             <!-- AS9100D -->
-            <button onclick="openPopup()"  class="flex flex-col justify-center items-center ">
+            <button data-img="/assets/img/gcl2018-img.png" data-pdf="/assets/img/gcl2018-img.png"
+                class="open-popup flex flex-col justify-center items-center">
                 <img src="/assets/img/AS9100D-img.png" alt="" class="w-[370px] max-w-none mx-5">
-                <h3 class="mt-7 font-medium text-3xl text-[#002E5F] ">AS 9100:2016</h3>
+                <h3 class="mt-7 font-medium text-3xl text-[#002E5F]">AS 9100:2016</h3>
             </button>
 
             <!-- GCL International -->
-            <button onclick="openPopup()"  class="flex flex-col items-center justify-center">
+            <button data-img="/assets/img/gcl2015-img.png" data-pdf="/assets/img/gcl2018-img.png"
+                class="open-popup flex flex-col justify-center items-center">
                 <img src="/assets/img/CGL-img.png" alt="" class="w-[170px] max-w-none mx-5">
-                <h3 class="mt-7 font-medium text-3xl text-[#005097] ">ISO 9001:2015</h3>
+                <h3 class="mt-7 font-medium text-3xl text-[#005097]">ISO 9001:2015</h3>
             </button>
 
             <!-- Novo Star -->
-            <button onclick="openPopup()"  class="flex flex-col items-center justify-center">
+            <button data-img="/assets/img/novostar2015-img.png" data-pdf="/assets/img/gcl2018-img.png"
+                class="open-popup flex flex-col justify-center items-center">
                 <img src="/assets/img/novoStar-img.png" alt="" class="w-[390px] max-w-none mx-5">
-                <h3 class="mt-7 font-medium text-3xl text-[#E75006] ">ISO 9001:2015</h3>
+                <h3 class="mt-7 font-medium text-3xl text-[#E75006]">ISO 9001:2015</h3>
             </button>
         </div>
+
     </section>
 
 
     <!-- pop up Certificate before Download -->
-    <div id="popup" onclick="closePopup()"  class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-            <div class="overflow-hidden w-96">
-                <img src="/assets/img/gcl2015-img.png" alt="">
-            </div>
+    <div id="popup" onclick="closePopup()"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
 
-            <a href="/assets/pdf/sertifikat-ku.pdf" download>
-                <button class="w-full py-5 mt-5 bg-navBlue ">
-                    <h4 class="text-white text-xl">Download as PDF</h4>
-                </button>
-            </a>
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <div class="flex space-x-5">
+                <div class="overflow-hidden w-96 mb-5 flex space-x-5">
+                    <img id="popup-img" src="/assets/img/gcl2015-img.png" alt="">
+                </div>
+                <div class="overflow-hidden w-96 mb-5 flex space-x-5">
+                    <img id="popup-img" src="/assets/img/gcl2015-img.png" alt="">
+                </div>
+            </div>
+            <div class="flex space-x-5 w-full ">
+                <a id="popup-download" href="#" target="_blank" download>
+                    <button class="w-full py-5  bg-navBlue ">
+                        <h4 class="text-white text-xl">Download as PDF</h4>
+                    </button>
+                </a>
+                                <a id="popup-download" href="#" target="_blank" download>
+                    <button class="w-full py-5  bg-navBlue ">
+                        <h4 class="text-white text-xl">Download as PDF</h4>
+                    </button>
+                </a>
+            </div>
             <div class="w-full mt-3 text-center">
                 <button onclick="closePopup()"
                     class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
-
     </div>
 
     <!-- Footer Section -->
