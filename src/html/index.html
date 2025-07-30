@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Javascript & Css-Style -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
+</head>
+
+<body class="bg-navBlue">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky z-40 top-0 flex justify-between items-center | duration-200 px-16 py-5  ">
+        <div class="flex items-center | overflow-hidden h-[40px] ">
+            <!-- logo -->
+            <img src="/assets/img/white-logo.png" alt="Logo" class="w-32">
+        </div>
+        <div class="flex items-center | text-white font-light">
+            <!-- list -->
+            <ul class="flex justify-center items-center | ">
+                <!-- about -->
+                <li>
+                    <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/50years.html">About</a>
+                </li>
+                <!-- Products -->
+                <li class="dropdown-group group relative">
+                    <a href="#"
+                        class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                        <span>Products</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <div
+                        class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] rounded z-50">
+                        <ul>
+                            <li><button class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                    onclick="window.location.href='/src/html/whatWeHave.html'">Hakudo</button></li>
+                            <li><button class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                    onclick="window.location.href='/src/html/nipponKoshuha.html'">Nippon Koshuha
+                                    Steel</button></li>
+                            <li><button class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                    onclick="window.location.href='/src/html/globalLeader.html'">Global Leader Carbon
+                                    Material</button></li>
+                            <li><button class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                    onclick="window.location.href='/src/html/metalProduct.html'">Metal Material</button>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- Services -->
+                <li class="dropdown-group group relative">
+                    <a href="#"
+                        class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                        <span>Services</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <div
+                        class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] rounded z-50">
+                        <ul>
+                            <li><button class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                    onclick="window.location.href='/src/html/machineData.html'">Cutting</button></li>
+                            <li><button class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                    onclick="window.location.href='/src/html/machineData.html#milling'">Milling</button>
+                            </li>
+                            <li><button class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                    onclick="window.location.href='/src/html/machineData.html#grinding'">Gridding</button>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a>
+                </li>
+                <li>
+                    <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a>
+                </li>
+            </ul>
+            <!-- shop,profile -->
+            <div class="flex | space-x-6 ml-6">
+                <i class="fa-solid fa-cart-shopping | "></i>
+                <i class="fa-solid fa-user | "></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Whats App Icon -->
+    <a href="https://wa.link/s20edj" target="_blank" class="fixed bottom-0 right-7 m-5 | z-50">
+        <img src="/assets/img/whatsapp-icon.png" alt="" class="w-10">
+    </a>
+
+
+
+    <!-- Video Section -->
+    <section class="relative overflow-hidden | w-full h-[850px]  ">
+        <!-- Carousel container -->
+        <div id="carousel-track" class="flex w-full h-full transition-transform duration-700 ease-in-out ">
+            <video class="w-full h-full object-cover flex-shrink-0" src="/assets/video/video 1.mp4" muted autoplay
+                playsinline></video>
+            <video class="w-full h-full object-cover flex-shrink-0" src="/assets/video/video 2.mp4" muted autoplay
+                playsinline></video>
+            <video class="w-full h-full object-cover flex-shrink-0" src="/assets/video/video 3.mp4" muted autoplay
+                playsinline></video>
+            <video class="w-full h-full object-cover flex-shrink-0" src="/assets/video/video 4.mp4" muted autoplay
+                playsinline></video>
+            <video class="w-full h-full object-cover flex-shrink-0" src="/assets/video/video 5.mp4" muted autoplay
+                playsinline></video>
+        </div>
+        <!-- Overlay gelap -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <!-- Dot Navigation -->
+        <div class="z-20 flex gap-2 absolute bottom-14 left-52 transform -translate-x-1/2 ">
+            <div id="dot-container" class="relative flex items-center gap-2">
+                <button class="flex items-center justify-center relative z-10 w-8 h-8 dot " data-index="0">
+                    <span class="w-1 h-1 rounded-full bg-white hover:bg-white transition duration-200 block"></span>
+                </button>
+                <button class="flex items-center justify-center relative z-10 w-8 h-8 dot " data-index="1">
+                    <span class="w-1 h-1 rounded-full bg-white/60 hover:bg-white transition duration-200 block"></span>
+                </button>
+                <button class="flex items-center justify-center relative z-10 w-8 h-8 dot " data-index="2">
+                    <span class="w-1 h-1 rounded-full bg-white/60 hover:bg-white transition duration-200 block"></span>
+                </button>
+                <button class="flex items-center justify-center relative z-10 w-8 h-8 dot " data-index="3">
+                    <span class="w-1 h-1 rounded-full bg-white/60 hover:bg-white transition duration-200 block"></span>
+                </button>
+                <button class="flex items-center justify-center relative z-10 w-8 h-8 dot " data-index="4">
+                    <span class="w-1 h-1 rounded-full bg-white/60 hover:bg-white transition duration-200 block"></span>
+                </button>
+                <!-- Outer ring -->
+                <div id="inner-circle"
+                    class="absolute w-8 h-8 border border-white rounded-full pointer-events-none transition-transform duration-300 z-0"
+                    style="left:0;top:0;"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Us Section -->
+    <section class=" flex items-center justify-center relative h-[850px] w-full  bg-cover bg-center bg-no-repeat"
+        style="background-image: url('/assets/img/aboutUs-img.png')">
+        <h1 class="absolute top-10 left-16  text-4xl text-navBlue font-bold"> ABOUT US </h1>
+        <div class="absolute bottom-5 left-0  bg-navBlue w-[650px] py-3 pl-16 pr-3 text-white/80 font-light text-sm">
+            <p>In an ever-evolving landscape of industries reliant on metal products, one name has consistently shone as
+                a beacon of quality and innovation for over five decades. The PHH Group of Companies, with its
+                unwavering commitment to delivering top-notch metal products, services, and solutions, has not only
+                weathered the test of time but has also evolved into a global force to be reckoned with.</p>
+        </div>
+        <!-- <div class="absolute inset-0 bg-black bg-opacity-40"></div> -->
+
+    </section>
+
+    <!-- Menu on Section = 8Page -->
+    <section class="grid grid-cols-5 w-full h-[800px] bg-slate-200">
+
+        <!-- number 1 -> 50 years = 1Page -->
+        <a href="50years.html" class="relative overflow-hidden group">
+            <img class="object-cover w-full h-full" src="/assets/img/50 years since 1975.png" alt="">
+            <div
+                class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                <div class="w-[200px] text-center text-white">
+                    <p>A HISTORY OF STEEL, FORGED IN EXCELLENCE</p>
+                    <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                </div>
+            </div>
+        </a>
+
+        <!-- number 2 -> hakudo What we have, nippon Koshuha, global Leader, metal Product = 4Page -->
+        <div class="flex flex-col h-full ">
+
+            <!-- Hakudo | what we have -->
+            <a href="whatWeHave.html"
+                class="cursor-pointer group relative w-full h-[180px] border-[0.25px] border-white ">
+                <div
+                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                    <div class="w-[200px] text-center text-white">
+                        <p>HAKUDO</p>
+                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                    </div>
+                </div>
+                <h1
+                    class="absolute flex justify-center items-end h-12  inset-0 text-center text-xl text-navBlue tracking-widest">
+                    WHAT WE HAVE</h1>
+                <img class="w-full h-full object-cover object-[50%_100%]" src="/assets/img/menu-21.jpeg" alt="">
+            </a>
+
+            <!-- Nippon Koshuha -->
+            <a href="nipponKoshuha.html"
+                class="relative w-full h-[200px] overflow-hidden group border-[0.25px] border-white ">
+                <img class="object-cover w-full h-full" src="/assets/img/nippon kosuha steel22.png" alt="">
+                <div
+                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                    <div class="w-[200px] text-center text-white">
+                        <p>NIPPON KOSHUHA STEEL</p>
+                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Global Leader -->
+            <a href="globalLeader.html"
+                class="relative w-full h-[230px] group overflow-hidden border-[0.25px] border-white  ">
+                <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/menu-23.jpeg" alt="">
+                <div
+                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                    <div class="w-[200px] text-center text-white">
+                        <p>GLOBAL LEADER CARBON MATERIALS</p>
+                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Metal Product -->
+            <a href="metalProduct.html"
+                class="relative w-full group flex-1 overflow-hidden1 border-[0.25px] border-white ">
+                <img class="object-cover w-full h-full object-[0%_center]" src="/assets/img/metalproducts-img2.png"
+                    alt="">
+                <div
+                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                    <div class="w-[200px] text-center text-white">
+                        <p>METAL PRODUCTS</p>
+                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Number 3 -> What we do, Milling, Grinding-Packaging = 1page  -->
+        <div class="flex flex-col">
+
+            <!-- What we do -->
+            <a href="machineData.html" class="relative w-full h-[250px] group border-[0.25px] border-white ">
+                <h1
+                    class="absolute flex justify-center items-end h-12 inset-0 text-center text-xl text-white tracking-widest">
+                    WHAT WE DO</h1>
+                <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/menu-31.png" alt="">
+                <div
+                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                    <div class="w-[200px] text-center text-white">
+                        <p>MACHINE DATA & WORKING CAPACITY</p>
+                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- MIlling -->
+            <a href="machineData.html#milling" class="relative w-full flex-1 group border-[0.25px] border-white">
+                <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/milling-img.png" alt="">
+                <div
+                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                    <div class="w-[200px] text-center text-white">
+                        <p>MILING</p>
+                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Grinding-Packaging -->
+            <a href="machineData.html#grinding" class="relative w-full h-[260px] group border-[0.25px] border-white">
+                <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/menu-33.png" alt="">
+                <div
+                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                    <div class="w-[200px] text-center text-white">
+                        <p>GRINDING</p>
+                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Number 4 -> Aerospacec Division = 1Page -->
+        <a href="aerospace.html" class="relative flex flex-col group border-[0.25px] border-white ">
+            <h1
+                class="absolute flex justify-center items-end text-center h-12 inset-0 text-xl text-white tracking-widest">
+                AEROSPACE DIVISION</h1>
+            <img class="w-full h-full object-cover object-[50%_100%]" src="/assets/img/menu-4.jpeg" alt="">
+
+            <div
+                class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                <div class="w-[200px] text-center text-white">
+                    <p>AEROSPACE
+                        DIVISION</p>
+                    <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                </div>
+            </div>
+        </a>
+
+        <!-- Number 5 -> SmartWareHouse = 1Page -->
+        <a href="smartWareHouse.html" class="relative group border-[0.25px] border-white ">
+            <div class="absolute flex justify-center items-end h-20 inset-0 text-center tracking-widest ">
+                <ol class="list-disc list-inside text-sm text-white text-start">
+                    <li>SMART WAREHOUSE</li>
+                    <li>VENDOR-MANAGED INVENTORY</li>
+                </ol>
+            </div>
+            <img class="w-full h-full object-cover object-[60%_100%]" src="/assets/img/smartwarehouse-img.png" alt="">
+            <div
+                class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                <div class="w-[200px] text-center text-white">
+                    <p>SMART WAREHOUSE, VENDOR-MANAGED INVENTORY</p>
+                    <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <!-- Certificate Section -->
+    <section class="w-full px-16 py-32 bg-white">
+
+        <!-- title -->
+        <div class="flex justify-center items-center w-full mb-14">
+            <h3 class="text-2xl text-navBlue tracking-widest">CERTIFICATIONS</h3>
+        </div>
+
+        <!-- certificate list -->
+        <div class="flex justify-center items-center space-x-40">
+
+            <!-- AS9100D -->
+            <button onclick="openPopup()"  class="flex flex-col justify-center items-center ">
+                <img src="/assets/img/AS9100D-img.png" alt="" class="w-[370px] max-w-none mx-5">
+                <h3 class="mt-7 font-medium text-3xl text-[#002E5F] ">AS 9100:2016</h3>
+            </button>
+
+            <!-- GCL International -->
+            <button onclick="openPopup()"  class="flex flex-col items-center justify-center">
+                <img src="/assets/img/CGL-img.png" alt="" class="w-[170px] max-w-none mx-5">
+                <h3 class="mt-7 font-medium text-3xl text-[#005097] ">ISO 9001:2015</h3>
+            </button>
+
+            <!-- Novo Star -->
+            <button onclick="openPopup()"  class="flex flex-col items-center justify-center">
+                <img src="/assets/img/novoStar-img.png" alt="" class="w-[390px] max-w-none mx-5">
+                <h3 class="mt-7 font-medium text-3xl text-[#E75006] ">ISO 9001:2015</h3>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- pop up Certificate before Download -->
+    <div id="popup" onclick="closePopup()"  class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <div class="overflow-hidden w-96">
+                <img src="/assets/img/gcl2015-img.png" alt="">
+            </div>
+
+            <a href="/assets/pdf/sertifikat-ku.pdf" download>
+                <button class="w-full py-5 mt-5 bg-navBlue ">
+                    <h4 class="text-white text-xl">Download as PDF</h4>
+                </button>
+            </a>
+            <div class="w-full mt-3 text-center">
+                <button onclick="closePopup()"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="flex justify-between items-end px-16 py-7 text-xs font-light text-white">
+
+        <!-- Part 1 - Left  -->
+        <div class="w-[650px]">
+            <div class="flex items-center">
+                <h3 class="pb-2 border-b-[0.5px] border-white/80 text-base font-semibold"> Contact Information</h3>
+            </div>
+
+            <!-- Malaysia -->
+            <div class="relative py-5 border-b-[0.5px] border-white/80">
+                <div class="absolute flex flex-col items-center top-5 right-0 ">
+                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light mt-1">MALAYSIA</p>
+                </div>
+                <h4 class="text-sm mb-3"> HEADQUARTER</h4>
+                <p class="font-bold">PHH METAL 1 SDN BHD <span class="text-[10px] font-thin">(176257-T)</span></p>
+                <p><span class="font-bold">T</span> +60 3 8068 7000 | <span class="font-bold">E</span> sales@phh.com.my
+                    | <span class="font-bold">W</span> www.phh.com.my</p>
+                <p>Wisma PHH, Jalan PPU 3, Taman Perindustrian Puchong Utama, 47100 Selangor, Malaysia.</p>
+            </div>
+
+            <!-- Indonesia -->
+            <div class="relative pt-5">
+                <div class="absolute flex flex-col items-center top-5 right-0">
+                    <img class="w-12"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">INDONESIA</p>
+                </div>
+                <p class="font-bold">PT PHH SPECIAL STEEL <span class="text-[10px] font-thin">(18835/BH 05
+                        09/VM/2011)</span></p>
+                <p><span class="font-bold">T</span> +62 21 2808 5200 | <span class="font-bold">E</span> sales@phh.co.id
+                    | <span class="font-bold">W</span> www.phh.co.id</p>
+                <p>Blok F25-09J, Jl.Sungkai, Delta Silicon 3, Lippo Cikarang, Bekasi 17550, Indonesia.</p>
+            </div>
+        </div>
+        <!-- Part 2 - Right  -->
+        <div class="w-[650px] ">
+            <!-- Malaysia -->
+            <div class=" relative">
+                <div class="absolute flex flex-col items-center top-0 right-0 ">
+                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">MALAYSIA</p>
+                </div>
+                <p class="font-bold">PROTECH TOOL AND DIE SDN BHD <span class="text-[10px] font-thin ">(176257-T)</span>
+                </p>
+                <p><span class="font-bold">T</span> +62 3 5102 9505 | <span class="font-bold">E</span>
+                    info@phhmetal1.com
+                    | <span class="font-bold">W</span> www.protechdm.com.my</p>
+                <p>No.7, Jalan Mandolin 33/5, Seksyen 33, 40400 Shah Alam, Selangor, Malaysia.</p>
+            </div>
+            <!-- Contact, copyright, ect -->
+            <div class="mt-5">
+                <p class="font-bold">Follow Us</p>
+                <div class="flex space-x-5 py-2 border-b-[0.5px] border-white/80 text-lg">
+                    <button>
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                    <button>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </button>
+                    <button>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </button>
+                    <button>
+                        <i class="fa-brands fa-youtube"></i>
+                    </button>
+                    <button>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </button>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <p class="text-xs">© PHH Metal. All rights reserved 2023.</p>
+                    <div class="flex space-x-2">
+                        <button class="text-xs">Privacy Policy</button>
+                        <p>|</p>
+                        <button class="text-xs">Terms of Use</button>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        // Carousel functionality
+        const track = document.getElementById('carousel-track');
+        const videos = track.querySelectorAll('video');
+        const dots = document.querySelectorAll('.dot');
+        const dotContainer = document.getElementById('dot-container');
+        const innerCircle = document.getElementById('inner-circle');
+        let index = 0;
+
+        function updateSlider(newIndex) {
+            // Pause all videos
+            videos.forEach((video) => {
+                video.pause();
+                video.currentTime = 0;
+            });
+
+            // Slide track
+            track.style.transform = `translateX(-${newIndex * 100}%)`;
+
+            // Play current
+            setTimeout(() => {
+                videos[newIndex].play();
+            }, 700); // match transition
+
+            // Update dots
+            dots.forEach((dot, i) => {
+                const span = dot.querySelector('span');
+                if (i === newIndex) {
+                    span.classList.add('bg-white');
+                    span.classList.remove('bg-white/60');
+                } else {
+                    span.classList.remove('bg-white');
+                    span.classList.add('bg-white/60');
+                }
+            });
+
+            // Move inner circle to the selected dot
+            const selectedDot = dots[newIndex];
+            const dotRect = selectedDot.getBoundingClientRect();
+            const containerRect = dotContainer.getBoundingClientRect();
+            const offset = dotRect.left - containerRect.left;
+            innerCircle.style.transform = `translateX(${offset}px)`;
+
+            index = newIndex;
+        }
+
+        // Dot click
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                e.preventDefault();
+                const idx = parseInt(dot.dataset.index);
+                updateSlider(idx);
+            });
+        });
+
+        // Controls (if you add prev/next button, add their logic here)
+
+        // Auto move after video ends (loop to first if last)
+        videos.forEach((video, idx) => {
+            video.addEventListener('ended', () => {
+                let nextIndex = (idx + 1) % videos.length;
+                updateSlider(nextIndex);
+            });
+        });
+
+        // Start autoplay
+        updateSlider(0);
+    </script>
+
+</body>
+
+</html>

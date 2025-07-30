@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine data</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Javascript & Css-Style -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
+    <!-- <style>
+        /* !!! jangan lupa pindahkan css dan rapihkan setelah itu pindahkan ke react !!!*/
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        .cabin-light {
+            font-family: "Cabin", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            /* Ganti sesuai kebutuhan: 100 - 700 */
+            font-style: normal;
+            font-variation-settings: "wdth"100;
+
+            letter-spacing: 3px;
+        }
+
+        .montserrat-400 {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .bg-navBlue {
+            background-color: #1C3D69;
+        }
+
+        .text-navBlue {
+            color: #1C3D69;
+        }
+    </style> -->
+</head>
+
+<body class=" text-navBlue">
+    <!-- navbar -->
+
+    <!-- content section -->
+    <!-- part1 -->
+
+    <section class="px-32 py-10">
+        <!-- Hero section | img dan text -->
+        <div class="flex justify-between items-start h-[450px]">
+            <!-- text -->
+            <div class="flex flex-col justify-between h-full ">
+                <h1 class="text-7xl helvetica-medium tracking-[0.15em] ">MACHINE DATA & WORKING CAPACITY</h1>
+                <h3 class="text-5xl  tracking-widest">CUTTING</h3>
+            </div>
+            <!-- image -->
+            <div class="w-[1700px] h-full  ">
+                <img src="/assets/img/cutting-img.png" alt="" class="object-cover w-full h-full">
+            </div>
+        </div>
+        <!-- table content -->
+        <div class="mt-5 overflow-x-auto scrolling-touch ">
+            <table class="table-auto border-collapse w-full bg-white">
+                <thead>
+                    <tr class="bg-navBlue text-white border-b-[0.5px] border-white ">
+                        <th class="px-2 py-4 font-normal">NO.</th>
+                        <th class="px-4 py-2 font-normal">TYPES OF MACHINE</th>
+                        <th class="px-4 py-2 font-normal">MACHINE NO.</th>
+                        <th class="px-4 py-2 font-normal">MODEL</th>
+                        <th class="px-4 py-2 font-normal">COUNTRY OF ORIGIN</th>
+                        <th class="px-4 py-2 font-normal">SERIAL</th>
+                        <th class="px-4 py-2 font-normal">MAX. TABLE LOAD (KG)</th>
+                        <th class="px-4 py-2 font-normal">WORK AREA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data Baris -->
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            1</td>
+                        <td class="px-4 py-2">SATO CNC Gantry Plasma/Flame Cutting</td>
+                        <td class="px-4 py-2">MCF1997-001</td>
+                        <td class="px-4 py-2">D-3500</td>
+                        <td class="px-4 py-2">Germany</td>
+                        <td class="px-4 py-2">140.97</td>
+                        <td class="px-4 py-2">10.000(Mild Steel)</td>
+                        <td class="px-4 py-2">200 × 3000 x 6000</td>
+
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            2</td>
+                        <td class="px-4 py-2">PPRPTRONICS CNC Gantry
+                            Plasma/Flame Cutting</td>
+                        <td class="px-4 py-2">MCF1996-03</td>
+                        <td class="px-4 py-2">POROTRONICS
+                            D-25</td>
+                        <td class="px-4 py-2">Germany</td>
+                        <td class="px-4 py-2">02068.96.199.08</td>
+                        <td class="px-4 py-2">10.000
+                            (Mild Steel)</td>
+                        <td class="px-4 py-2">200 x 3000 x 6000</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            3</td>
+                        <td class="px-4 py-2">Everising Automated
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS2005-006</td>
+                        <td class="px-4 py-2">H-1010</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">3279801</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">1000 × 1100</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            4</td>
+                        <td class="px-4 py-2">Everising Automated
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS2003-05</td>
+                        <td class="px-4 py-2">H-7050</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">21233</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">550 × 700</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            5</td>
+                        <td class="px-4 py-2">Weiren
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS2008-007</td>
+                        <td class="px-4 py-2">GB 4235</td>
+                        <td class="px-4 py-2">China</td>
+                        <td class="px-4 py-2">801169</td>
+                        <td class="px-4 py-2">For Graphite</td>
+                        <td class="px-4 py-2">350 x 700</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            6</td>
+                        <td class="px-4 py-2">Mega Automated Bandsaw
+                            Machine - Lot 4</td>
+                        <td class="px-4 py-2">MBS1992-002</td>
+                        <td class="px-4 py-2">H-330A</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">920115</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">350 × 350</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            7</td>
+                        <td class="px-4 py-2">Amada Automated
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS2000-004</td>
+                        <td class="px-4 py-2">HA-250W</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">25650002</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">250 x 250</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            8</td>
+                        <td class="px-4 py-2">Amada Automated
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS1995-003</td>
+                        <td class="px-4 py-2">HA-400</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">43600035</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">400 x 400</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            9</td>
+                        <td class="px-4 py-2">Amada
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS1983-001</td>
+                        <td class="px-4 py-2">H-650HD</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">483284</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">300 x 650</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            10</td>
+                        <td class="px-4 py-2">Amada
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS2008-008</td>
+                        <td class="px-4 py-2">HFA-500</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">50130613</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">500 x 500</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            11</td>
+                        <td class="px-4 py-2">Amada
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS2001-009</td>
+                        <td class="px-4 py-2">HFA-400</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">41740010</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">415 × 415</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            12</td>
+                        <td class="px-4 py-2">Everising Automated
+                            Bandsaw Machine</td>
+                        <td class="px-4 py-2">MBS2021-010</td>
+                        <td class="px-4 py-2">H-460HA</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">N/A</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">500 x 460</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td
+                            class="px-2 py-4 text-white bg-navBlue font-light text-center border-b-[0.5px] border-white">
+                            13</td>
+                        <td class="px-4 py-2">Gas Cutting Machine</td>
+                        <td class="px-4 py-2">MMC-001</td>
+                        <td class="px-4 py-2">VIC-12</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- part2 MILNG -->
+    <section id="milling" class="px-16 my-10 ">
+        <div class="w-full pb-20 pt-28 px-5 bg-cover bg-center bg-no-repeat"
+            style="background-image: url('/assets/img/milling-img.png')">
+            <h1 class="text-6xl text-white tracking-widest">MILING</h1>
+
+            <div class="mt-5 overflow-x-auto scrolling-touch ">
+                <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
+                    <thead class="mb-3">
+                        <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
+                            <th class="px-2 py-4 font-normal">NO.</th>
+                            <th class="px-4 py-2 font-normal">TYPES OF MACHINE</th>
+                            <th class="px-4 py-2 font-normal">MACHINE NO.</th>
+                            <th class="px-4 py-2 font-normal">MODEL</th>
+                            <th class="px-4 py-2 font-normal">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 py-2 font-normal">SERIAL</th>
+                            <th class="px-4 py-2 font-normal">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 py-2 font-normal">WORK AREA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data Rows -->
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">1</td>
+                            <td class="px-4 py-2">OKK (Surface Miling)</td>
+                            <td class="px-4 py-2">MSM1982-006</td>
+                            <td class="px-4 py-2">MH-4V 3</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">MA59644 / 865</td>
+                            <td class="px-4 py-2">1000</td>
+                            <td class="px-4 py-2">500 x 420 x 1100</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">2</td>
+                            <td class="px-4 py-2">OKK (Surface Miling)</td>
+                            <td class="px-4 py-2">MSM1987-004</td>
+                            <td class="px-4 py-2">MH-4V 1</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">KA59467 / 271</td>
+                            <td class="px-4 py-2">1000</td>
+                            <td class="px-4 py-2">500 x 420 x 1100</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">3</td>
+                            <td class="px-4 py-2">OKK (Surface Miling)</td>
+                            <td class="px-4 py-2">MSM1974-005</td>
+                            <td class="px-4 py-2">MH-4V 2</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">MA59505X / 273</td>
+                            <td class="px-4 py-2">1000</td>
+                            <td class="px-4 py-2">500 x 420 x 1100</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">4</td>
+                            <td class="px-4 py-2">OKK (Surface Miling)</td>
+                            <td class="px-4 py-2">MSM1967-002</td>
+                            <td class="px-4 py-2">MH-3V</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">M6198 / 370</td>
+                            <td class="px-4 py-2">1000</td>
+                            <td class="px-4 py-2">450 x 350 x 920</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">5</td>
+                            <td class="px-4 py-2">Hitachi Seiki (Surface Miling)</td>
+                            <td class="px-4 py-2">MSM1972-003</td>
+                            <td class="px-4 py-2">12MJ50</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">B2237</td>
+                            <td class="px-4 py-2">7500</td>
+                            <td class="px-4 py-2">700 x 1200 x 3500</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">6</td>
+                            <td class="px-4 py-2">KAO FONG (Surface Miling)</td>
+                            <td class="px-4 py-2">MSM1984-007</td>
+                            <td class="px-4 py-2">HF-V8M-AL</td>
+                            <td class="px-4 py-2">Taiwan</td>
+                            <td class="px-4 py-2">6029</td>
+                            <td class="px-4 py-2">1000</td>
+                            <td class="px-4 py-2">300 x 400 x 1000</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">7</td>
+                            <td class="px-4 py-2">Niigata Auto Surface Miling</td>
+                            <td class="px-4 py-2">MSM1992-009</td>
+                            <td class="px-4 py-2">3JK</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">11030</td>
+                            <td class="px-4 py-2">450</td>
+                            <td class="px-4 py-2">300 x 300 x 600</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">8</td>
+                            <td class="px-4 py-2">Niigata Auto Surface Miling</td>
+                            <td class="px-4 py-2">MSM2000-010</td>
+                            <td class="px-4 py-2">4JK</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">73720101</td>
+                            <td class="px-4 py-2">550</td>
+                            <td class="px-4 py-2">400 x 400 x 800</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">9</td>
+                            <td class="px-4 py-2">Chuo-Seiki Double Head Miling (Side Miling)</td>
+                            <td class="px-4 py-2">MDM2004-003</td>
+                            <td class="px-4 py-2">Dai700</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">304165</td>
+                            <td class="px-4 py-2">800</td>
+                            <td class="px-4 py-2">150 x 800 x 800</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">10</td>
+                            <td class="px-4 py-2">Chuo-Seiki Double Head Miling (Side Miling)</td>
+                            <td class="px-4 py-2">MDM1998-001</td>
+                            <td class="px-4 py-2">Dai500</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">398123</td>
+                            <td class="px-4 py-2">500</td>
+                            <td class="px-4 py-2">150 x 500 x 500</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">11</td>
+                            <td class="px-4 py-2">Chuo-Seiki Double Head Miling (Side Miling)</td>
+                            <td class="px-4 py-2">MDM2003-002</td>
+                            <td class="px-4 py-2">CL1800</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">20373</td>
+                            <td class="px-4 py-2">400</td>
+                            <td class="px-4 py-2">100 x 261 x 1800</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">12</td>
+                            <td class="px-4 py-2">Chuo-Seiki Double Head Miling (Side Miling)</td>
+                            <td class="px-4 py-2">MDM2011-005</td>
+                            <td class="px-4 py-2">CS300</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">211190</td>
+                            <td class="px-4 py-2">100</td>
+                            <td class="px-4 py-2">100 x 300 x 300</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">13</td>
+                            <td class="px-4 py-2">Toyoda (Side Miling)</td>
+                            <td class="px-4 py-2">MSM1968-001</td>
+                            <td class="px-4 py-2">Z3C-1</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">Z 2196</td>
+                            <td class="px-4 py-2">1000</td>
+                            <td class="px-4 py-2">500 x 400 x 850</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">14</td>
+                            <td class="px-4 py-2">GEN E (Side Miling)</td>
+                            <td class="px-4 py-2">MSM2008-008</td>
+                            <td class="px-4 py-2">GE-3A</td>
+                            <td class="px-4 py-2">Taiwan</td>
+                            <td class="px-4 py-2">88037</td>
+                            <td class="px-4 py-2">1000</td>
+                            <td class="px-4 py-2">200 x 350 x 1000</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">15</td>
+                            <td class="px-4 py-2">Willing Duplex NC Miling (Side Miling)</td>
+                            <td class="px-4 py-2">MDM2004-004</td>
+                            <td class="px-4 py-2">6DS</td>
+                            <td class="px-4 py-2">Taiwan</td>
+                            <td class="px-4 py-2">MF-2B30201029</td>
+                            <td class="px-4 py-2">2000</td>
+                            <td class="px-4 py-2">250 x 1200 x 1200</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">16</td>
+                            <td class="px-4 py-2">Okuma Howa Machining Center</td>
+                            <td class="px-4 py-2">MSM1991-012</td>
+                            <td class="px-4 py-2">3V-NC</td>
+                            <td class="px-4 py-2">Japan</td>
+                            <td class="px-4 py-2">23482</td>
+                            <td class="px-4 py-2">-</td>
+                            <td class="px-4 py-2">200 x 300 x 600</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 py-4 text-white bg-navBlue font-light text-center">17</td>
+                            <td class="px-4 py-2">Lagun Vertical Knee Miling</td>
+                            <td class="px-4 py-2">MSM1991-013</td>
+                            <td class="px-4 py-2">FT-1S</td>
+                            <td class="px-4 py-2">USA</td>
+                            <td class="px-4 py-2">1478112</td>
+                            <td class="px-4 py-2">-</td>
+                            <td class="px-4 py-2">300 x 200 x 600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- part3 GRINDING -->
+    <section id="grinding" class="px-16 my-10">
+        <!-- Grinding -->
+        <h1 class="text-5xl tracking-widest">GRINDING</h1>
+        <div class="mt-5 overflow-x-auto scrolling-touch">
+            <table class="w-full table-auto border-collapse bg-[#EBECED]">
+                <thead class="mb-3">
+                    <tr class="font-light text-white border-b-[0.5px] border-white bg-navBlue">
+                        <th class="px-2 py-4 font-normal">NO.</th>
+                        <th class="px-4 py-2 font-normal">TYPES OF MACHINE</th>
+                        <th class="px-4 py-2 font-normal">MACHINE NO.</th>
+                        <th class="px-4 py-2 font-normal">MODEL</th>
+                        <th class="px-4 py-2 font-normal">COUNTRY OF ORIGIN</th>
+                        <th class="px-4 py-2 font-normal">SERIAL</th>
+                        <th class="px-4 py-2 font-normal">MAX. TABLE LOAD (KG)</th>
+                        <th class="px-4 py-2 font-normal">WORK AREA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data Rows -->
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">1</td>
+                        <td class="px-4 py-2">Lumsden 36 (Rough Grinding)</td>
+                        <td class="px-4 py-2">MRG1945-001</td>
+                        <td class="px-4 py-2">91ML</td>
+                        <td class="px-4 py-2">England</td>
+                        <td class="px-4 py-2">229476</td>
+                        <td class="px-4 py-2">1000</td>
+                        <td class="px-4 py-2">250 x Ø 1010</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">2</td>
+                        <td class="px-4 py-2">Lumsden 48 (Rough Grinding)</td>
+                        <td class="px-4 py-2">MRG1945-002</td>
+                        <td class="px-4 py-2">1200</td>
+                        <td class="px-4 py-2">England</td>
+                        <td class="px-4 py-2">19989</td>
+                        <td class="px-4 py-2">1000</td>
+                        <td class="px-4 py-2">280 x Ø 1300</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">3</td>
+                        <td class="px-4 py-2">Wardrich Coburg (Surface Grinding)</td>
+                        <td class="px-4 py-2">MSG1965-001</td>
+                        <td class="px-4 py-2">10F2526</td>
+                        <td class="px-4 py-2">Germany</td>
+                        <td class="px-4 py-2">13821</td>
+                        <td class="px-4 py-2">7500</td>
+                        <td class="px-4 py-2">350 x 800 x 3500</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">4</td>
+                        <td class="px-4 py-2">Freeport (Surface Grinding)</td>
+                        <td class="px-4 py-2">MSG1994-002</td>
+                        <td class="px-4 py-2">SGS-2012AD</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">408002</td>
+                        <td class="px-4 py-2">2500</td>
+                        <td class="px-4 py-2">300 x 1200 x 2000</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">5</td>
+                        <td class="px-4 py-2">Okamoto (Surface Grinding)</td>
+                        <td class="px-4 py-2">MSG1995-004</td>
+                        <td class="px-4 py-2">PSG-84ST</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">S8005</td>
+                        <td class="px-4 py-2">500</td>
+                        <td class="px-4 py-2">500 x 400 x 800</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">6</td>
+                        <td class="px-4 py-2">Okamoto (Surface Grinding)</td>
+                        <td class="px-4 py-2">MSG1999-005</td>
+                        <td class="px-4 py-2">ACC-84ST</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">88136</td>
+                        <td class="px-4 py-2">500</td>
+                        <td class="px-4 py-2">500 x 400 x 800</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">7</td>
+                        <td class="px-4 py-2">Okamoto (Surface Grinding)</td>
+                        <td class="px-4 py-2">MSG1996-003</td>
+                        <td class="px-4 py-2">ACC-950X</td>
+                        <td class="px-4 py-2">Japan</td>
+                        <td class="px-4 py-2">69063</td>
+                        <td class="px-4 py-2">500</td>
+                        <td class="px-4 py-2">500 x 500 x 900</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">8</td>
+                        <td class="px-4 py-2">Chevalier (Surface Grinding)</td>
+                        <td class="px-4 py-2">MSG2005-006</td>
+                        <td class="px-4 py-2">FSG2040TC</td>
+                        <td class="px-4 py-2">USA</td>
+                        <td class="px-4 py-2">1089804</td>
+                        <td class="px-4 py-2">500</td>
+                        <td class="px-4 py-2">400 x 500 x 1000</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4   font-light text-center text-white bg-navBlue">9</td>
+                        <td class="px-4 py-2">Hone Right (Surface Grinding)</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">700 x 1500 x 3000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CNC MACHINING -->
+        <h1 class="mt-10 text-5xl   tracking-widest">CNC MACHINING</h1>
+        <div class=" mt-3 overflow-x-auto">
+            <table class="table-auto border-collapse w-full shadow-lg bg-[#EBECED]">
+                <thead class="mb-3">
+                    <tr class="bg-navBlue font-light text-white border-b-[0.5px] border-white ">
+                        <th class="px-2 py-4 font-normal">NO.</th>
+                        <th class="px-4 py-2 font-normal">TYPES OF MACHINE</th>
+                        <th class="px-4 py-2 font-normal">MACHINE NO.</th>
+                        <th class="px-4 py-2 font-normal">MODEL</th>
+                        <th class="px-4 py-2 font-normal">COUNTRY OF ORIGIN</th>
+                        <th class="px-4 py-2 font-normal">SERIAL</th>
+                        <th class="px-4 py-2 font-normal">MAX. TABLE LOAD (KG)</th>
+                        <th class="px-4 py-2 font-normal">WORK AREA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data Rows -->
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4 font-light text-white  text-center bg-navBlue">1</td>
+                        <td class="px-4 py-2">Harford CNC Machining Center</td>
+                        <td class="px-4 py-2">MCM2001-001</td>
+                        <td class="px-4 py-2">HB-3150G</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">3654</td>
+                        <td class="px-4 py-2">8000</td>
+                        <td class="px-4 py-2">900 x 1500 x 3000</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4 font-light text-white  text-center bg-navBlue">2</td>
+                        <td class="px-4 py-2">Harford CNC Machining Center</td>
+                        <td class="px-4 py-2">MCM2005-003</td>
+                        <td class="px-4 py-2">PRO-2000A</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">7762</td>
+                        <td class="px-4 py-2">5000</td>
+                        <td class="px-4 py-2">780 x 1450 x 2100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- QUALITY CONTROL -->
+        <h1 class="text-5xl mt-10 tracking-widest">QUALITY CONTROL</h1>
+        <div class=" mt-3 overflow-x-auto">
+            <table class="w-full table-auto border-collapse bg-[#EBECED]">
+                <thead class="mb-3">
+                    <tr class="font-light text-white border-b-[0.5px] border-white  bg-navBlue">
+                        <th class="px-2 py-4 font-normal">NO.</th>
+                        <th class="px-4 py-2 font-normal">TYPES OF MACHINE</th>
+                        <th class="px-4 py-2 font-normal">MACHINE NO.</th>
+                        <th class="px-4 py-2 font-normal">MODEL</th>
+                        <th class="px-4 py-2 font-normal">COUNTRY OF ORIGIN</th>
+                        <th class="px-4 py-2 font-normal">SERIAL</th>
+                        <th class="px-4 py-2 font-normal">MAX. TABLE LOAD (KG)</th>
+                        <th class="px-4 py-2 font-normal">WORK AREA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data Rows -->
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4 font-light text-center text-white bg-navBlue">1</td>
+                        <td class="px-4 py-2">Ultrasonic Flaw Detector</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4 font-light text-center text-white bg-navBlue">2</td>
+                        <td class="px-4 py-2">Rockwell Hardness Tester & Equotip Piccolo Portable Hardness Tester</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4 font-light text-center text-white bg-navBlue">3</td>
+                        <td class="px-4 py-2">Digital Caliper</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">300mm</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4 font-light text-center text-white bg-navBlue">4</td>
+                        <td class="px-4 py-2">Micrometer</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">25-50mm</td>
+                    </tr>
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4 font-light text-center text-white bg-navBlue">5</td>
+                        <td class="px-4 py-2">Measuring Tape & Square Ruler</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- PACKAGING -->
+        <h1 class="text-5xl mt-10 tracking-widest">PACKAGING</h1>
+        <div class="mt-3 overflow-x-auto ">
+            <table class="table-auto border-collapse w-full shadow-lg bg-[#EBECED]">
+                <thead class="mb-3">
+                    <tr class="bg-navBlue border-[0.5px] border-white fon text-white border-b-[t-light">
+                        <th class="px-2 py-4 font-normal">NO.</th>
+                        <th class="px-4 py-2 font-normal">TYPES OF MACHINE</th>
+                        <th class="px-4 py-2 font-normal">MACHINE NO.</th>
+                        <th class="px-4 py-2 font-normal">MODEL</th>
+                        <th class="px-4 py-2 font-normal">COUNTRY OF ORIGIN</th>
+                        <th class="px-4 py-2 font-normal">SERIAL</th>
+                        <th class="px-4 py-2 font-normal">MAX. TABLE LOAD (KG)</th>
+                        <th class="px-4 py-2 font-normal">WORK AREA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data Row -->
+                    <tr class="text-center border-b-[0.5px] border-white">
+                        <td class="px-2 py-4 font-light text-center text-white bg-navBlue">1</td>
+                        <td class="px-4 py-2">Aston Automation Vacuum Packaging</td>
+                        <td class="px-4 py-2">MPK2005-001</td>
+                        <td class="px-4 py-2">T-5000</td>
+                        <td class="px-4 py-2">Taiwan</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">50 x 350 x 500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    </section>
+
+
+</body>
+
+</html>

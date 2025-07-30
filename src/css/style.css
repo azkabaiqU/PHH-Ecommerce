@@ -1,0 +1,81 @@
+* {
+    font-family: helveticaNeue; /* Font default */
+}
+
+.bg-navBlue {
+    background-color: #1C3D69;
+}
+
+.text-navBlue {
+    color: #1C3D69;
+}
+
+.barlow-medium{
+    font-family: Barlow-medium;
+}
+
+/* .helvetica-regular{
+    font-family: helveticaNeueRegular;
+} */
+
+.helvetica-medium{
+    font-family: helveticaNeueMedium;
+}
+
+
+
+/* Font's =================================== */
+
+/* Font Barlow BOLD */
+@font-face {
+  font-family: 'Barlow-bold';
+  src: url('/assets/fonts/barlow-bold.ttf') format('truetype');
+  font-weight: bold; 
+    font-style: normal;
+}
+
+/* Font Barlow MEDIUM */
+@font-face {
+  font-family: 'Barlow-medium';
+  src: url('/assets/fonts/barlow-medium.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Font Gobold BOLD */
+@font-face {
+  font-family: 'gobold-bold';
+  src: url('/assets/fonts/gobold-bold.ttf') format('truetype');
+  font-weight: bold; 
+  font-style: normal;
+}
+
+/* Font Helvetica Neue */
+@font-face {
+  font-family: 'helveticaNeue';
+  src: url('/assets/fonts/HelveticaNeue.ttc') format('truetype');
+  font-style: normal;
+}
+
+/* Font Helvetica Neue MEDIUM */
+@font-face {
+  font-family: 'helveticaNeueMedium';
+  src: url('/assets/fonts/HelveticaNeueMedium.otf') format('opentype');
+  font-weight: bold; 
+  font-style: normal;
+}
+
+/* Font Helvetica Neue ROMAN */
+/* @font-face {
+  font-family: 'helveticaNeueRegular';
+  src: url('/assets/fonts/HelveticaNeueRoman.otf') format('opentype');
+  font-style: normal;
+} */
+
+/* Font Minion Pro REGULAR */
+@font-face {
+  font-family: 'minionPro-regular';
+  src: url('/assets/fonts/MinionPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

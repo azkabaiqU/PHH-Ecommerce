@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Warehouse</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- JavaScript & CSS Styles -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
+</head>
+
+<body class="bg-white">
+    <!-- Navbar -->
+
+
+    <!-- Content Section -->
+    <section class="flex justify-center items-center py-10">
+        <div class="w-[950px]">
+            <!-- Image Area -->
+            <div>
+                <div class="w-full h-[650px] overflow-hidden">
+                    <img src="/assets/img/smartwarehouse-img.png" alt=""
+                        class="object-cover w-full h-full object-[50%_80%] scale-125">
+                </div>
+            </div>
+            <div class="px-7">
+                <!-- Text Area -->
+                <ul
+                    class="mt-10 helvetica-medium font-bold text-5xl text-navBlue tracking-wider list-disc  list-inside space-y-1  ">
+                    <li>SMART WAREHOUSE</li>
+                    <li>VENDOR-MANAGED INVENTORY</li>
+                </ul>
+
+                <!-- Diagram Area -->
+                <div class="mt-10 text-navBlue">
+                    <!-- Diagram 1 -->
+                    <div class="flex justify-between">
+                        <!-- Step 1: Incoming -->
+                        <div class="relative flex-col flex items-center ">
+                            <div
+                                class="flex items-center justify-center w-52 h-52 helvetica-medium text-base font-bold rounded-full bg-blue-100">
+                                Incoming</div>
+                            <div
+                                class="absolute flex items-center justify-center -bottom-3 mt-2 w-8 h-8 text-sm font-bold text-white  rounded-full bg-[#083F74]">
+                                01</div>
+                        </div>
+
+                        <!-- Step 3: Warehouses -->
+                        <div class="relative flex-col flex items-center ">
+                            <div class=" flex items-center justify-center w-52 h-52 rounded-full bg-blue-100">
+                                <div
+                                    class="flex flex-col justify-center items-center px-2 w-52 h-52 rounded-full helvetica-medium text-base font-bold text-center bg-blue-100   ">
+                                    Warehouses
+                                    <ul class="mt-1 text-xs font-normal text-center text-gray-800 ">
+                                        <li>• PHH</li>
+                                        <li>• QR code sticker</li>
+                                        <li>• ERP in</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute flex items-center justify-center -bottom-3 mt-2 w-8 h-8 text-sm font-bold text-white  rounded-full bg-[#083F74]">
+                                03</div>
+                        </div>
+
+                        <!-- Step 5: QC out -->
+                        <div class="relative flex-col flex items-center ">
+                            <div class=" flex items-center justify-center w-52 h-52 rounded-full bg-blue-100">
+                                <div
+                                    class="w-52 h-52  flex-col flex  justify-center items-center px-2 helvetica-medium text-base  font-bold text-center rounded-full bg-blue-100">
+                                    QC out
+                                    <ul class="text-xs font-normal mt-1 text-gray-800 text-center px-3 ">
+                                        <li>• Dimensions TxWxL - Qty</li>
+                                        <li>• Grade of material</li>
+                                        <li>• Mill certificate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute flex items-center justify-center -bottom-3 mt-2 w-8 h-8 text-sm font-bold text-white  rounded-full bg-[#083F74]">
+                                05</div>
+                        </div>
+
+                        <!-- Step 7: Delivery -->
+                        <div class="relative flex-col flex items-center ">
+                            <div class=" flex items-center justify-center w-52 h-52 rounded-full bg-blue-100">
+                                <div
+                                    class="flex-col flex  justify-center items-center px-2 w-52 h-52 rounded-full helvetica-medium text-base font-bold text-center  bg-blue-100">
+                                    Delivery
+                                </div>
+                            </div>
+                            <div
+                                class="absolute flex items-center justify-center -bottom-3 mt-2 w-8 h-8 text-sm font-bold text-white  rounded-full bg-[#083F74]">
+                                07</div>
+                        </div>
+                    </div>
+
+                    <!-- Diagram 2 -->
+                    <div class="flex justify-center mt-5 space-x-6">
+                        <!-- Step 2: QC in -->
+                        <div class="relative flex-col flex items-center ">
+                            <div
+                                class="flex items-center justify-center w-52 h-52 rounded-full border-[0.5px] border-blue-100 ">
+                                <div
+                                    class=" flex flex-col justify-center items-center px-2 w-52 h-52 helvetica-medium text-base font-bold text-center  rounded-full border-[0.5px] border-blue-100">
+                                    QC in
+                                    <ul class="mt-1 text-xs text-center font-normal  text-gray-800">
+                                        <li>• Dimensions TxWxL - Qty</li>
+                                        <li>• Grade of material</li>
+                                        <li>• Mill certificate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute flex items-center justify-center -top-5 mt-2 w-8 h-8  rounded-full  text-sm font-bold  bg-blue-100 ">
+                                02</div>
+                        </div>
+
+                        <!-- Step 4: Outgoing -->
+                        <div class="flex flex-col items-center relative">
+                            <div
+                                class="w-52 h-52 rounded-full border-[0.5px] border-blue-100 flex items-center justify-center">
+                                <div
+                                    class=" flex flex-col justify-center items-center px-2 w-52 h-52 helvetica-medium text-base font-bold text-center  rounded-full border-[0.5px] border-blue-100">
+                                    Outgoing
+                                    <ul class="mt-1 text-xs font-normal text-center text-gray-800  ">
+                                        <li>• ERP out</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute flex items-center justify-center -top-5 mt-2 w-8 h-8  rounded-full  text-sm font-bold  bg-blue-100 ">
+                                04</div>
+                        </div>
+
+                        <!-- Step 6: Documentation & Packaging -->
+                        <div class="flex flex-col items-center relative">
+                            <div
+                                class="w-52 h-52 rounded-full border-[0.5px] border-blue-100 flex items-center justify-center">
+                                <div
+                                    class=" flex flex-col justify-center text-base px-2 w-52 h-52 items-center helvetica-medium font-bold text-center  rounded-full border-[0.5px] border-blue-100">
+                                    Documentation & Packaging
+                                    <ul class="mt-1 px-3 text-xs font-normal text-center text-gray-800  ">
+                                        <li>• Print Delivery Order</li>
+                                        <li>• Invoice</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute flex items-center justify-center -top-5 mt-2 w-8 h-8  rounded-full  text-sm font-bold  bg-blue-100 ">
+                                06</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
