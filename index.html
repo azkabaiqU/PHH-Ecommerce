@@ -18,15 +18,14 @@
     <!-- Overlay -->
     <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-30 hidden transition-opacity duration-500"></div>
 
-
     <!-- Navbar -->
     <nav id="navbar"
         class="fixed z-40 top-0 left-0 w-full noscroll duration-200 overflow-visible text-white bg-[#1C3D69] ">
         <div class="relative flex justify-between items-center lg:px-16 md:px-8 px-4  sm:py-3 py-0">
             <!-- logo -->
-            <div class="flex items-center | overflow-hidden h-[40px] ">
+            <button onclick="window.location.href='/index.html'" class="flex items-center | overflow-hidden h-[40px] ">
                 <img src="/assets/img/white-logo.png" alt="Logo" class="sm:w-32 w-20">
-            </div>
+            </button>
 
             <!-- desktop menu -->
             <div class="hidden md:flex items-center | text-white font-light ">
@@ -34,7 +33,7 @@
                 <ul class=" flex justify-center items-center ">
                     <!-- about -->
                     <li>
-                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/50years.html">About</a>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/about.html">About</a>
                     </li>
                     <!-- Products -->
                     <li class="dropdown-group group relative">
@@ -49,19 +48,19 @@
                             <ul>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/whatWeHave.html'">Hakudo</button></li>
+                                        onclick="window.location.href='/whatWeHave.html'">Hakudo</button></li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/nipponKoshuha.html'">Nippon Koshuha
+                                        onclick="window.location.href='/nipponKoshuha.html'">Nippon Koshuha
                                         Steel</button></li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/globalLeader.html'">Global Leader
+                                        onclick="window.location.href='/globalLeader.html'">Global Leader
                                         Carbon
                                         Material</button></li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/metalProduct.html'">Metal
+                                        onclick="window.location.href='/metalProduct.html'">Metal
                                         Material</button>
                                 </li>
                             </ul>
@@ -80,24 +79,24 @@
                             <ul>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html'">Cutting</button>
+                                        onclick="window.location.href='/machineData.html'">Cutting</button>
                                 </li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#milling'">Milling</button>
+                                        onclick="window.location.href='/machineData.html#milling'">Milling</button>
                                 </li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#grinding'">Gridding</button>
+                                        onclick="window.location.href='/machineData.html#grinding'">Gridding</button>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a>
+                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="#">Events & News</a>
                     </li>
                     <li>
-                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/contact.html">Contact</a>
                     </li>
                 </ul>
 
@@ -125,14 +124,14 @@
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
                                 href="">Hakudo</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
                                 href="">Nippon Koshuha Steel</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
                                 href="">Global Leader Carbon
                                 Material</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80" href="">Metal
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]" href="">Metal
                                 Material</a></li>
                     </ul>
                 </li>
@@ -145,11 +144,11 @@
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
                                 href="">Cutting</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
                                 href="">Milling</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
                                 href="">Gridding</a></li>
                     </ul>
                 </li>
@@ -169,7 +168,7 @@
 
 
     <!-- Video Section -->
-    <section class="relative overflow-hidden | w-full h-screen ">
+    <section class="relative overflow-hidden | w-full h-screen   sm:pt-20 pt-10">
         <!-- Carousel container -->
         <div id="carousel-track" class="flex w-full h-full transition-transform duration-700 ease-in-out ">
             <video class="w-full h-full object-cover flex-shrink-0" src="/assets/video/video 1.mp4" muted autoplay
@@ -265,7 +264,7 @@
 
             <!-- Nippon Koshuha -->
             <a href="/src/html/nipponKoshuha.html"
-                class="relative w-full md:h-[200px] h-[300px] overflow-hidden group md:border-[0.25px] border-none md:border-white  ">
+                class="relative w-full md:h-[200px] sm:h-[300px] h-auto overflow-hidden group md:border-[0.25px] border-none md:border-white  ">
                 <img class="object-cover w-full h-full md:object-[0%_center] object-[50%_0%] "
                     src="/assets/img/nippon kosuha steel22.png" alt="">
                 <div
@@ -375,7 +374,7 @@
         <a href="/src/html/smartWareHouse.html"
             class="relative group md:border-[0.25px] border-none md:border-white  md:h-full h-[300px]">
             <div
-                class="absolute flex md:justify-center justify-start items-end lg:h-20 md:h-28 h-20 xl2:pl-0 pl-4 pr-1 inset-0  tracking-widest ">
+                class="absolute  flex md:justify-center justify-start items-end lg:h-20 md:h-28 h-20 xl2:pl-0 pl-4 pr-1 inset-0  tracking-widest ">
                 <ol class="list-disc list-inside md:text-sm sm:text-2xl text-base text-white text-start ">
                     <li>SMART WAREHOUSE</li>
                     <li>VENDOR-MANAGED INVENTORY</li>
@@ -392,6 +391,7 @@
             </div>
         </a>
     </section>
+
     <!-- Certificate Section -->
     <section class="w-full  mx-auto px-4 py-32 bg-white">
 

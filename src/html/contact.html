@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What We Have</title>
+    <title>50Years</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
-    <!-- JavaScript & CSS Styles -->
+    <!-- External CSS -->
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="/src/js/script.js" defer></script>
 </head>
 
-<body class="bg-white">
+<body class="bg-white text-white">
     <!-- Overlay -->
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden transition-opacity duration-300"></div>
-
 
     <!-- Navbar -->
     <nav id="navbar"
@@ -166,119 +165,9 @@
         <img src="/assets/img/whatsapp-icon.png" alt="" class="w-10">
     </a>
 
-    <!-- Content Section -->
-    <section class="pb-10 sm:pt-28 pt-20 lg:px-28 md:px-8 px-4">
 
-        <!-- Image Area -->
-        <div class="relative">
-            <div class="flex justify-center items-center md:h-[700px] sm:h-[500px] h-[300px] overflow-hidden ">
-                <img src="/assets/img/whatwehave-img.png" alt="" class=" w-full h-full object-cover object-[50%_30%]">
-            </div>
-            <!-- Logo on Top of Image -->
-            <div class="absolute sm:bottom-10 bottom-5 sm:left-10 left-5">
-                <img class="w-56" src="/assets/img/hakudo-logo.png" alt="">
-            </div>
-        </div>
-
-        <!-- Table -->
-            <div class="flex justify-center items-center mt-10 ">
-                <div class="w-full max-w-[800px]">
-                    <!-- Logo -->
-                    <div class="flex justify-end items-center mb-3">
-                        <img class="w-44" src="/assets/img/hakudo-logo2.png" alt="">
-                    </div>
-
-                    <!-- Table Part 1 -->
-                    <div class="overflow-x-auto scrolling-touch">
-                        <table class="min-w-full border-collapse bg-[#EBECED]">
-                            <thead>
-                                <tr class=" text-white text-base text-start bg-[rgb(42,61,103)]">
-                                    <th class="w-[150px] px-2 py-2">CATEGORY</th>
-                                    <th class="w-[20px] px-2 py-2"></th>
-                                    <th class="px-4 py-2 text-start">PHH</th>
-                                    <th class="px-4 py-2 text-start">JIS</th>
-                                    <th class="px-4 py-2 text-start">DIN</th>
-                                    <th class="px-4 py-2 text-start">UNS</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-t-8 border-white">
-                                    <td class="w-[150px] px-4 py-2 text-white bg-[#2A3D67]">Stainless Steel</td>
-                                    <td class="w-[20px] py-2 border-x-8 border-white bg-[#F186B6]"></td>
-                                    <td class="px-4 py-2">HNS303</td>
-                                    <td class="px-4 py-2">SUS303</td>
-                                    <td class="px-4 py-2">1.4305</td>
-                                    <td class="px-4 py-2">S30300</td>
-                                </tr>
-                                <tr class="border-t-8 border-white">
-                                    <td rowspan="2"
-                                        class="w-[120px] px-4 py-2 align-top text-start text-white bg-[#2A3D67]">
-                                        Aluminium
-                                    </td>
-                                    <td
-                                        class="w-[20px] py-2 border-x-8 border-white bg-gradient-to-r from-slate-400 via-white to-slate-400 ">
-                                    </td>
-                                    <td class="px-4 py-2">YH52</td>
-                                    <td class="px-4 py-2">H4000 A5052P<br>(High Precision)</td>
-                                    <td class="px-4 py-2">1725-1</td>
-                                    <td class="px-4 py-2">A95052</td>
-                                </tr>
-                                <tr>
-                                    <td
-                                        class="w-[20px] py-2 border-x-8 border-white bg-gradient-to-r from-slate-400 via-white to-slate-400 ">
-                                    </td>
-                                    <td class="px-4 py-2">52S</td>
-                                    <td class="px-4 py-2">H4000 A5052P</td>
-                                    <td class="px-4 py-2">1725-1</td>
-                                    <td class="px-4 py-2">A95052</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-
-                    <!-- Table Part 2 -->
-                    <div class="overflow-x-auto scrolling-touch">
-                        <table class="min-w-full border-collapse mt-5 bg-[#EBECED]">
-                            <thead>
-                                <tr class=" text-white bg-[#2A3D67]">
-                                    <th class="w-[150px] px-2 py-2">MATERIAL</th>
-                                    <th class=" w-[20px] px-2 py-2 "></th>
-                                    <th class="px-4 py-2 text-start">CODE</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-t-8 border-white">
-                                    <td class="w-[150px] px-4 py-2 text-white bg-navBlue">Mild Steel</td>
-                                    <th class="w-[20px] py-2 border-x-8 border-white bg-[#47BFAB]"></th>
-                                    <td class="px-4 py-2">SS 400, BS 4360, A571/42, A36</td>
-                                </tr>
-                                <tr class="border-t-8 border-white">
-                                    <td class="w-[150px] px-4 py-2 text-white bg-navBlue">Brass</td>
-                                    <th class="w-[20px] py-2 border-x-8 border-white bg-[#47BFAB]"></th>
-                                    <td class="px-4 py-2">H 3250, C 3604, C 3100, & etc</td>
-                                </tr>
-                                <tr class="border-t-8 border-white">
-                                    <td class="w-[150px] px-4 py-2 text-white bg-navBlue">Copper</td>
-                                    <th class="w-[20px] py-2 border-x-8 border-white bg-[#47BFAB]"></th>
-                                    <td class="flex items-center px-4 py-2 ">
-                                        <span><img src="/assets/img/hakudo-logoIcon.png" alt=""
-                                                class="w-3 mr-0.5"></span> BeCu,
-                                        <span><img src="/assets/img/hakudo-logoIcon.png" alt=""
-                                                class="w-3 ml-1 mr-0.5"></span>CrCu,
-                                        Mallory 3, C 1100, H 3140
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                </div>
-            </div>
-    </section>
-
-            <!-- Footer Section -->
-    <footer class="md:flex justify-between items-end lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white bg-navBlue">
+    <!-- Footer Section -->
+    <footer class="md:flex justify-between items-end lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white my-20 bg-navBlue">
 
         <!-- Part 1 - Left  -->
         <div class="md:w-[650px] w-full mr-10">
@@ -376,7 +265,10 @@
                     </div>
                 </div>
             </div>
+
     </footer>
+
+
 </body>
 
 </html>
