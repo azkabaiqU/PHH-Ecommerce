@@ -17,9 +17,9 @@
     font-family: Barlow-medium;
 }
 
-/* .helvetica-regular{
+.helvetica-regular{
     font-family: helveticaNeueRegular;
-} */
+}
 
 .helvetica-medium{
     font-family: helveticaNeueMedium;
@@ -74,11 +74,11 @@
 }
 
 /* Font Helvetica Neue ROMAN */
-/* @font-face {
+@font-face {
   font-family: 'helveticaNeueRegular';
   src: url('/assets/fonts/HelveticaNeueRoman.otf') format('opentype');
   font-style: normal;
-} */
+}
 
 /* Font Minion Pro REGULAR */
 @font-face {
