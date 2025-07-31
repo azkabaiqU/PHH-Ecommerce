@@ -15,6 +15,156 @@
 </head>
 
 <body class="bg-navBlue text-white">
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden transition-opacity duration-300"></div>
+
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="fixed z-40 top-0 left-0 w-full noscroll duration-200 overflow-visible text-white bg-[#1C3D69]">
+        <div class="relative flex justify-between items-center lg:px-16 md:px-8 px-4 sm:py-3 py-0">
+            <!-- logo -->
+            <div class="flex items-center | overflow-hidden h-[40px] ">
+                <img src="/assets/img/white-logo.png" alt="Logo" class="sm:w-32 w-20">
+            </div>
+
+            <!-- desktop menu -->
+            <div class="hidden md:flex items-center | text-white font-light ">
+                <!-- list -->
+                <ul class=" flex justify-center items-center ">
+                    <!-- about -->
+                    <li>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/50years.html">About</a>
+                    </li>
+                    <!-- Products -->
+                    <li class="dropdown-group group relative">
+                        <a href="#"
+                            class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                            <span>Products</span>
+                            <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                            <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            <ul>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/whatWeHave.html'">Hakudo</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/nipponKoshuha.html'">Nippon Koshuha
+                                        Steel</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/globalLeader.html'">Global Leader
+                                        Carbon
+                                        Material</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/metalProduct.html'">Metal
+                                        Material</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Services -->
+                    <li class="dropdown-group group relative">
+                        <a href="#"
+                            class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                            <span>Services</span>
+                            <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                            <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            <ul>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html'">Cutting</button>
+                                </li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#milling'">Milling</button>
+                                </li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#grinding'">Gridding</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a>
+                    </li>
+                    <li>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- shop,profile -->
+                <div class="flex | space-x-6 ml-6 ">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                    <i class="fa-solid fa-user "></i>
+                </div>
+            </div>
+
+            <!--  Burger -->
+            <button id="mobileMenuToggle" class="py-4 md:hidden">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+        <!-- mobile navbar -->
+        <div id="mobileMenu" class="max-h-0 relative w-full  top-18 bg-[#1C3D69] overflow-hidden  duration-500">
+            <ul class=" w-full text-lg">
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">About</a></li>
+                <!-- Products mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <span>Products</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Hakudo</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Nippon Koshuha Steel</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Global Leader Carbon
+                                Material</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80" href="">Metal
+                                Material</a></li>
+                    </ul>
+                </li>
+
+                <!-- Services mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <span>Services</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Cutting</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Milling</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Gridding</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Whats App Icon -->
+    <a href="https://wa.link/s20edj" target="_blank" class="fixed bottom-7 right-7 | z-50">
+        <img src="/assets/img/whatsapp-icon.png" alt="" class="w-10">
+    </a>
 
     <!-- Hero Section -->
     <section>
@@ -25,10 +175,10 @@
         </div>
 
         <!-- Hero Text -->
-        <div class="flex justify-center items-center w-full py-24 px-16 text-center">
+        <div class="flex justify-center items-center w-full py-24 lg:px-16 md:px-10 px-4 text-center">
             <div class="w-[1200px]">
-                <h3 class="text-4xl tracking-widest">A HISTORY OF STEEL, FORGED IN EXCELLENCE</h3>
-                <p class="mt-8 text-base font-thin leading-loose">
+                <h3 class="md:text-4xl text-3xl tracking-widest">A HISTORY OF STEEL, FORGED IN EXCELLENCE</h3>
+                <p class="mt-8 text-base font-thin leading-loose lg:px-16 md:px-10 px-4">
                     The PHH Group of Companies was established in 1975, specialising in hardware metal trading. Over the
                     past 48 years, the Group’s capabilities
                     in ferrous and non-ferrous metal solutions has grown by leaps and bounds, allowing it to now deliver
@@ -41,20 +191,20 @@
                 </p>
                 <div class="flex justify-between items-center mt-10 space-x-5 ">
                     <div class="text-center">
-                        <h1 class="text-6xl">2900</h1>
-                        <p>tonnes metal production</p>
+                        <h1 class="md:text-6xl text-5xl">2900</h1>
+                        <p class="md:text-base text-xs">tonnes metal production</p>
                     </div>
                     <div class="text-center">
-                        <h1 class="text-6xl">50</h1>
-                        <p>years of experience</p>
+                        <h1 class="md:text-6xl text-5xl">50</h1>
+                        <p class="md:text-base text-xs">years of experience</p>
                     </div>
                     <div class="text-center">
-                        <h1 class="text-6xl">3</h1>
-                        <p>locations</p>
+                        <h1 class="md:text-6xl text-5xl">3</h1>
+                        <p class="md:text-base text-xs">locations</p>
                     </div>
                     <div class="text-center">
-                        <h1 class="text-6xl">200</h1>
-                        <p>number of employees</p>
+                        <h1 class="md:text-6xl text-5xl">200</h1>
+                        <p class="md:text-base text-xs">number of employees</p>
                     </div>
                 </div>
             </div>
@@ -62,13 +212,13 @@
     </section>
 
     <!-- Company Locations Section -->
-    <section class="grid grid-cols-3">
+    <section class="grid md:grid-cols-3 grid-cols-1">
         <!-- PHH METAL 1 SDN BHD Malaysia -->
         <div class="relative h-[850px] border-[0.25px] border-[#1C3D69] bg-cover bg-center bg-no-repeat"
             style="background-image: url('/assets/img/malay-building.png')">
             <div class="absolute inset-0 bg-[#09131f] bg-opacity-30"></div>
-            <div class="absolute bottom-10 p-10 ">
-                <h1 class="text-4xl tracking-widest">PHH METAL 1 SDN. BHD. MALAYSIA</h1>
+            <div class="absolute xl:bottom-10 bottom-5 xl:p-10 p-5">
+                <h1 class="xl:text-4xl text-3xl tracking-widest">PHH METAL 1 SDN. BHD. MALAYSIA</h1>
                 <p class="mt-3">Wisma PHH, Jalan PPU 3,<br> Taman Perindustrian Puchong<br> Utama, 47100 Selangor,
                     Malaysia.</p>
             </div>
@@ -78,8 +228,8 @@
         <div class="relative h-[850px] border-[0.25px] border-[#1C3D69] bg-cover bg-no-repeat"
             style="background-image: url('/assets/img/protech-building.jpg'); background-position: 35% 100%;">
             <div class="absolute inset-0 bg-[#09131f] bg-opacity-30"></div>
-            <div class="absolute bottom-10 p-10">
-                <h1 class="text-4xl tracking-widest">PRO TECH TOOL AND DIE SDN. BHD. MALAYSIA</h1>
+            <div class="absolute xl:bottom-10 bottom-5 xl:p-10 p-5">
+                <h1 class="xl:text-4xl text-3xl  tracking-widest">PRO TECH TOOL AND DIE SDN. BHD. MALAYSIA</h1>
                 <p class="mt-3">7, Jalan Mandolin 33/5, Seksyen 33,<br> 40400 Shah Alam, Selangor</p>
             </div>
         </div>
@@ -88,8 +238,8 @@
         <div class="relative h-[850px] border-[0.25px] border-[#1C3D69] bg-cover bg-center bg-no-repeat"
             style="background-image: url('/assets/img/indonesia-building.png')">
             <div class="absolute inset-0 bg-[#09131f] bg-opacity-30"></div>
-            <div class="absolute bottom-10 p-10">
-                <h1 class="text-4xl tracking-widest">PT PHH SPECIAL STEEL INDONESIA</h1>
+            <div class="absolute xl:bottom-10 bottom-5 xl:p-10 p-5">
+                <h1 class="lg:text-4xl text-3xl  tracking-widest">PT PHH SPECIAL STEEL INDONESIA</h1>
                 <p class="mt-3">Blok F25-09J, Jl. Sungkai, Delta Silicon 3,<br> Lippo Cikarang, Bekasi 17550, Indonesia.
                 </p>
             </div>
@@ -115,23 +265,139 @@
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section class="w-full px-16 py-32 bg-white">
+    <!-- Certificate Section -->
+    <section class="w-full  mx-auto px-4 py-32 bg-white">
+
+        <!-- title -->
         <div class="flex justify-center items-center w-full mb-14">
-            <h3 class="text-2xl font-sans text-navBlue tracking-widest">CERTIFICATIONS</h3>
+            <h3 class="text-2xl text-navBlue tracking-widest">CERTIFICATIONS</h3>
         </div>
-        <div class="flex justify-center items-center space-x-40">
-            <div class="flex-col flex justify-center items-center ">
-                <img src="/assets/img/AS9100D-img.png" alt="" class="w-[370px] max-w-none mx-5">
-            </div>
-            <div class="flex-col flex justify-center items-center ">
-                <img src="/assets/img/CGL-img.png" alt="" class="w-[170px] max-w-none mx-5">
-            </div>
-            <div class="flex-col flex justify-center items-center ">
-                <img src="/assets/img/novoStar-img.png" alt="" class="w-[390px] max-w-none mx-5">
-            </div>
+
+        <!-- Certificate List -->
+        <div class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-y-12 gap-x-14 xl:gap-x-24">
+
+            <!-- Sertifikat AS9100D -->
+            <button class="open-popup flex flex-col items-center text-center" data-img='["/assets/img/gcl2015-img.png"]'
+                data-pdf='["/assets/pdf/GCL-Certificate.pdf"]'>
+                <img src="/assets/img/AS9100D-img.png" alt="AS9100D Certificate" class="xl:w-[370px] w-[270px] mx-5">
+            </button>
+
+            <!-- GCL International -->
+            <button class="open-popup flex flex-col items-center text-center" data-img='["/assets/img/gcl2015-img.png"]'
+                data-pdf='["/assets/pdf/GCL-Certificate.pdf"]'>
+                <img src="/assets/img/CGL-img.png" alt="GCL Certificate" class="xl:w-[170px] w-[150px] mx-5">
+            </button>
+
+            <!-- Novo Star -->
+            <button class="open-popup flex flex-col items-center text-center"
+                data-img='["/assets/img/novostar2015-img.png","/assets/img/novostar2016-img.png"]'
+                data-pdf='["/assets/pdf/NovaStar2015-Certificate.pdf","/assets/pdf//NovaStar2016-Certificate.pdf"]'>
+                <img src="/assets/img/novoStar-img.png" alt="NovoStar Certificate" class="xl:w-[390px] w-[290px] mx-5">
+            </button>
         </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="md:flex justify-between items-end lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white">
+
+        <!-- Part 1 - Left  -->
+        <div class="md:w-[650px] w-full mr-10">
+            <div class="flex items-center">
+                <h3 class="pb-2 border-b-[0.5px] border-white/80 text-base font-semibold"> Contact Information</h3>
+            </div>
+
+            <!-- Malaysia -->
+            <div class="relative py-5 border-b-[0.5px] border-white/80 flex justify-between text-white/80">
+                <div>
+                    <h4 class="text-sm mb-3"> HEADQUARTER</h4>
+                    <p class="helvetica-medium text-white">PHH METAL 1 SDN BHD <span class="text-[10px] text-white/80">
+                            (176257-T)</span></p>
+                    <p><span class="helvetica-medium text-white">T</span> +60 3 8068 7000 | <span
+                            class="helvetica-medium text-white">E</span> sales@phh.com.my
+                        | <span class="helvetica-medium text-white">W</span> www.phh.com.my</p>
+                    <p>Wisma PHH, Jalan PPU 3, Taman Perindustrian Puchong Utama, 47100 Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4">
+                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light mt-1">MALAYSIA</p>
+                </div>
+            </div>
+
+            <!-- Indonesia -->
+            <div class="relative pt-5 flex justify-between text-white/80">
+                <div class="">
+                    <p class="helvetica-medium text-white">PT PHH SPECIAL STEEL <span
+                            class="text-[10px] text-white/80">(18835/BH 05
+                            09/VM/2011)</span></p>
+                    <p><span class="helvetica-medium text-white">T</span> +62 21 2808 5200 | <span
+                            class="helvetica-medium text-white">E</span>
+                        sales@phh.co.id
+                        | <span class="helvetica-medium text-white">W</span> www.phh.co.id</p>
+                    <p>Blok F25-09J, Jl.Sungkai, Delta Silicon 3, Lippo Cikarang, Bekasi 17550, Indonesia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4">
+                    <img class="w-12"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">INDONESIA</p>
+                </div>
+            </div>
+        </div>
+        <!-- Part 2 - Right  -->
+        <div class="md:w-[650px] w-full md:mt-0 mt-7">
+            <!-- Malaysia -->
+            <div class="flex justify-between text-white/80">
+                <div>
+                    <p class="helvetica-medium text-white ">PROTECH TOOL AND DIE SDN BHD <span
+                            class="text-[10px] text-white/80 ">(176257-T)</span>
+                    </p>
+                    <p><span class="helvetica-medium text-white">T</span> +62 3 5102 9505 | <span
+                            class="helvetica-medium text-white">E</span>
+                        info@phhmetal1.com
+                        | <span class="helvetica-medium text-white">W</span> www.protechdm.com.my</p>
+                    <p>No.7, Jalan Mandolin 33/5, Seksyen 33, 40400 Shah Alam, Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4 w-12">
+                    <img class="w-f" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">MALAYSIA</p>
+                </div>
+            </div>
+            <!-- Contact, copyright, ect -->
+            <div class="mt-5">
+                <p class="helvetica-medium">Follow Us</p>
+                <div class="flex space-x-5 py-2 border-b-[0.5px] border-white/80 text-lg">
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.link/s20edj" target="_blank" class="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <p class="text-xs">© PHH Metal. All rights reserved 2023.</p>
+                    <div class="flex space-x-2">
+                        <button class="text-xs">Privacy Policy</button>
+                        <p>|</p>
+                        <button class="text-xs">Terms of Use</button>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
 
 
 </body>

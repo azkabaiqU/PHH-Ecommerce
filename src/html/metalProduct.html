@@ -15,136 +15,438 @@
 </head>
 
 <body class="bg-white">
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden transition-opacity duration-300"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="sticky z-40 top-0 left-0 w-full noscroll duration-200 overflow-visible text-white bg-[#1C3D69]">
+        <div class="relative flex justify-between items-center lg:px-16 md:px-8 px-4 sm:py-3 py-0">
+            <!-- logo -->
+            <div class="flex items-center | overflow-hidden h-[40px] ">
+                <img src="/assets/img/white-logo.png" alt="Logo" class="sm:w-32 w-20">
+            </div>
+
+            <!-- desktop menu -->
+            <div class="hidden md:flex items-center | text-white font-light ">
+                <!-- list -->
+                <ul class=" flex justify-center items-center ">
+                    <!-- about -->
+                    <li>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/50years.html">About</a>
+                    </li>
+                    <!-- Products -->
+                    <li class="dropdown-group group relative">
+                        <a href="#"
+                            class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                            <span>Products</span>
+                            <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                            <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            <ul>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/whatWeHave.html'">Hakudo</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/nipponKoshuha.html'">Nippon Koshuha
+                                        Steel</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/globalLeader.html'">Global Leader
+                                        Carbon
+                                        Material</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/metalProduct.html'">Metal
+                                        Material</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Services -->
+                    <li class="dropdown-group group relative">
+                        <a href="#"
+                            class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                            <span>Services</span>
+                            <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                            <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            <ul>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html'">Cutting</button>
+                                </li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#milling'">Milling</button>
+                                </li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#grinding'">Gridding</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a>
+                    </li>
+                    <li>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- shop,profile -->
+                <div class="flex | space-x-6 ml-6 ">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                    <i class="fa-solid fa-user "></i>
+                </div>
+            </div>
+
+            <!--  Burger -->
+            <button id="mobileMenuToggle" class="py-4 md:hidden">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+        <!-- mobile navbar -->
+        <div id="mobileMenu" class="max-h-0 relative w-full  top-18 bg-[#1C3D69] overflow-hidden  duration-500">
+            <ul class=" w-full text-lg">
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">About</a></li>
+                <!-- Products mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <span>Products</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Hakudo</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Nippon Koshuha Steel</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Global Leader Carbon
+                                Material</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80" href="">Metal
+                                Material</a></li>
+                    </ul>
+                </li>
+
+                <!-- Services mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <span>Services</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Cutting</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Milling</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Gridding</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Whats App Icon -->
+    <a href="https://wa.link/s20edj" target="_blank" class="fixed bottom-7 right-7 | z-50">
+        <img src="/assets/img/whatsapp-icon.png" alt="" class="w-10">
+    </a>
+
     <!-- Content -->
-    <section class="px-24 py-10">
+    <section class="lg:px-24 md:px-8 px-4  py-10">
         <!-- Big Img -->
         <div class="relative">
             <div class="flex justify-start items-end w-full h-[700px] overflow-hidden ">
-                <img class="w-full h-full object-cover object-[0%_center]" src="/assets/img/metalproducts-img2.png" alt="">
+                <img class="w-full h-full object-cover object-[0%_center]" src="/assets/img/metalproducts-img2.png"
+                    alt="">
             </div>
         </div>
 
         <!-- Content -->
         <div>
             <!-- part 1 | text Ferous Metal-->
-            <div class="flex justify-between items-start mt-10 space-x-20">
+            <div class="lg:flex lg:flex-row flex-col justify-between items-start mt-10 lg:space-x-20">
                 <!-- Ferrous Metals Section -->
-                <div class="flex-1 flex space-x-10 text-left ">
+                <div class="flex-1 sm:flex sm:flex-row flex-col sm:space-x-10 text-left ">
                     <h2 class="text-3xl text-[#2A3D67]">FERROUS METALS</h2>
                     <p class="text-sm text-gray-700">
-                        Our Metal Division has exceptional capabilities in delivering a range of ferrous metal products in a wide variety of specifications. We are especially experienced in working with highly versatile AISI C1050 carbon steel, top quality stainless steel, multi-purpose tool steel, and low-carbon mild steel. These metals are known for their strength and durability, making them widely used in construction, manufacturing, and infrastructure due to their ability to withstand heavy loads and high temperatures.
+                        Our Metal Division has exceptional capabilities in delivering a range of ferrous metal products
+                        in a wide variety of specifications. We are especially experienced in working with highly
+                        versatile AISI C1050 carbon steel, top quality stainless steel, multi-purpose tool steel, and
+                        low-carbon mild steel. These metals are known for their strength and durability, making them
+                        widely used in construction, manufacturing, and infrastructure due to their ability to withstand
+                        heavy loads and high temperatures.
                     </p>
                 </div>
 
                 <!-- Non-Ferrous Metals Section -->
-                <div class="flex-1 flex space-x-10 text-left">
+                <div class="flex-1 sm:flex sm:flex-row flex-col sm:space-x-10 text-left lg:mt-0 mt-5">
                     <h2 class="text-3xl text-[#2A3D67]">NON-FERROUS METALS</h2>
                     <p class="text-sm text-gray-700 ">
-                        Our decades of experience also encompasses the delivery of on-demand non-ferrous metal products, where we work with materials such as aluminum, brass, bronze, copper, graphite, and titanium. Our non-ferrous products are prized for their corrosion resistance, malleability, and lightweight nature, making them essential in industries such as aerospace, electronics, and automotive manufacturing where factors like conductivity and weight are crucial.
+                        Our decades of experience also encompasses the delivery of on-demand non-ferrous metal products,
+                        where we work with materials such as aluminum, brass, bronze, copper, graphite, and titanium.
+                        Our non-ferrous products are prized for their corrosion resistance, malleability, and
+                        lightweight nature, making them essential in industries such as aerospace, electronics, and
+                        automotive manufacturing where factors like conductivity and weight are crucial.
                     </p>
                 </div>
             </div>
             <!-- part 2 | material form & Image-->
             <div class="flex mt-20">
                 <!-- material form -->
-                <div class="flex justify-center items-end mr-10">
-                    <div>
+
+                <div class="sticky md:top-8 sm:top-24 top-20 z-20 self-start ">
+                    <div class=" flex justify-center lg:items-end items-start mr-10">
                         <div>
-                            <h2 class="text-white px-2 py-0.5 text-center bg-navBlue">MATERIAL FORM</h2>
+                            <div>
+                                <h2 class="text-white px-2 py-0.5 text-center bg-navBlue">MATERIAL FORM</h2>
+                            </div>
+                            <ol class="bg-[#EBECED] ">
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white ">
+                                    <span
+                                        class="flex justify-center items-center w-5 h-5 rounded-full text-white mr-3 text-xs bg-navBlue">01</span>
+                                    Plate
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">02</span>
+                                    Flat
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">03</span>
+                                    Shaft / Rod
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">04</span>
+                                    Hexagon
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">05</span>
+                                    Channel
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">06</span>
+                                    Checker
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">07</span>
+                                    Square
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">08</span>
+                                    Pipe / Hollow
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">09</span>
+                                    Angle
+                                </li>
+                                <li
+                                    class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
+                                    <span
+                                        class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">10</span>
+                                    I -Beam
+                                </li>
+                            </ol>
                         </div>
-                        <ol class="bg-[#EBECED] ">
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white ">
-                                <span class="flex justify-center items-center w-5 h-5 rounded-full text-white mr-3 text-xs bg-navBlue">01</span> Plate
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">02</span> Flat
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">03</span> Shaft / Rod
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">04</span> Hexagon
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">05</span> Channel
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">06</span> Checker
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">07</span> Square
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">08</span> Pipe / Hollow
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">09</span> Angle
-                            </li>
-                            <li class="flex items-centerp py-2 px-3 whitespace-nowrap border-b-[0.5px] border-white">
-                                <span class="flex justify-center items-center  w-5 h-5 mr-3 rounded-full text-white  text-xs bg-navBlue">10</span> I -Beam
-                            </li>
-                        </ol>
                     </div>
                 </div>
                 <!-- img content -->
-                <div class="grid grid-cols-4 gap-10 w-full">
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 w-full">
                     <!-- Aluminium -->
                     <div class="text-center">
                         <div class="overflow-hidden ">
-                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item1-metal.png" alt="">
+                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item1-metal.png"
+                                alt="">
                         </div>
-                        <h4 class="mt-7 text-2xl ">ALUMINIUM</h4>
+                        <h4 class="mt-7 lg:text-2xl text-xl ">ALUMINIUM</h4>
                     </div>
                     <!-- Tool Steel -->
                     <div class="text-center">
                         <div class="overflow-hidden ">
-                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item2-metal.png" alt="">
+                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item2-metal.png"
+                                alt="">
                         </div>
-                        <h4 class="mt-7 text-2xl ">TOOL STEEL</h4>
+                        <h4 class="mt-7 lg:text-2xl text-xl ">TOOL STEEL</h4>
                     </div>
                     <!-- Machinery Steel -->
                     <div class="text-center">
                         <div class="overflow-hidden ">
-                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item3-metal.png" alt="">
+                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item3-metal.png"
+                                alt="">
                         </div>
-                        <h4 class="mt-7 text-2xl ">MACHINERY STEEL</h4>
+                        <h4 class="mt-7 lg:text-2xl text-xl ">MACHINERY STEEL</h4>
                     </div>
                     <!-- Stainless Steel -->
                     <div class="text-center">
                         <div class="overflow-hidden ">
-                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item4-metal.png" alt="">
+                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item4-metal.png"
+                                alt="">
                         </div>
-                        <h4 class="mt-7 text-2xl ">AIRCRAFT FASTENING SYSTEM</h4>
+                        <h4 class="mt-7 lg:text-2xl text-xl ">AIRCRAFT FASTENING SYSTEM</h4>
                     </div>
                     <!-- Additional products -->
                     <div class="text-center">
                         <div class="overflow-hidden ">
-                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item5-metal.png" alt="">
+                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item5-metal.png"
+                                alt="">
                         </div>
-                        <h4 class="mt-7 text-2xl ">STAINLESS STEEL</h4>
+                        <h4 class="mt-7 lg:text-2xl text-xl ">STAINLESS STEEL</h4>
                     </div>
                     <div class="text-center">
                         <div class="overflow-hidden ">
-                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item6-metal.png" alt="">
+                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item6-metal.png"
+                                alt="">
                         </div>
-                        <h4 class="mt-7 text-2xl ">CARBON STEEL</h4>
+                        <h4 class="mt-7 lg:text-2xl text-xl ">CARBON STEEL</h4>
                     </div>
                     <div class="text-center">
                         <div class="overflow-hidden ">
-                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item7-metal.png" alt="">
+                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item7-metal.png"
+                                alt="">
                         </div>
-                        <h4 class="mt-7 text-2xl ">TITANIUM</h4>
+                        <h4 class="mt-7 lg:text-2xl text-xl ">TITANIUM</h4>
                     </div>
                     <div class="text-center">
                         <div class="overflow-hidden ">
-                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item8-metal.png" alt="">
+                            <img class="w-[170px] h-[170px] mx-auto object-cover " src="/assets/img/item8-metal.png"
+                                alt="">
                         </div>
-                        <h4 class="mt-7 text-2xl ">AIRCRAFT TOOL</h4>
+                        <h4 class="mt-7 lg:text-2xl text-xl ">AIRCRAFT TOOL</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="md:flex justify-between items-end lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white bg-navBlue">
+
+        <!-- Part 1 - Left  -->
+        <div class="md:w-[650px] w-full mr-10">
+            <div class="flex items-center">
+                <h3 class="pb-2 border-b-[0.5px] border-white/80 text-base font-semibold"> Contact Information</h3>
+            </div>
+
+            <!-- Malaysia -->
+            <div class="relative py-5 border-b-[0.5px] border-white/80 flex justify-between text-white/80">
+                <div>
+                    <h4 class="text-sm mb-3"> HEADQUARTER</h4>
+                    <p class="helvetica-medium text-white">PHH METAL 1 SDN BHD <span class="text-[10px] text-white/80">
+                            (176257-T)</span></p>
+                    <p><span class="helvetica-medium text-white">T</span> +60 3 8068 7000 | <span
+                            class="helvetica-medium text-white">E</span> sales@phh.com.my
+                        | <span class="helvetica-medium text-white">W</span> www.phh.com.my</p>
+                    <p>Wisma PHH, Jalan PPU 3, Taman Perindustrian Puchong Utama, 47100 Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4">
+                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light mt-1">MALAYSIA</p>
+                </div>
+            </div>
+
+            <!-- Indonesia -->
+            <div class="relative pt-5 flex justify-between text-white/80">
+                <div class="">
+                    <p class="helvetica-medium text-white">PT PHH SPECIAL STEEL <span
+                            class="text-[10px] text-white/80">(18835/BH 05
+                            09/VM/2011)</span></p>
+                    <p><span class="helvetica-medium text-white">T</span> +62 21 2808 5200 | <span
+                            class="helvetica-medium text-white">E</span>
+                        sales@phh.co.id
+                        | <span class="helvetica-medium text-white">W</span> www.phh.co.id</p>
+                    <p>Blok F25-09J, Jl.Sungkai, Delta Silicon 3, Lippo Cikarang, Bekasi 17550, Indonesia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4">
+                    <img class="w-12"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">INDONESIA</p>
+                </div>
+            </div>
+        </div>
+        <!-- Part 2 - Right  -->
+        <div class="md:w-[650px] w-full md:mt-0 mt-7">
+            <!-- Malaysia -->
+            <div class="flex justify-between text-white/80">
+                <div>
+                    <p class="helvetica-medium text-white ">PROTECH TOOL AND DIE SDN BHD <span
+                            class="text-[10px] text-white/80 ">(176257-T)</span>
+                    </p>
+                    <p><span class="helvetica-medium text-white">T</span> +62 3 5102 9505 | <span
+                            class="helvetica-medium text-white">E</span>
+                        info@phhmetal1.com
+                        | <span class="helvetica-medium text-white">W</span> www.protechdm.com.my</p>
+                    <p>No.7, Jalan Mandolin 33/5, Seksyen 33, 40400 Shah Alam, Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4 w-12">
+                    <img class="w-f" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">MALAYSIA</p>
+                </div>
+            </div>
+            <!-- Contact, copyright, ect -->
+            <div class="mt-5">
+                <p class="helvetica-medium">Follow Us</p>
+                <div class="flex space-x-5 py-2 border-b-[0.5px] border-white/80 text-lg">
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.link/s20edj" target="_blank" class="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <p class="text-xs">© PHH Metal. All rights reserved 2023.</p>
+                    <div class="flex space-x-2">
+                        <button class="text-xs">Privacy Policy</button>
+                        <p>|</p>
+                        <button class="text-xs">Terms of Use</button>
+                    </div>
+                </div>
+            </div>
+    </footer>
 
 </body>
 

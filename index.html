@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <nav id="navbar"
         class="fixed z-40 top-0 left-0 w-full noscroll duration-200 overflow-visible text-white bg-[#1C3D69]">
-        <div class="relative flex justify-between items-center lg:px-16 md:px-8 px-4 py-3">
+        <div class="relative flex justify-between items-center lg:px-16 md:px-8 px-4  sm:py-3 py-0">
             <!-- logo -->
             <div class="flex items-center | overflow-hidden h-[40px] ">
                 <img src="/assets/img/white-logo.png" alt="Logo" class="sm:w-32 w-20">
@@ -229,7 +229,7 @@
     </section>
 
     <!-- Menu on Section = 8Page -->
-    <section class="grid md:grid-cols-5 grid-flow-cols-1 w-full md:h-[800px] h-auto bg-slate-200">
+    <section class="grid md:grid-cols-5 grid-flow-cols-1 w-full md:h-[800px] h-[600px] h-auto bg-slate-200">
 
         <!-- number 1 -> 50 years = 1Page -->
         <a href="/src/html/50years.html" class="relative overflow-hidden group md:h-full h-[300px]">
@@ -260,13 +260,13 @@
                 <h1
                     class="absolute flex justify-center items-end xl:h-12 h-11 inset-0 text-center lg:text-xl text-lg text-navBlue tracking-widest">
                     WHAT WE HAVE</h1>
-                <img class="w-full h-full object-cover object-[50%_100%]" src="/assets/img/menu-21.jpeg" alt="">
+                <img class="w-full h-full object-cover object-[0%_100%]" src="/assets/img/menu-21.jpeg" alt="">
             </a>
 
             <!-- Nippon Koshuha -->
             <a href="/src/html/nipponKoshuha.html"
                 class="relative w-full md:h-[200px] h-[300px] overflow-hidden group md:border-[0.25px] border-none md:border-white  ">
-                <img class="object-cover w-full h-full md:object-[50%_100%] object-[50%_0%]"
+                <img class="object-cover w-full h-full md:object-[0%_center] object-[50%_0%] "
                     src="/assets/img/nippon kosuha steel22.png" alt="">
                 <div
                     class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
@@ -280,7 +280,7 @@
             <!-- Global Leader -->
             <a href="/src/html/globalLeader.html"
                 class="relative w-full md:h-[230px] h-[300px] group overflow-hidden md:border-[0.25px] border-none md:border-white   ">
-                <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/menu-23.jpeg" alt="">
+                <img class="object-cover w-full h-full object-[0%_100%]" src="/assets/img/menu-23.jpeg" alt="">
                 <div
                     class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
                     <div class="w-[200px] text-center text-white">
@@ -392,50 +392,46 @@
             </div>
         </a>
     </section>
-<!-- Certificate Section -->
-<section class="w-full  mx-auto px-4 py-32 bg-white">
+    <!-- Certificate Section -->
+    <section class="w-full  mx-auto px-4 py-32 bg-white">
 
-    <!-- title -->
-    <div class="flex justify-center items-center w-full mb-14">
-        <h3 class="text-2xl text-navBlue tracking-widest">CERTIFICATIONS</h3>
-    </div>
+        <!-- title -->
+        <div class="flex justify-center items-center w-full mb-14">
+            <h3 class="text-2xl text-navBlue tracking-widest">CERTIFICATIONS</h3>
+        </div>
 
-    <!-- Certificate List -->
-    <div class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-y-12 gap-x-14 xl:gap-x-24">
-        
-        <!-- Sertifikat AS9100D -->
-        <button class="open-popup flex flex-col items-center text-center" 
-                data-img='["/assets/img/gcl2015-img.png"]'
+        <!-- Certificate List -->
+        <div class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-y-12 gap-x-14 xl:gap-x-24">
+
+            <!-- Sertifikat AS9100D -->
+            <button class="open-popup flex flex-col items-center text-center" data-img='["/assets/img/gcl2015-img.png"]'
                 data-pdf='["/assets/pdf/GCL-Certificate.pdf"]'>
-            <img src="/assets/img/AS9100D-img.png" alt="AS9100D Certificate" class="xl:w-[370px] w-[270px] mx-5">
-            <h3 class="mt-5 font-medium text-2xl text-[#002E5F]">AS 9100:2016</h3>
-        </button>
+                <img src="/assets/img/AS9100D-img.png" alt="AS9100D Certificate" class="xl:w-[370px] w-[270px] mx-5">
+                <h3 class="mt-5 font-medium text-2xl text-[#002E5F]">AS 9100:2016</h3>
+            </button>
 
-        <!-- GCL International -->
-        <button class="open-popup flex flex-col items-center text-center" 
-                data-img='["/assets/img/gcl2015-img.png"]'
+            <!-- GCL International -->
+            <button class="open-popup flex flex-col items-center text-center" data-img='["/assets/img/gcl2015-img.png"]'
                 data-pdf='["/assets/pdf/GCL-Certificate.pdf"]'>
-            <img src="/assets/img/CGL-img.png" alt="GCL Certificate" class="xl:w-[170px] w-[70px] mx-5">
-            <h3 class="mt-5 font-medium text-2xl text-[#005097]">ISO 9001:2015</h3>
-        </button>
+                <img src="/assets/img/CGL-img.png" alt="GCL Certificate" class="xl:w-[170px] w-[70px] mx-5">
+                <h3 class="mt-5 font-medium text-2xl text-[#005097]">ISO 9001:2015</h3>
+            </button>
 
-        <!-- Novo Star -->
-        <button class="open-popup flex flex-col items-center text-center" 
+            <!-- Novo Star -->
+            <button class="open-popup flex flex-col items-center text-center"
                 data-img='["/assets/img/novostar2015-img.png","/assets/img/novostar2016-img.png"]'
-                data-pdf='["/assets/pdf/NovaStar2015-Certificate.pdf","/assets/pdf//NovaStar2016-Certificate.pdf"]'>
-            <img src="/assets/img/novoStar-img.png" alt="NovoStar Certificate" class="xl:w-[390px] w-[290px] mx-5">
-            <h3 class="mt-5 font-medium text-2xl text-[#E75006]">ISO 9001:2015</h3>
-        </button>
-    </div>
-</section>
-
-
+                data-pdf='["/assets/pdf/NovaStar2015-Certificate.pdf","/assets/pdf/NovaStar2016-Certificate.pdf"]'>
+                <img src="/assets/img/novoStar-img.png" alt="NovoStar Certificate" class="xl:w-[390px] w-[290px] mx-5">
+                <h3 class="mt-5 font-medium text-2xl text-[#E75006]">ISO 9001:2015</h3>
+            </button>
+        </div>
+    </section>
 
     <!-- pop up Certificate before Download -->
     <div id="popup" onclick="closePopup()"
         class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
 
-        <div onclick="event.stopPropagation()" class="p-5 bg-black/60 w-[400px] overflow-x-scroll">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
             <div id="popup-content" class="flex flex-wrap justify-center items-center gap-5 mb-5">
                 <!-- Gambar akan dimasukkan lewat JavaScript -->
             </div>

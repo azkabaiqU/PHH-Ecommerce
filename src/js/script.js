@@ -89,55 +89,62 @@ document.querySelectorAll('.dropdown-group').forEach(group => {
 
 
 // Pop-up for Certificate
-const popup = document.getElementById('popup');
-const popupContent = document.getElementById('popup-content');
-const popupButtons = document.getElementById('popup-buttons');
+  document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.getElementById('popup');
+    const popupContent = document.getElementById('popup-content');
+    const popupButtons = document.getElementById('popup-buttons');
 
-function openPopup(images, pdfs) {
-    popupContent.innerHTML = '';
-    popupButtons.innerHTML = '';
+    function openPopup(images, pdfs) {
+      popupContent.innerHTML = '';
+      popupButtons.innerHTML = '';
 
-    images.forEach((img, i) => {
-        // Tambahkan gambar
+      images.forEach((img, i) => {
         const imageEl = document.createElement('img');
-
         const imageParent = document.createElement('div');
         imageParent.className = 'w-80 h-[450px] overflow-hidden';
-
 
         imageEl.src = img;
         imageEl.className = 'w-full h-full object-cover';
 
         imageParent.appendChild(imageEl);
         popupContent.appendChild(imageParent);
+      });
 
-        // Tambahkan tombol download
-        const link = document.createElement('a');
-        link.href = pdfs[i] || img;
-        link.target = '_blank';
-        link.download = '';
+      // Buat satu tombol download
+      const button = document.createElement('button');
+      button.className = 'py-3 px-5 bg-navBlue text-white text-lg rounded w-80';
+      button.textContent = 'Download All PDF';
+      button.addEventListener('click', () => {
+        pdfs.forEach(pdf => {
+          const link = document.createElement('a');
+          link.href = pdf;
+          link.target = '_blank';
+          link.download = '';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      });
 
-        const button = document.createElement('button');
-        button.className = 'py-3 px-5 bg-navBlue text-white text-lg rounded w-80';
-        button.textContent = 'Download as PDF';
+      popupButtons.appendChild(button);
 
-        link.appendChild(button);
-        popupButtons.appendChild(link);
-    });
+      popup.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
 
-    popup.classList.remove('hidden');
-    document.body.classList.add('overflow-hidden');
-}
+    function closePopup() {
+      popup.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
 
-function closePopup() {
-    popup.classList.add('hidden');
-    document.body.classList.remove('overflow-hidden');
-}
-
-document.querySelectorAll('.open-popup').forEach(button => {
-    button.addEventListener('click', () => {
+    document.querySelectorAll('.open-popup').forEach(button => {
+      button.addEventListener('click', () => {
         const imgs = JSON.parse(button.getAttribute('data-img'));
         const pdfs = JSON.parse(button.getAttribute('data-pdf'));
         openPopup(imgs, pdfs);
+      });
     });
-});
+
+    window.closePopup = closePopup; // supaya bisa diakses di HTML onclick="closePopup()"
+  });
+
