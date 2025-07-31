@@ -15,35 +15,184 @@
 </head>
 
 <body class="bg-white">
-    <!-- Navbar -->
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden transition-opacity duration-300"></div>
 
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="fixed z-40 top-0 left-0 w-full noscroll duration-200 overflow-visible text-white bg-[#1C3D69]">
+        <div class="relative flex justify-between items-center lg:px-16 md:px-8 px-4 sm:py-3 py-0">
+            <!-- logo -->
+            <div class="flex items-center | overflow-hidden h-[40px] ">
+                <img src="/assets/img/white-logo.png" alt="Logo" class="sm:w-32 w-20">
+            </div>
+
+            <!-- desktop menu -->
+            <div class="hidden md:flex items-center | text-white font-light ">
+                <!-- list -->
+                <ul class=" flex justify-center items-center ">
+                    <!-- about -->
+                    <li>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/50years.html">About</a>
+                    </li>
+                    <!-- Products -->
+                    <li class="dropdown-group group relative">
+                        <a href="#"
+                            class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                            <span>Products</span>
+                            <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                            <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            <ul>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/whatWeHave.html'">Hakudo</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/nipponKoshuha.html'">Nippon Koshuha
+                                        Steel</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/globalLeader.html'">Global Leader
+                                        Carbon
+                                        Material</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/metalProduct.html'">Metal
+                                        Material</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Services -->
+                    <li class="dropdown-group group relative">
+                        <a href="#"
+                            class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                            <span>Services</span>
+                            <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                            <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            <ul>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html'">Cutting</button>
+                                </li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#milling'">Milling</button>
+                                </li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#grinding'">Gridding</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a>
+                    </li>
+                    <li>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- shop,profile -->
+                <div class="flex | space-x-6 ml-6 ">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                    <i class="fa-solid fa-user "></i>
+                </div>
+            </div>
+
+            <!--  Burger -->
+            <button id="mobileMenuToggle" class="py-4 md:hidden">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+        <!-- mobile navbar -->
+        <div id="mobileMenu" class="max-h-0 relative w-full  top-18 bg-[#1C3D69] overflow-hidden  duration-500">
+            <ul class=" w-full text-lg">
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">About</a></li>
+                <!-- Products mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <span>Products</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Hakudo</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Nippon Koshuha Steel</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Global Leader Carbon
+                                Material</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80" href="">Metal
+                                Material</a></li>
+                    </ul>
+                </li>
+
+                <!-- Services mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <span>Services</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Cutting</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Milling</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80"
+                                href="">Gridding</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Whats App Icon -->
+    <a href="https://wa.link/s20edj" target="_blank" class="fixed bottom-7 right-7 | z-50">
+        <img src="/assets/img/whatsapp-icon.png" alt="" class="w-10">
+    </a>
 
     <!-- Content Section -->
-    <section class="flex justify-center items-center py-10">
-        <div class="w-[950px]">
+    <section class="pb-10 sm:pt-28 pt-20 2xl:px-52 xl:px-48 lg:px-36 md:px-8 px-4">
             <!-- Image Area -->
             <div>
-                <div class="w-full h-[650px] overflow-hidden">
+                <div class="w-full md:h-[650px] sm:h-[500px] h-[300px]  overflow-hidden">
                     <img src="/assets/img/smartwarehouse-img.png" alt=""
                         class="object-cover w-full h-full object-[50%_80%] scale-125">
                 </div>
             </div>
-            <div class="px-7">
+            <div class="md:px-7">
                 <!-- Text Area -->
                 <ul
-                    class="mt-10 helvetica-medium font-bold text-5xl text-navBlue tracking-wider list-disc  list-inside space-y-1  ">
+                    class="mt-10 helvetica-medium font-bold md:text-5xl sm:text-4xl text-2xl text-navBlue tracking-wider list-disc  list-inside space-y-1  ">
                     <li>SMART WAREHOUSE</li>
                     <li>VENDOR-MANAGED INVENTORY</li>
                 </ul>
 
                 <!-- Diagram Area -->
-                <div class="mt-10 text-navBlue">
+                 <div class="md:overflow-visible overflow-x-scroll">
+                                     <div class="flex md:justify-center justify-start items-center w-full">
+                                    <div class="mt-10 text-navBlue">
                     <!-- Diagram 1 -->
-                    <div class="flex justify-between">
+                    <div class="flex justify-between space-x-5">
                         <!-- Step 1: Incoming -->
                         <div class="relative flex-col flex items-center ">
                             <div
-                                class="flex items-center justify-center w-52 h-52 helvetica-medium text-base font-bold rounded-full bg-blue-100">
+                                class="flex items-center justify-center lg:w-52  w-40  lg:h-52  h-40  helvetica-medium text-base font-bold rounded-full bg-blue-100">
                                 Incoming</div>
                             <div
                                 class="absolute flex items-center justify-center -bottom-3 mt-2 w-8 h-8 text-sm font-bold text-white  rounded-full bg-[#083F74]">
@@ -52,9 +201,9 @@
 
                         <!-- Step 3: Warehouses -->
                         <div class="relative flex-col flex items-center ">
-                            <div class=" flex items-center justify-center w-52 h-52 rounded-full bg-blue-100">
+                            <div class=" flex items-center justify-center lg:w-52  w-40  lg:h-52  h-40 rounded-full bg-blue-100">
                                 <div
-                                    class="flex flex-col justify-center items-center px-2 w-52 h-52 rounded-full helvetica-medium text-base font-bold text-center bg-blue-100   ">
+                                    class="flex flex-col justify-center items-center px-2  rounded-full helvetica-medium text-base font-bold text-center    ">
                                     Warehouses
                                     <ul class="mt-1 text-xs font-normal text-center text-gray-800 ">
                                         <li>• PHH</li>
@@ -70,9 +219,9 @@
 
                         <!-- Step 5: QC out -->
                         <div class="relative flex-col flex items-center ">
-                            <div class=" flex items-center justify-center w-52 h-52 rounded-full bg-blue-100">
+                            <div class=" flex items-center justify-center lg:w-52  w-40  lg:h-52  h-40 rounded-full bg-blue-100">
                                 <div
-                                    class="w-52 h-52  flex-col flex  justify-center items-center px-2 helvetica-medium text-base  font-bold text-center rounded-full bg-blue-100">
+                                    class=" flex-col flex  justify-center items-center px-2 helvetica-medium text-base  font-bold text-center rounded-full ">
                                     QC out
                                     <ul class="text-xs font-normal mt-1 text-gray-800 text-center px-3 ">
                                         <li>• Dimensions TxWxL - Qty</li>
@@ -88,9 +237,9 @@
 
                         <!-- Step 7: Delivery -->
                         <div class="relative flex-col flex items-center ">
-                            <div class=" flex items-center justify-center w-52 h-52 rounded-full bg-blue-100">
+                            <div class=" flex items-center justify-center lg:w-52  w-40  lg:h-52  h-40 rounded-full bg-blue-100">
                                 <div
-                                    class="flex-col flex  justify-center items-center px-2 w-52 h-52 rounded-full helvetica-medium text-base font-bold text-center  bg-blue-100">
+                                    class="flex-col flex  justify-center items-center px-2 rounded-full helvetica-medium text-base font-bold text-center  ">
                                     Delivery
                                 </div>
                             </div>
@@ -105,9 +254,9 @@
                         <!-- Step 2: QC in -->
                         <div class="relative flex-col flex items-center ">
                             <div
-                                class="flex items-center justify-center w-52 h-52 rounded-full border-[0.5px] border-blue-100 ">
+                                class="flex items-center justify-center lg:w-52  w-40  lg:h-52  h-40 rounded-full border-[0.5px] border-blue-100 ">
                                 <div
-                                    class=" flex flex-col justify-center items-center px-2 w-52 h-52 helvetica-medium text-base font-bold text-center  rounded-full border-[0.5px] border-blue-100">
+                                    class=" flex flex-col justify-center items-center px-2 helvetica-medium text-base font-bold text-center  rounded-full ">
                                     QC in
                                     <ul class="mt-1 text-xs text-center font-normal  text-gray-800">
                                         <li>• Dimensions TxWxL - Qty</li>
@@ -124,9 +273,9 @@
                         <!-- Step 4: Outgoing -->
                         <div class="flex flex-col items-center relative">
                             <div
-                                class="w-52 h-52 rounded-full border-[0.5px] border-blue-100 flex items-center justify-center">
+                                class="lg:w-52  w-40  lg:h-52  h-40 rounded-full border-[0.5px] border-blue-100 flex items-center justify-center">
                                 <div
-                                    class=" flex flex-col justify-center items-center px-2 w-52 h-52 helvetica-medium text-base font-bold text-center  rounded-full border-[0.5px] border-blue-100">
+                                    class=" flex flex-col justify-center items-center px-2 helvetica-medium text-base font-bold text-center  rounded-full">
                                     Outgoing
                                     <ul class="mt-1 text-xs font-normal text-center text-gray-800  ">
                                         <li>• ERP out</li>
@@ -141,9 +290,9 @@
                         <!-- Step 6: Documentation & Packaging -->
                         <div class="flex flex-col items-center relative">
                             <div
-                                class="w-52 h-52 rounded-full border-[0.5px] border-blue-100 flex items-center justify-center">
+                                class="lg:w-52  w-40  lg:h-52  h-40 rounded-full border-[0.5px] border-blue-100 flex items-center justify-center">
                                 <div
-                                    class=" flex flex-col justify-center text-base px-2 w-52 h-52 items-center helvetica-medium font-bold text-center  rounded-full border-[0.5px] border-blue-100">
+                                    class=" flex flex-col justify-center text-base px-2 items-center helvetica-medium font-bold text-center">
                                     Documentation & Packaging
                                     <ul class="mt-1 px-3 text-xs font-normal text-center text-gray-800  ">
                                         <li>• Print Delivery Order</li>
@@ -157,10 +306,111 @@
                         </div>
                     </div>
                 </div>
+                 </div>
+                 </div>
             </div>
-        </div>
     </section>
 
+        <!-- Footer Section -->
+    <footer class="md:flex justify-between items-end lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white bg-navBlue">
+
+        <!-- Part 1 - Left  -->
+        <div class="md:w-[650px] w-full mr-10">
+            <div class="flex items-center">
+                <h3 class="pb-2 border-b-[0.5px] border-white/80 text-base font-semibold"> Contact Information</h3>
+            </div>
+
+            <!-- Malaysia -->
+            <div class="relative py-5 border-b-[0.5px] border-white/80 flex justify-between text-white/80">
+                <div>
+                    <h4 class="text-sm mb-3"> HEADQUARTER</h4>
+                    <p class="helvetica-medium text-white">PHH METAL 1 SDN BHD <span class="text-[10px] text-white/80">
+                            (176257-T)</span></p>
+                    <p><span class="helvetica-medium text-white">T</span> +60 3 8068 7000 | <span
+                            class="helvetica-medium text-white">E</span> sales@phh.com.my
+                        | <span class="helvetica-medium text-white">W</span> www.phh.com.my</p>
+                    <p>Wisma PHH, Jalan PPU 3, Taman Perindustrian Puchong Utama, 47100 Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4">
+                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light mt-1">MALAYSIA</p>
+                </div>
+            </div>
+
+            <!-- Indonesia -->
+            <div class="relative pt-5 flex justify-between text-white/80">
+                <div class="">
+                    <p class="helvetica-medium text-white">PT PHH SPECIAL STEEL <span
+                            class="text-[10px] text-white/80">(18835/BH 05
+                            09/VM/2011)</span></p>
+                    <p><span class="helvetica-medium text-white">T</span> +62 21 2808 5200 | <span
+                            class="helvetica-medium text-white">E</span>
+                        sales@phh.co.id
+                        | <span class="helvetica-medium text-white">W</span> www.phh.co.id</p>
+                    <p>Blok F25-09J, Jl.Sungkai, Delta Silicon 3, Lippo Cikarang, Bekasi 17550, Indonesia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4">
+                    <img class="w-12"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">INDONESIA</p>
+                </div>
+            </div>
+        </div>
+        <!-- Part 2 - Right  -->
+        <div class="md:w-[650px] w-full md:mt-0 mt-7">
+            <!-- Malaysia -->
+            <div class="flex justify-between text-white/80">
+                <div>
+                    <p class="helvetica-medium text-white ">PROTECH TOOL AND DIE SDN BHD <span
+                            class="text-[10px] text-white/80 ">(176257-T)</span>
+                    </p>
+                    <p><span class="helvetica-medium text-white">T</span> +62 3 5102 9505 | <span
+                            class="helvetica-medium text-white">E</span>
+                        info@phhmetal1.com
+                        | <span class="helvetica-medium text-white">W</span> www.protechdm.com.my</p>
+                    <p>No.7, Jalan Mandolin 33/5, Seksyen 33, 40400 Shah Alam, Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4 w-12">
+                    <img class="w-f" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">MALAYSIA</p>
+                </div>
+            </div>
+            <!-- Contact, copyright, ect -->
+            <div class="mt-5">
+                <p class="helvetica-medium">Follow Us</p>
+                <div class="flex space-x-5 py-2 border-b-[0.5px] border-white/80 text-lg">
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.link/s20edj" target="_blank" class="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <p class="text-xs">© PHH Metal. All rights reserved 2023.</p>
+                    <div class="flex space-x-2">
+                        <button class="text-xs">Privacy Policy</button>
+                        <p>|</p>
+                        <button class="text-xs">Terms of Use</button>
+                    </div>
+                </div>
+            </div>
+    </footer>
 
 </body>
 
