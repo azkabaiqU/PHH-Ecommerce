@@ -21,6 +21,11 @@
 .helvetica-medium{
     font-family: helveticaNeueMedium;
 }
+/* anti scroll when they click android menu */
+.noscroll {
+  overflow: hidden;
+}
+
 
 
 
