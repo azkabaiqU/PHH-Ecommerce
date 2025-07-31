@@ -1,68 +1,59 @@
-// NAVBAR SCROLL EFFECT 
 const navbar = document.getElementById('navbar');
-
-// Scroll: mengatur transparansi navbar
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-        navbar.classList.remove('bg-[#1C3D69]');
-        navbar.classList.add('bg-[#1C3D69]/90');
-    } else {
-        navbar.classList.remove('bg-[#1C3D69]/90');
-        navbar.classList.add('bg-[#1C3D69]');
-    }
-});
-
-// navbar animasi dropdown
-document.querySelectorAll('.dropdown-group').forEach(group => {
-    const toggle = group.querySelector('.dropdown-toggle');
-    const content = group.querySelector('.dropdown-content');
-    const angleUp = group.querySelector('.angle-up');
-    const angleDown = group.querySelector('.angle-down');
-
-    group.addEventListener('mouseenter', () => {
-        content.style.maxHeight = content.scrollHeight + 'px';
-        angleUp.classList.add('hidden');
-        angleDown.classList.remove('hidden');
-    });
-
-    group.addEventListener('mouseleave', () => {
-        content.style.maxHeight = '0px';
-        angleUp.classList.remove('hidden');
-        angleDown.classList.add('hidden');
-    });
-});
-
-// navbar resposive - mobile version
 const menuToggle = document.getElementById('mobileMenuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 const overlay = document.getElementById('overlay');
 
 let menuOpen = false;
 
-menuToggle.addEventListener('click', () => {
-  menuOpen = !menuOpen;
-
-  if (menuOpen) {
-    mobileMenu.style.maxHeight = '500px'; // Atur tinggi sesuai kebutuhan
-    overlay.classList.remove('hidden');
-    overlay.classList.add('opacity-100');
-    document.body.classList.add('noscroll');
+// 🔹 Update background navbar tergantung scroll atau menu
+function updateNavbarBackground() {
+  if (menuOpen || window.scrollY > 10) {
+    navbar.classList.remove('bg-[#1C3D69]');
+    navbar.classList.add('bg-[#1C3D69]/90');
   } else {
-    mobileMenu.style.maxHeight = '0px';
-    overlay.classList.add('hidden');
-    overlay.classList.remove('opacity-100');
-    document.body.classList.remove('noscroll');
+    navbar.classList.remove('bg-[#1C3D69]/90');
+    navbar.classList.add('bg-[#1C3D69]');
   }
-});
+}
 
-// Klik overlay = tutup semuanya
-overlay.addEventListener('click', () => {
+// 🔹 Tutup menu
+function closeMenu() {
   menuOpen = false;
   mobileMenu.style.maxHeight = '0px';
   overlay.classList.add('hidden');
   overlay.classList.remove('opacity-100');
   document.body.classList.remove('noscroll');
+  updateNavbarBackground();
+}
+
+// 🔹 Toggle menu burger
+menuToggle.addEventListener('click', () => {
+  menuOpen = !menuOpen;
+
+  if (menuOpen) {
+    mobileMenu.style.maxHeight = '650px'; 
+    overlay.classList.remove('hidden');
+    overlay.classList.add('opacity-100');
+    document.body.classList.add('noscroll');
+  } else {
+    closeMenu();
+  }
+
+  updateNavbarBackground();t
 });
+
+// 🔹 Scroll event
+window.addEventListener('scroll', updateNavbarBackground);
+
+// 🔹 Auto close saat resize ke desktop
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768 && menuOpen) {
+    closeMenu();
+  }
+});
+
+// 🔹 Klik overlay = tutup menu
+overlay.addEventListener('click', closeMenu);
 
 
 // navbar service and product - mobile version
