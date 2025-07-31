@@ -16,7 +16,8 @@
 
 <body class="bg-navBlue">
     <!-- Overlay -->
-    <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-30 hidden transition-opacity duration-500"></div>
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden transition-opacity duration-300"></div>
+
 
     <!-- Navbar -->
     <nav id="navbar"
@@ -147,14 +148,14 @@
                         <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
                                 href="/src/html/machineData.html#cutting">Cutting</a></li>
                         <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
-                                href="/src/html/machineData.html#miling">Milling</a></li>
+                                href="/src/html/machineData.html#milling">Milling</a></li>
                         <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
                                 href="/src/html/machineData.html#griding">Griding</a></li>
                     </ul>
                 </li>
 
                 <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a></li>
-                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Contact</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/contact.html">Contact</a></li>
             </ul>
 
         </div>
@@ -432,9 +433,12 @@
         class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
 
         <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-            <div id="popup-content" class="flex flex-wrap justify-center items-center gap-5 mb-5">
-                <!-- Gambar akan dimasukkan lewat JavaScript -->
+            <div class="overflow-x-scroll md:w-auto w-80 h-auto">
+                <div id="popup-content" class="flex items-center space-x-5 mb-5 w-max">
+                    <!-- Gambar akan dimasukkan lewat JavaScript -->
+                </div>
             </div>
+
             <div id="popup-buttons" class="flex flex-wrap justify-center items-center gap-5">
                 <!-- Tombol download juga dari JavaScript -->
             </div>
@@ -446,7 +450,8 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="md:flex justify-between items-end lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white tracking-wide">
+    <footer
+        class="md:flex justify-between items-end lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white tracking-wide">
 
         <!-- Part 1 - Left  -->
         <div class="md:w-[650px] w-full mr-10 font-thin ">
@@ -458,7 +463,8 @@
             <div class="relative py-5 border-b-[0.5px] border-white/80 flex justify-between text-white/80 font-thin">
                 <div>
                     <h4 class="text-sm mb-3"> HEADQUARTER</h4>
-                    <p class="font-bold text-white">PHH METAL 1 SDN BHD <span class="text-[10px]  text-white/80 font-thin">
+                    <p class="font-bold text-white">PHH METAL 1 SDN BHD <span
+                            class="text-[10px]  text-white/80 font-thin">
                             (176257-T)</span></p>
                     <p class=""><span class="font-semibold text-white">T</span> +60 3 8068 7000 | <span
                             class="font-semibold text-white">E</span> sales@phh.com.my

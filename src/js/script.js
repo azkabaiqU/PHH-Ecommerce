@@ -57,9 +57,14 @@ menuToggle.addEventListener('click', () => {
 
 // mobile navbar that auto close when the screen is desktop
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 1024 && menuOpen) {
-    closeMenu();
-  }
+    if (window.innerWidth >= 768 && menuOpen) {
+        menuOpen = false;
+        mobileMenu.style.maxHeight = '0px';
+        overlay.classList.add('hidden');
+        overlay.classList.remove('opacity-100');
+        document.body.classList.remove('noscroll');
+        updateNavbarBackground();
+    }
 });
 
 // Klik overlay = tutup semuanya
