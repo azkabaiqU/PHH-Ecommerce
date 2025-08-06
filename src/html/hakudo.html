@@ -207,7 +207,7 @@
                                     <td class="w-[150px] px-4 py-2 text-white bg-[#2A3D67] font-semibold">Stainless Steel</td>
                                     <td class="w-[20px] py-2 border-x-8 border-white bg-[#F186B6]"></td>
                                     <td class="px-4 py-2">
-                                        <a href="" class="underline text-blue-600">HNS303</a></td>
+                                    <a href="javascript:void(0)" class="open-popupBook underline text-blue-600">HNS303</a>
                                     <td class="px-4 py-2">SUS303</td>
                                     <td class="px-4 py-2">1.4305</td>
                                     <td class="px-4 py-2">S30300</td>
@@ -221,7 +221,7 @@
                                         class="w-[20px] py-2 border-x-8 border-white bg-gradient-to-r from-slate-400 via-white to-slate-400 ">
                                     </td>
                                     <td class="px-4 py-2">
-                                        <a href="" class="underline text-blue-600">YH52</a>
+                                        <a href="javascript:void(0)" class="open-popupBook underline text-blue-600">YH52</a>
                                         </td>
                                     <td class="px-4 py-2">H4000 A5052P<br>(High Precision)</td>
                                     <td class="px-4 py-2">1725-1</td>
@@ -232,7 +232,7 @@
                                         class="w-[20px] py-2 border-x-8 border-white bg-gradient-to-r from-slate-400 via-white to-slate-400 ">
                                     </td>
                                     <td class="px-4 py-2">
-                                        <a href="" class="underline text-blue-600">52S</a>
+                                        <a href="javascript:void(0)" class="open-popupBook underline text-blue-600">52S</a>
 
                                         </td>
                                     <td class="px-4 py-2">H4000 A5052P</td>
@@ -282,7 +282,82 @@
 
                 </div>
             </div>
+
+
+<!-- pop up Book -->
+<div id="popupBook" onclick="closePopupBook()"
+    class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+
+    <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+        <!-- Flipbook Embed -->
+        <div>
+            <iframe 
+              class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"  
+              src="https://online.fliphtml5.com/nalcs/zfyn/"  
+              seamless="seamless" 
+              scrolling="no" 
+              frameborder="0" 
+              allowtransparency="true" 
+              allowfullscreen="true">
+            </iframe>
+        </div>
+        <div class="w-full mt-3 text-center">
+            <button onclick="closePopupBook()"
+                class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+        </div>
+    </div>
+</div>
     </section>
+
+        <!-- Certificate Section -->
+    <section class="w-full  mx-auto px-4 py-32 bg-white">
+
+        <!-- title -->
+        <div class="flex justify-center items-center w-full mb-14">
+            <h3 class="text-2xl text-navBlue tracking-widest">CERTIFICATIONS</h3>
+        </div>
+
+        <!-- Certificate List -->
+        <div class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-y-12 gap-x-14 xl:gap-x-52">
+
+            <!-- Sertifikat AS9100D -->
+            <button class="open-popup flex flex-col items-center text-end w-[300px] bg-white p-1"
+                data-img='["/assets/img/novostar2015-img.png","/assets/img/novostar2016-img.png"]'
+                data-pdf='["/assets/pdf/NovaStar2015-Certificate.pdf","/assets/pdf/NovaStar2016-Certificate.pdf"]'>
+                <img src="/assets/img/AS9100D-img.png" alt="AS9100D Certificate" class="  ">
+                <h3 class="mt-5 font-medium text-2xl text-[#002E5F]">AS 9100:2016</h3>
+            </button>
+
+            <!-- GCL International -->
+            <button class="open-popup flex flex-col items-center text-center w-[300px] bg-white p-1" 
+            data-img='["/assets/img/gcl2015-img.png", "/assets/img/gcl2015-img-no2.png"]'
+                data-pdf='["/assets/pdf/GCL-Certificate.pdf", "/assets/pdf/SERTIFIKAT-ISO9001-PTPRO-TECH-TOOL-AND-DIE.pdf"]'>
+                <img src="/assets/img/CGL-img.png" alt="GCL Certificate" class=" ">
+                <h3 class="mt-5 font-medium text-2xl text-[#005097]">ISO 9001:2015</h3>
+            </button>
+        </div>
+    </section>
+
+    <!-- pop up Certificate before Download -->
+    <div id="popup" onclick="closePopup()"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <div class="overflow-x-scroll md:w-auto w-80 h-auto">
+                <div id="popup-content" class="flex items-center space-x-5 mb-5 w-max">
+                    <!-- Gambar akan dimasukkan lewat JavaScript -->
+                </div>
+            </div>
+
+            <div id="popup-buttons" class="flex flex-wrap justify-center items-center gap-5">
+                <!-- Tombol download juga dari JavaScript -->
+            </div>
+            <div class="w-full mt-3 text-center">
+                <button onclick="closePopup()"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Section -->
     <footer
@@ -358,19 +433,19 @@
             <div class="mt-5">
                 <p class="font-semibold">Follow Us</p>
                 <div class="flex space-x-5 py-2 border-b-[0.5px] border-white/80 text-lg">
-                    <a href="">
+                    <a href="https://www.instagram.com/phhmetal1sdnbhd/">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="">
+                    <a href="https://www.facebook.com/profile.php?id=61553394089567">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="">
+                    <a href="https://www.tiktok.com/@phhmetal1">
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
-                    <a href="">
+                    <a href="https://www.youtube.com/@MarketingPHH">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/phh-metal-1-47537b317/">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a href="https://wa.link/s20edj" target="_blank" class="">
@@ -389,6 +464,29 @@
         </div>
     </footer>
 
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const popupBook = document.getElementById('popupBook');
+
+    function openPopupBook() {
+        popupBook.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+    }
+
+    function closePopupBook() {
+        popupBook.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+    }
+
+    document.querySelectorAll('.open-popupBook').forEach(button => {
+        button.addEventListener('click', () => {
+            openPopupBook();
+        });
+    });
+
+    window.closePopupBook = closePopupBook; // supaya bisa dipanggil di onclick
+});
+    </script>
 </body>
 
 </html>
