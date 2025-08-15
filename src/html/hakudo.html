@@ -212,7 +212,7 @@
                                 </td>
                                 <td class="w-[20px] py-2 border-x-8 border-white bg-[#F186B6]"></td>
                                 <td class="px-4 py-2">
-                                    <a href="javascript:void(0)"
+                                    <a href="javascript:void(0)" data-popup="popupBookHNS303" 
                                         class="open-popupBook underline text-blue-600">HNS303</a>
                                 <td class="px-4 py-2">SUS303</td>
                                 <td class="px-4 py-2">1.4305</td>
@@ -227,7 +227,8 @@
                                     class="w-[20px] py-2 border-x-8 border-white bg-gradient-to-r from-slate-400 via-white to-slate-400 ">
                                 </td>
                                 <td class="px-4 py-2">
-                                    <a href="" class=" underline text-blue-600">YH52</a>
+                                    <a href="javascript:void(0)" data-popup="popupBook" 
+                                    class="open-popupBook underline text-blue-600">YH52</a>
                                 </td>
                                 <td class="px-4 py-2">H4000 A5052P<br>(High Precision)</td>
                                 <td class="px-4 py-2">1725-1</td>
@@ -289,9 +290,27 @@
             </div>
         </div>
 
+        <!-- pop up Book HNS303 -->
+         <div id="popupBookHNS303" onclick="closePopupBook('popupBookHNS303')"
+            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
 
-        <!-- pop up Book -->
-        <div id="popupBook" onclick="closePopupBook()"
+            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+                <!-- Flipbook Embed -->
+                <div>
+                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                        src="https://online.fliphtml5.com/nalcs/bqnd/" seamless="seamless" scrolling="no"
+                        frameborder="0" allowtransparency="true" allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="w-full mt-3 text-center">
+                    <button onclick="closePopupBook('popupBookHNS303')"
+                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- pop up Book YH52 -->
+        <div id="popupBook" onclick="closePopupBook('popupBook')"
             class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
 
             <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
@@ -303,11 +322,14 @@
                     </iframe>
                 </div>
                 <div class="w-full mt-3 text-center">
-                    <button onclick="closePopupBook()"
+                    <button onclick="closePopupBook('popupBook')"
                         class="text-white/80 hover:text-white/40 text-lg underline">close</button>
                 </div>
             </div>
         </div>
+
+        <!-- pop up Book 52S -->
+
     </section>
 
     <!-- Certificate Section -->
@@ -465,29 +487,23 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const popupBook = document.getElementById('popupBook');
-
-            function openPopupBook() {
-                popupBook.classList.remove('hidden');
-                document.body.classList.add('overflow-hidden');
-            }
-
-            function closePopupBook() {
-                popupBook.classList.add('hidden');
-                document.body.classList.remove('overflow-hidden');
-            }
-
-            document.querySelectorAll('.open-popupBook').forEach(button => {
-                button.addEventListener('click', () => {
-                    openPopupBook();
-                });
-            });
-
-            window.closePopupBook = closePopupBook; // supaya bisa dipanggil di onclick
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.open-popupBook').forEach(button => {
+        button.addEventListener('click', () => {
+            const popupId = button.getAttribute('data-popup');
+            document.getElementById(popupId).classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
         });
-    </script>
+    });
+
+    window.closePopupBook = function(popupId) {
+        document.getElementById(popupId).classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+    }
+});
+</script>
+
 </body>
 
 </html>
