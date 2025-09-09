@@ -89,7 +89,7 @@
                                 </li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#grinding'">Gridding</button>
+                                        onclick="window.location.href='/src/html/machineData.html#grinding'">Grinding</button>
                                 </li>
                             </ul>
                         </div>
@@ -212,7 +212,7 @@
                                 </td>
                                 <td class="w-[20px] py-2 border-x-8 border-white bg-[#F186B6]"></td>
                                 <td class="px-4 py-2">
-                                    <a href="javascript:void(0)" data-popup="popupBookHNS303" 
+                                    <a href="javascript:void(0)" data-popup="popupBookHNS303"
                                         class="open-popupBook underline text-blue-600">HNS303</a>
                                 <td class="px-4 py-2">SUS303</td>
                                 <td class="px-4 py-2">1.4305</td>
@@ -227,8 +227,8 @@
                                     class="w-[20px] py-2 border-x-8 border-white bg-gradient-to-r from-slate-400 via-white to-slate-400 ">
                                 </td>
                                 <td class="px-4 py-2">
-                                    <a href="javascript:void(0)" data-popup="popupBook" 
-                                    class="open-popupBook underline text-blue-600">YH52</a>
+                                    <a href="javascript:void(0)" data-popup="popupBook"
+                                        class="open-popupBook underline text-blue-600">YH52</a>
                                 </td>
                                 <td class="px-4 py-2">H4000 A5052P<br>(High Precision)</td>
                                 <td class="px-4 py-2">1725-1</td>
@@ -291,7 +291,7 @@
         </div>
 
         <!-- pop up Book HNS303 -->
-         <div id="popupBookHNS303" onclick="closePopupBook('popupBookHNS303')"
+        <div id="popupBookHNS303" onclick="closePopupBook('popupBookHNS303')"
             class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
 
             <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
@@ -487,22 +487,22 @@
         </div>
     </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.open-popupBook').forEach(button => {
-        button.addEventListener('click', () => {
-            const popupId = button.getAttribute('data-popup');
-            document.getElementById(popupId).classList.remove('hidden');
-            document.body.classList.add('overflow-hidden');
-        });
-    });
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.open-popupBook').forEach(button => {
+                button.addEventListener('click', () => {
+                    const popupId = button.getAttribute('data-popup');
+                    document.getElementById(popupId).classList.remove('hidden');
+                    document.body.classList.add('overflow-hidden');
+                });
+            });
 
-    window.closePopupBook = function(popupId) {
-        document.getElementById(popupId).classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-    }
-});
-</script>
+            window.closePopupBook = function (popupId) {
+                document.getElementById(popupId).classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }
+        });
+    </script>
 
 </body>
 

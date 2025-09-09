@@ -12,7 +12,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// navbar animasi dropdown
+// navbar animasi dropdown ------------------
+
 document.querySelectorAll('.dropdown-group').forEach(group => {
     const toggle = group.querySelector('.dropdown-toggle');
     const content = group.querySelector('.dropdown-content');
@@ -32,7 +33,8 @@ document.querySelectorAll('.dropdown-group').forEach(group => {
     });
 });
 
-// navbar resposive - mobile version
+// navbar resposive - mobile version ------------------
+
 const menuToggle = document.getElementById('mobileMenuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 const overlay = document.getElementById('overlay');
@@ -43,7 +45,7 @@ menuToggle.addEventListener('click', () => {
   menuOpen = !menuOpen;
 
   if (menuOpen) {
-    mobileMenu.style.maxHeight = '500px'; // Atur tinggi sesuai kebutuhan
+    mobileMenu.style.maxHeight = '500px';
     overlay.classList.remove('hidden');
     overlay.classList.add('opacity-100');
     document.body.classList.add('noscroll');
@@ -55,7 +57,6 @@ menuToggle.addEventListener('click', () => {
   }
 });
 
-// mobile navbar that auto close when the screen is desktop
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 768 && menuOpen) {
         menuOpen = false;
@@ -67,7 +68,7 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Klik overlay = tutup semuanya
+
 overlay.addEventListener('click', () => {
   menuOpen = false;
   mobileMenu.style.maxHeight = '0px';
@@ -77,7 +78,7 @@ overlay.addEventListener('click', () => {
 });
 
 
-// navbar service and product - mobile version
+
 document.querySelectorAll('.dropdown-group').forEach(group => {
     const toggle = group.querySelector('.dropdown-toggle');
     const content = group.querySelector('.dropdown-content');
@@ -100,7 +101,8 @@ document.querySelectorAll('.dropdown-group').forEach(group => {
 });
 
 
-// Pop-up for Certificate
+// Pop-up for Certificate ------------------
+
   document.addEventListener('DOMContentLoaded', function () {
     const popup = document.getElementById('popup');
     const popupContent = document.getElementById('popup-content');
@@ -122,7 +124,7 @@ document.querySelectorAll('.dropdown-group').forEach(group => {
         popupContent.appendChild(imageParent);
       });
 
-      // Buat satu tombol download
+
       const button = document.createElement('button');
       button.className = 'py-3 px-5 bg-navBlue text-white text-lg rounded w-80';
       button.textContent = 'Download All PDF';
@@ -157,7 +159,7 @@ document.querySelectorAll('.dropdown-group').forEach(group => {
       });
     });
 
-    window.closePopup = closePopup; // supaya bisa diakses di HTML onclick="closePopup()"
+    window.closePopup = closePopup; 
   });
 
 
