@@ -45,7 +45,7 @@ menuToggle.addEventListener('click', () => {
   menuOpen = !menuOpen;
 
   if (menuOpen) {
-    mobileMenu.style.maxHeight = '500px';
+    mobileMenu.style.maxHeight = '900px';
     overlay.classList.remove('hidden');
     overlay.classList.add('opacity-100');
     document.body.classList.add('noscroll');

@@ -23,6 +23,7 @@
 
 
     <!-- Navbar -->
+    <!-- Navbar -->
     <nav id="navbar"
         class="fixed z-40 top-0 left-0 w-full noscroll duration-200 overflow-visible text-white bg-[#1C3D69] ">
         <div class="relative flex justify-between items-center lg:px-16 md:px-8 px-4  sm:py-3 py-0">
@@ -83,15 +84,47 @@
                             <ul>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#cutting'">Cutting</button>
+                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual Cut</button>
                                 </li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#milling'">Milling</button>
+                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma Flame Cutting</button>
                                 </li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#grinding'">Gridding</button>
+                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser Cutting</button>
+                                </li>
+                                                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw Machine</button>
+                                </li>
+                                                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium Cutting and Milling</button>
+                                </li>
+                                                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
+                                </li>
+                                                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough Grinding</button>
+                                </li>
+                                                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc Machine</button>
+                                </li>
+                                                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding </button>
+                                </li>
+                                                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
+                                </li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
                                 </li>
                             </ul>
                         </div>
@@ -119,7 +152,7 @@
         </div>
         <!-- mobile navbar -->
         <div id="mobileMenu" class="max-h-0 relative w-full  top-18 bg-[#1C3D69] overflow-hidden  duration-500">
-            <ul class=" w-full text-lg">
+            <ul class=" w-full m:text-base text-sm">
                 <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]"
                         href="/src/html/about.html">About</a></li>
                 <!-- Products mobile nav -->
@@ -130,41 +163,78 @@
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
                                 href="/src/html/hakudo.html">Hakudo</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
                                 href="/src/html/nipponKoshuha.html">Nippon Koshuha Steel</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
                                 href="/src/html/globalLeader.html">Global Leader Carbon
                                 Material</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
                                 href="/src/html/metalProduct.html">Metal
                                 Material</a></li>
                     </ul>
                 </li>
 
                 <!-- Services mobile nav -->
-                <li class="dropdown-group hover:bg-[#132a47] duration-100">
-                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                <li class="dropdown-group overflow-y-scroll hover:bg-[#132a47] duration-100">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle m:text-base text-sm">
                         <span>Services</span>
                         <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
-                                href="/src/html/machineData.html#cutting">Cutting</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
-                                href="/src/html/machineData.html#milling">Milling</a></li>
-                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 hover:bg-[#1b3b5f]"
-                                href="/src/html/machineData.html#grinding">Grinding</a></li>
+                                                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80  sm:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual Cut</button>
+                                </li>
+                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma Flame Cutting</button>
+                                </li>
+                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser Cutting</button>
+                                </li>
+                                                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw Machine</button>
+                                </li>
+                                                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium Cutting and Milling</button>
+                                </li>
+                                                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
+                                </li>
+                                                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough Grinding</button>
+                                </li>
+                                                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc Machine</button>
+                                </li>
+                                                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding </button>
+                                </li>
+                                                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
+                                </li>
+                                <li><button
+                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                        onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
+                                </li>
                     </ul>
                 </li>
 
-                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="">Events & News</a></li>
-                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]"
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm" href="">Events & News</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm"
                         href="/src/html/contact.html">Contact</a></li>
             </ul>
-
         </div>
     </nav>
 
