@@ -1125,17 +1125,12 @@
 
     <!-- Footer Section -->
     <footer
-        class="md:flex justify-between items-end lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white tracking-wide bg-navBlue">
+        class=" lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white  bg-navBlue ">
 
-        <!-- Part 1 - Left  -->
-        <div class="md:w-[650px] w-full mr-10 font-light ">
-            <div class="flex items-center">
-                <h3 class="pb-2 border-b-[0.5px] border-white/80 text-base font-semibold"> Contact Information</h3>
-            </div>
-
-            <!-- Malaysia -->
-            <div class="relative py-5 border-b-[0.5px] border-white/80 flex justify-between text-white font-light">
-                <div>
+        <div class="flex md:flex-row flex-col justify-between items-end  space-x-10 ">
+            <!-- Malaysia left -->
+            <div class="md:w-[700px] w-full h-[120px]   relative border-b-[0.5px] md:border-white/80 border-white/0  flex justify-between items-end text-white font-light">
+                <div class="pb-5">
                     <h4 class="text-sm mb-3"> HEADQUARTER</h4>
                     <p class="font-semibold text-white">PHH METAL 1 SDN BHD <span
                             class="text-[10px]  text-white/80 font-thin">
@@ -1145,15 +1140,36 @@
                         | <span class="font-semibold text-white">W</span> www.phh.com.my</p>
                     <p>Wisma PHH, Jalan PPU 3, Taman Perindustrian Puchong Utama, 47100 Selangor, Malaysia.</p>
                 </div>
-                <div class="flex flex-col items-center ml-4">
+                <div class="flex flex-col items-center ml-4 pt-5 md:h-[120px] h-[80px]">
                     <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
                         alt="">
                     <p class="text-xs font-light mt-1">MALAYSIA</p>
                 </div>
             </div>
 
+            <!-- Malaysia 2 right -->
+            <div class="md:mt-0 mt-5  md:w-[700px] w-full md:h-[120px] h-[80px]  border-b-[0.5px]  border-white/80    flex justify-between items-end text-white font-light ">
+                <div class="pb-5">
+                    <p class="font-semibold text-white ">PROTECH TOOL AND DIE SDN BHD <span
+                            class="text-[10px] text-white/80 font-thin">(176257-T)</span>
+                    </p>
+                    <p><span class="font-semibold text-white">T</span> +62 3 5102 9505 | <span
+                            class="font-semibold text-white">E</span>
+                        info@phhmetal1.com
+                        | <span class="font-semibold text-white">W</span> www.protechdm.com.my</p>
+                    <p>No.7, Jalan Mandolin 33/5, Seksyen 33, 40400 Shah Alam, Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4 md:h-[120px] h-[80px]  pt-5">
+                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light mt-1">MALAYSIA</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex md:flex-row flex-col justify-between  md:space-x-10 space-x-0 ">
             <!-- Indonesia -->
-            <div class="relative pt-5 flex justify-between text-white">
+            <div class="md:w-[700px] w-full relative pt-5 flex justify-between text-white">
                 <div class="">
                     <p class="font-semibold text-white">PT PHH SPECIAL STEEL <span
                             class="text-[10px] text-white/80 font-thin">(18835/BH 05
@@ -1171,32 +1187,10 @@
                     <p class="text-xs font-light text-center mt-1">INDONESIA</p>
                 </div>
             </div>
-        </div>
-        <!-- Part 2 - Right  -->
-        <div class="md:w-[650px] w-full md:mt-0 mt-7 font-light">
-            <!-- Malaysia -->
-            <div class=" flex justify-between text-white font-light">
-                <div>
-                    <p class="font-semibold text-white ">PROTECH TOOL AND DIE SDN BHD <span
-                            class="text-[10px] text-white/80 font-thin">(176257-T)</span>
-                    </p>
-                    <p><span class="font-semibold text-white">T</span> +62 3 5102 9505 | <span
-                            class="font-semibold text-white">E</span>
-                        info@phhmetal1.com
-                        | <span class="font-semibold text-white">W</span> www.protechdm.com.my</p>
-                    <p>No.7, Jalan Mandolin 33/5, Seksyen 33, 40400 Shah Alam, Selangor, Malaysia.</p>
-                </div>
-                <div class="flex flex-col items-center ml-4">
-                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
-                        alt="">
-                    <p class="text-xs font-light mt-1">MALAYSIA</p>
-                </div>
-            </div>
-
-            <!-- Contact, copyright, ect -->
-            <div class="mt-5">
+                        <!-- Contact, copyright, ect -->
+            <div class="mt-5 md:w-[700px] w-full ">
                 <p class="font-semibold">Follow Us</p>
-                <div class="flex space-x-5 py-2 border-b-[0.5px] border-white/80 text-lg">
+                <div class="flex space-x-5 py-2  text-lg">
                     <a href="https://www.instagram.com/phhmetal1sdnbhd/" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
@@ -1226,6 +1220,7 @@
                 </div>
             </div>
         </div>
+        
     </footer>
 
 </body>
