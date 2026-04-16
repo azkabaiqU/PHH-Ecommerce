@@ -6,6 +6,7 @@
 
 const translations = {
   // BAHASA INGGRIS (Default)
+  // NAVBAR
   en: {
     nav_about: "About",
     nav_products: "Products",
@@ -33,6 +34,10 @@ const translations = {
     hakudo_table2_brass: "Brass",
     hakudo_table2_copper: "Copper",
     certifications_title: "CERTIFICATIONS",
+    footer_headquarter: "HEADQUARTER",
+    footer_copyright: "© PHH Metal. All rights reserved 2023.",
+    footer_privacy_policy: "Privacy Policy",
+    footer_terms_of_use: "Terms of Use",
   },
 
   // BAHASA INDONESIA
@@ -61,6 +66,10 @@ const translations = {
     hakudo_table2_brass: "Kuningan",
     hakudo_table2_copper: "Tembaga",
     certifications_title: "SERTIFIKASI",
+    footer_headquarter: "KANTOR PUSAT",
+    footer_copyright: "© PHH Metal. Terlindungi Hak Cipta sejak 2023.",
+    footer_privacy_policy: "Kebijakan Privasi",
+    footer_terms_of_use: "Syarat Penggunaan",
   },
 
   // BAHASA MELAYU
@@ -79,24 +88,28 @@ const translations = {
     home_vendor_inventory: "INVENTARIS YANG DIKELOLA VENDOR",
 
     // --- TRANSLASI HAKUDO.HTML ---
-    hakudo_table1_category: "KATEGORI",
+    hakudo_table1_category: "CATEGORY",
     hakudo_table1_stainless: "Stainless Steel",
     hakudo_table1_aluminium: "Aluminium",
     hakudo_table1_precision: "(Presisi Tinggi)",
     hakudo_table2_material: "MATERIAL",
-    hakudo_table2_code: "KOD",
-    hakudo_table2_mildsteel: "Keluli Lembut (Mild Steel)",
-    hakudo_table2_brass: "Kuningan",
-    hakudo_table2_copper: "Tembaga",
+    hakudo_table2_code: "CODE",
+    hakudo_table2_mildsteel: "Mild Steel",
+    hakudo_table2_brass: "Brass",
+    hakudo_table2_copper: "Copper",
     certifications_title: "SERTIFIKASI",
+    footer_headquarter: "IBU PEJABAT",
+    footer_copyright: "© PHH Metal. Hak cipta terpelihara 2023.",
+    footer_privacy_policy: "Dasar Privasi",
+    footer_terms_of_use: "Syarat Penggunaan",
   },
 
   // BAHASA JEPANG
   ja: {
-    nav_about: "私たちについて",
+    nav_about: "PHH の強み",
     nav_products: "製品",
     nav_services: "サービス",
-    nav_events_news: "イベント・ニュース",
+    nav_events_news: "イベントとニュース",
     nav_contact: "お問い合わせ ",
     home_about_title: "ABOUT US",
     home_about_desc: "In an ever-evolving landscape of industries reliant on metal products, one name has consistently shone as a beacon of quality and innovation for over five decades. The PHH Group of Companies, with its unwavering commitment to delivering top-notch metal products, services, and solutions, has not only weathered the test of time but has also evolved into a global force to be reckoned with.",
@@ -107,16 +120,20 @@ const translations = {
     home_vendor_inventory: "VENDOR-MANAGED INVENTORY",
 
     // --- TRANSLASI HAKUDO.HTML ---
-    hakudo_table1_category: "CATEGORY",
-    hakudo_table1_stainless: "Stainless Steel",
-    hakudo_table1_aluminium: "Aluminium",
+    hakudo_table1_category: "カテゴリ",
+    hakudo_table1_stainless: "ステンレス鋼",
+    hakudo_table1_aluminium: "アルミニウム",
     hakudo_table1_precision: "(High Precision)",
-    hakudo_table2_material: "MATERIAL",
-    hakudo_table2_code: "CODE",
-    hakudo_table2_mildsteel: "Mild Steel",
-    hakudo_table2_brass: "Brass",
-    hakudo_table2_copper: "Copper",
-    certifications_title: "CERTIFICATIONS",
+    hakudo_table2_material: "材料",
+    hakudo_table2_code: "コード",
+    hakudo_table2_mildsteel: "軟鋼",
+    hakudo_table2_brass: "真鍮",
+    hakudo_table2_copper: "銅",
+    certifications_title: "認証",
+    footer_headquarter: "本社",
+    footer_copyright: "© PHHメタル。2023年、全著作権所有。",
+    footer_privacy_policy: "利用規約",
+    footer_terms_of_use: "プライバシーポリシー",
   },
 
   // BAHASA CHINA (Mandarin)
@@ -135,16 +152,20 @@ const translations = {
     home_vendor_inventory: "VENDOR-MANAGED INVENTORY",
 
     // --- TRANSLASI HAKUDO.HTML ---
-    hakudo_table1_category: "CATEGORY",
-    hakudo_table1_stainless: "Stainless Steel",
-    hakudo_table1_aluminium: "Aluminium",
+    hakudo_table1_category: "类别",
+    hakudo_table1_stainless: "不锈钢",
+    hakudo_table1_aluminium: "铝",
     hakudo_table1_precision: "(High Precision)",
-    hakudo_table2_material: "MATERIAL",
-    hakudo_table2_code: "CODE",
-    hakudo_table2_mildsteel: "Mild Steel",
-    hakudo_table2_brass: "Brass",
-    hakudo_table2_copper: "Copper",
-    certifications_title: "CERTIFICATIONS",
+    hakudo_table2_material: "材料",
+    hakudo_table2_code: "编码",
+    hakudo_table2_mildsteel: "低碳钢",
+    hakudo_table2_brass: "黄铜",
+    hakudo_table2_copper: "铜",
+    certifications_title: "认证",
+    footer_headquarter: "公司总部",
+    footer_copyright: "© PHH Metal。版权所有 2023。",
+    footer_privacy_policy: "隐私政策",
+    footer_terms_of_use: "使用条款",
   }
 };
 
