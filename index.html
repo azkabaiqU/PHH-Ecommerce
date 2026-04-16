@@ -35,13 +35,14 @@
                 <ul class=" flex justify-center items-center ">
                     <!-- about -->
                     <li>
-                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/about.html">About</a>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/about.html"
+                            data-i18n="nav_about">About</a>
                     </li>
                     <!-- Products -->
                     <li class="dropdown-group group relative">
                         <a href="#"
                             class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
-                            <span>Products</span>
+                            <span data-i18n="nav_products">Products</span>
                             <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                             <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
@@ -72,7 +73,7 @@
                     <li class="dropdown-group group relative">
                         <a href="#"
                             class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
-                            <span>Services</span>
+                            <span data-i18n="nav_services">Services</span>
                             <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                             <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
@@ -81,41 +82,49 @@
                             <ul>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual Cut</button>
+                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual
+                                        Cut</button>
                                 </li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma Flame Cutting</button>
+                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry
+                                        Plasma Flame Cutting</button>
                                 </li>
                                 <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser Cutting</button>
+                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser
+                                        Cutting</button>
                                 </li>
-                                                                <li><button
+                                <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw Machine</button>
+                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw
+                                        Machine</button>
                                 </li>
-                                                                <li><button
+                                <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium Cutting and Milling</button>
+                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium
+                                        Cutting and Milling</button>
                                 </li>
-                                                                <li><button
+                                <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
                                         onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
                                 </li>
-                                                                <li><button
+                                <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough Grinding</button>
+                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough
+                                        Grinding</button>
                                 </li>
-                                                                <li><button
+                                <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc Machine</button>
+                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc
+                                        Machine</button>
                                 </li>
-                                                                <li><button
+                                <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding </button>
+                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface
+                                        Grinding </button>
                                 </li>
-                                                                <li><button
+                                <li><button
                                         class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
                                         onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
                                 </li>
@@ -127,18 +136,59 @@
                         </div>
                     </li>
                     <li>
-                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="#">Events & News</a>
+                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="#"
+                            data-i18n="nav_events_news">Events & News</a>
                     </li>
                     <li>
-                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]"
-                            href="/src/html/contact.html">Contact</a>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/contact.html"
+                            data-i18n="nav_contact">Contact</a>
                     </li>
                 </ul>
 
-                <!-- shop,profile -->
-                <div class="flex | space-x-6 ml-6 ">
-                    <i class="fa-solid fa-cart-shopping "></i>
-                    <i class="fa-solid fa-user "></i>
+                <!-- shop,profile, lang dropdown -->
+                <div class="flex items-center space-x-6 ml-6 ">
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                    <i class="fa-solid fa-user cursor-pointer"></i>
+
+                    <!-- Language Selector -->
+                    <div class="dropdown-group group relative">
+                        <button
+                            class="flex items-center space-x-1 cursor-pointer dropdown-toggle hover:text-white/80 transition"
+                            id="lang-selector-btn">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="current-lang-display" class="uppercase text-sm font-medium">EN</span>
+                        </button>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute right-0 top-full mt-4 w-48 z-50">
+                            <ul class="py-2 text-sm text-white/90">
+                                <li><button onclick="setLanguage('en')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>English (EN)</span></button></li>
+                                <li><button onclick="setLanguage('id')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>Indonesia (ID)</span></button></li>
+                                <li><button onclick="setLanguage('ms')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>Melayu (MS)</span></button></li>
+                                <li><button onclick="setLanguage('ja')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>Japan (日本語)</span></button></li>
+                                <li><button onclick="setLanguage('zh')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>China (中文)</span></button></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -150,12 +200,12 @@
         <!-- mobile navbar -->
         <div id="mobileMenu" class="max-h-0 relative w-full  top-18 bg-[#1C3D69] overflow-hidden  duration-500">
             <ul class=" w-full m:text-base text-sm">
-                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]"
-                        href="/src/html/about.html">About</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/about.html"
+                        data-i18n="nav_about">About</a></li>
                 <!-- Products mobile nav -->
                 <li class="dropdown-group hover:bg-[#132a47] duration-100">
                     <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
-                        <span>Products</span>
+                        <span data-i18n="nav_products">Products</span>
                         <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
@@ -175,62 +225,112 @@
 
                 <!-- Services mobile nav -->
                 <li class="dropdown-group overflow-y-scroll hover:bg-[#132a47] duration-100">
-                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle m:text-base text-sm">
-                        <span>Services</span>
+                    <a
+                        class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle m:text-base text-sm">
+                        <span data-i18n="nav_services">Services</span>
                         <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80  sm:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual Cut</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma Flame Cutting</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser Cutting</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium Cutting and Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough Grinding</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding </button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
-                                </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80  sm:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual
+                                Cut</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma
+                                Flame Cutting</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser
+                                Cutting</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw
+                                Machine</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium
+                                Cutting and Milling</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough
+                                Grinding</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc
+                                Machine</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface
+                                Grinding </button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
+                        </li>
+                        <li><button
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
+                        </li>
                     </ul>
                 </li>
 
-                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm" href="">Events & News</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm" href=""
+                        data-i18n="nav_events_news">Events & News</a></li>
                 <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm"
-                        href="/src/html/contact.html">Contact</a></li>
+                        href="/src/html/contact.html" data-i18n="nav_contact">Contact</a></li>
+
+                <!-- Language mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100 border-t border-white/10">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Language: <span id="mobile-current-lang-display"
+                                    class="uppercase font-medium">EN</span></span>
+                        </div>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><button onclick="setLanguage('en');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>English
+                                    (EN)</span></button></li>
+                        <li><button onclick="setLanguage('id');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Indonesia
+                                    (ID)</span></button></li>
+                        <li><button onclick="setLanguage('ms');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Melayu
+                                    (MS)</span></button></li>
+                        <li><button onclick="setLanguage('ja');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Japan
+                                    (日本語)</span></button></li>
+                        <li><button onclick="setLanguage('zh');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>China
+                                    (中文)</span></button></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -297,10 +397,12 @@
     <!-- About Us Section -->
     <section class=" flex items-center justify-center relative h-[850px] w-full  bg-cover bg-right bg-no-repeat"
         style="background-image: url('/assets/img/aboutUs-img.png')">
-        <h1 class="absolute top-10 lg:left-16 left-10  text-4xl text-navBlue font-bold"> ABOUT US </h1>
+        <h1 class="absolute top-10 lg:left-16 left-10  text-4xl text-navBlue font-bold" data-i18n="home_about_title">
+            ABOUT US </h1>
         <div
             class="absolute bottom-5 left-0  bg-navBlue md:w-[650px] sm:w-[500px] w-full py-3 lg:pl-16 sm:pl-10 pl-3 pr-3 text-white/80 font-light text-sm">
-            <p>In an ever-evolving landscape of industries reliant on metal products, one name has consistently shone as
+            <p data-i18n="home_about_desc">In an ever-evolving landscape of industries reliant on metal products, one
+                name has consistently shone as
                 a beacon of quality and innovation for over five decades. The PHH Group of Companies, with its
                 unwavering commitment to delivering top-notch metal products, services, and solutions, has not only
                 weathered the test of time but has also evolved into a global force to be reckoned with.</p>
@@ -335,8 +437,8 @@
                         <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
                     </div>
                 </div>
-                <h1
-                    class="absolute flex justify-center items-end xl:h-12 h-11 inset-0 text-center lg:text-xl text-lg text-navBlue tracking-widest">
+                <h1 class="absolute flex justify-center items-start pt-3 w-full inset-0 text-center lg:text-xl text-lg text-navBlue tracking-widest leading-snug"
+                    data-i18n="home_what_we_have">
                     WHAT WE HAVE</h1>
                 <img class="w-full h-full object-cover object-[0%_100%]" src="/assets/img/menu-21.jpeg" alt="">
             </a>
@@ -389,8 +491,8 @@
             <!-- What we do -->
             <a href="/src/html/machineData.html#cutting"
                 class="relative w-full md:h-[250px] h-[300px] group md:border-[0.25px] border-none md:border-white  ">
-                <h1
-                    class="absolute flex md:justify-center justify-start md:pl-0 pl-4 items-end xl:h-12 h-11 inset-0 text-center lg:text-xl md:text-lg text-2xl text-white tracking-widest">
+                <h1 class="absolute flex md:justify-center justify-start md:pl-0 pl-4 items-start pt-3 w-full inset-0 text-center lg:text-xl md:text-lg text-xl text-white tracking-widest leading-snug"
+                    data-i18n="home_what_we_do">
                     WHAT WE DO</h1>
                 <img class="object-cover w-full h-full object-[50%_100%]" src="/assets/img/menu-31.png" alt="">
                 <div
@@ -433,8 +535,8 @@
         <!-- Number 4 -> Aerospacec Division = 1Page -->
         <a href="/src/html/aerospace.html"
             class="relative flex flex-col group md:border-[0.25px] border-none md:border-white  md:h-full h-[300px]">
-            <h1
-                class="absolute flex md:justify-center justify-start md:pl-0 pl-4  items-end text-center xl:h-12 sm:h-16 h-10 inset-0 lg:text-xl md:text-base sm:text-2xl text-xl text-white tracking-widest">
+            <h1 class="absolute flex md:justify-center justify-start md:pl-0 pl-4 items-start pt-3 w-full inset-0 text-center lg:text-xl md:text-base sm:text-2xl text-xl text-white tracking-widest leading-snug"
+                data-i18n="home_aerospace_div">
                 AEROSPACE DIVISION</h1>
             <img class="w-full h-full object-cover md:object-[50%_100%] object-[50%_100%]" src="/assets/img/menu-4.jpg"
                 alt="">
@@ -453,10 +555,10 @@
         <a href="/src/html/smartWareHouse.html"
             class="relative group md:border-[0.25px] border-none md:border-white  md:h-full h-[300px]">
             <div
-                class="absolute  flex md:justify-center justify-start items-end lg:h-20 md:h-28 h-20 xl2:pl-0 pl-4 pr-1 inset-0  tracking-widest ">
-                <ol class="list-disc list-inside md:text-sm sm:text-2xl text-base text-white text-start ">
-                    <li>SMART WAREHOUSE</li>
-                    <li>VENDOR-MANAGED INVENTORY</li>
+                class="absolute flex md:justify-center justify-start items-start lg:pt-5 pt-8 w-full xl2:pl-0 pl-4 pr-1 inset-0 tracking-widest">
+                <ol class="list-disc list-inside md:text-sm sm:text-xl text-base text-white text-start leading-snug">
+                    <li data-i18n="home_smart_warehouse">SMART WAREHOUSE</li>
+                    <li data-i18n="home_vendor_inventory">VENDOR-MANAGED INVENTORY</li>
                 </ol>
             </div>
             <img class="w-full h-full object-cover md:object-[60%_100%] object-[50%_0%]"
@@ -476,7 +578,7 @@
 
         <!-- title -->
         <div class="flex justify-center items-center w-full mb-14">
-            <h3 class="text-2xl text-navBlue tracking-widest">CERTIFICATIONS</h3>
+            <h3 class="text-2xl text-navBlue tracking-widest" data-i18n="certifications_title">CERTIFICATIONS</h3>
         </div>
 
         <!-- Certificate List -->
@@ -522,12 +624,12 @@
     </div>
 
     <!-- Footer Section -->
-    <footer
-        class=" lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white  bg-navBlue ">
+    <footer class=" lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white  bg-navBlue ">
 
         <div class="flex md:flex-row flex-col justify-between items-end  space-x-10 ">
             <!-- Malaysia left -->
-            <div class="md:w-[700px] w-full h-[120px]   relative border-b-[0.5px] md:border-white/80 border-white/0  flex justify-between items-end text-white font-light">
+            <div
+                class="md:w-[700px] w-full h-[120px]   relative border-b-[0.5px] md:border-white/80 border-white/0  flex justify-between items-end text-white font-light">
                 <div class="pb-5">
                     <h4 class="text-sm mb-3"> HEADQUARTER</h4>
                     <p class="font-semibold text-white">PHH METAL 1 SDN BHD <span
@@ -546,7 +648,8 @@
             </div>
 
             <!-- Malaysia 2 right -->
-            <div class="md:mt-0 mt-5  md:w-[700px] w-full md:h-[120px] h-[80px]  border-b-[0.5px]  border-white/80    flex justify-between items-end text-white font-light ">
+            <div
+                class="md:mt-0 mt-5  md:w-[700px] w-full md:h-[120px] h-[80px]  border-b-[0.5px]  border-white/80    flex justify-between items-end text-white font-light ">
                 <div class="pb-5">
                     <p class="font-semibold text-white ">PROTECH TOOL AND DIE SDN BHD <span
                             class="text-[10px] text-white/80 font-thin">(176257-T)</span>
@@ -580,12 +683,12 @@
                 </div>
                 <div class="flex flex-col items-center ml-4">
                     <img class="w-12"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1920px-Flag_of_Indonesia.svg.png?_=20200822164827"
                         alt="">
                     <p class="text-xs font-light text-center mt-1">INDONESIA</p>
                 </div>
             </div>
-                        <!-- Contact, copyright, ect -->
+            <!-- Contact, copyright, ect -->
             <div class="mt-5 md:w-[700px] w-full ">
                 <p class="font-semibold">Follow Us</p>
                 <div class="flex space-x-5 py-2  text-lg">
@@ -618,7 +721,7 @@
                 </div>
             </div>
         </div>
-        
+
     </footer>
 
     <script>
