@@ -35,13 +35,14 @@
                 <ul class=" flex justify-center items-center ">
                     <!-- about -->
                     <li>
-                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/about.html">About</a>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/about.html"
+                            data-i18n="nav_about">About</a>
                     </li>
                     <!-- Products -->
                     <li class="dropdown-group group relative">
                         <a href="#"
                             class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
-                            <span>Products</span>
+                            <span data-i18n="nav_products">Products</span>
                             <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                             <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
@@ -72,73 +73,152 @@
                     <li class="dropdown-group group relative">
                         <a href="#"
                             class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
-                            <span>Services</span>
+                            <span data-i18n="nav_services">Services</span>
                             <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                             <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
+                        <!-- dropdown utama -->
                         <div
-                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            class="dropdown-content absolute left-0 hidden group-hover:block bg-[#132a47] w-[220px] z-50">
                             <ul>
-                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual Cut</button>
+                                <!-- Malaysia -->
+                                <li class="relative group/child">
+                                    <a href="/src/html/machineData.html"
+                                        class="w-full py-3 px-4 flex items-center text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100">
+                                        <span data-i18n="nav_malaysia">Malaysia</span>
+                                        <span><img class="w-7 ml-3"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                                alt=""></span>
+                                    </a>
+                                    <!-- Submenu Malaysia -->
+                                    <ul
+                                        class="absolute left-full top-0 hidden group-hover/child:block bg-[#132a47] w-[250px] shadow-lg z-50">
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#LaserCutting'" data-i18n="md_laser_cutting">Laser
+                                                Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#CncGantry'" data-i18n="md_cnc_gantry">CNC
+                                                Gantry Plasma Flame Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'" data-i18n="md_aluminium_cutting">Aluminium
+                                                Cutting and Milling</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#BandsawMachine'" data-i18n="md_bandsaw_machine">Bandsaw
+                                                Machine</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#ManualCut'" data-i18n="md_manual_cut">Manual
+                                                Cut</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Milling'" data-i18n="md_milling">Milling</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#RoughGrinding'" data-i18n="md_rough_grinding">Rough
+                                                Grinding</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#CncMachining'" data-i18n="md_cnc_machining">CNC
+                                                Machining</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'" data-i18n="md_surface_grinding">Surface Grinding</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Logistic'" data-i18n="md_logistic">Logistics</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Others'" data-i18n="md_others">Others</button>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma Flame Cutting</button>
-                                </li>
-                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser Cutting</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium Cutting and Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough Grinding</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding </button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
-                                </li>
-                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
+                                <!-- Indonesia -->
+                                <li class="relative group/child">
+                                    <a href="/src/html/machineDataIndo.html"
+                                        class="w-full py-3 px-4 flex items-center text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100">
+                                        <span data-i18n="nav_indonesia">Indonesia</span>
+                                        <span><img class="w-7 ml-3"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                                                alt=""></span>
+                                    </a>
+                                    <!-- Submenu Indonesia -->
+                                    <ul
+                                        class="absolute left-full top-0 hidden group-hover/child:block bg-[#132a47] w-[250px] shadow-lg z-50">
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#CncGantry'" data-i18n="mdi_cnc_gantry">CNC
+                                                Gantry Plasma Flame Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Aluminium'" data-i18n="mdi_aluminium_cutting">Aluminium
+                                                Cutting and Milling</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Bandsaw'" data-i18n="mdi_bandsaw_machine">Bandsaw
+                                                Machine</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#ManualCut'" data-i18n="mdi_manual_cut">Manual
+                                                Cut</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Milling'" data-i18n="mdi_milling">Milling</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#CNCMachining'" data-i18n="mdi_cnc_machining">CNC
+                                                Machining</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Surface'" data-i18n="mdi_surface_grinding">Surface
+                                                Grinding</button></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="#">Events & News</a>
+                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="#"
+                            data-i18n="nav_events_news">Events & News</a>
                     </li>
                     <li>
-                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]"
-                            href="/src/html/contact.html">Contact</a>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/contact.html"
+                            data-i18n="nav_contact">Contact</a>
                     </li>
                 </ul>
 
-                <!-- shop,profile -->
-                <div class="flex | space-x-6 ml-6 ">
-                    <i class="fa-solid fa-cart-shopping "></i>
-                    <i class="fa-solid fa-user "></i>
+                <!-- shop,profile, lang dropdown -->
+                <div class="flex items-center space-x-6 ml-6 ">
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                    <i class="fa-solid fa-user cursor-pointer"></i>
+
+                    <!-- Language Selector -->
+                    <div class="dropdown-group group relative">
+                        <button
+                            class="flex items-center space-x-1 cursor-pointer dropdown-toggle hover:text-white/80 transition"
+                            id="lang-selector-btn">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="current-lang-display" class="uppercase text-sm font-medium">EN</span>
+                        </button>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute right-0 top-full mt-4 w-48 z-50">
+                            <ul class="py-2 text-sm text-white/90">
+                                <li><button onclick="setLanguage('en')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>English (EN)</span></button></li>
+                                <li><button onclick="setLanguage('id')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>Indonesia (ID)</span></button></li>
+                                <li><button onclick="setLanguage('ms')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>Melayu (MS)</span></button></li>
+                                <li><button onclick="setLanguage('ja')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>Japan (日本語)</span></button></li>
+                                <li><button onclick="setLanguage('zh')"
+                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
+                                        <span>China (中文)</span></button></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -150,12 +230,12 @@
         <!-- mobile navbar -->
         <div id="mobileMenu" class="max-h-0 relative w-full  top-18 bg-[#1C3D69] overflow-hidden  duration-500">
             <ul class=" w-full m:text-base text-sm">
-                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]"
-                        href="/src/html/about.html">About</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/about.html"
+                        data-i18n="nav_about">About</a></li>
                 <!-- Products mobile nav -->
                 <li class="dropdown-group hover:bg-[#132a47] duration-100">
                     <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
-                        <span>Products</span>
+                        <span data-i18n="nav_products">Products</span>
                         <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
@@ -174,63 +254,100 @@
                 </li>
 
                 <!-- Services mobile nav -->
-                <li class="dropdown-group overflow-y-scroll hover:bg-[#132a47] duration-100">
-                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle m:text-base text-sm">
-                        <span>Services</span>
+                <li class="dropdown-group bg-[#1C3D69] hover:bg-[#132a47] h-full">
+                    <a class="dropdown-toggle py-3 px-4 w-full block flex justify-between items-center text-sm sm:text-base cursor-pointer">
+                        <span data-i18n="nav_services">Services</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content relative max-h-0 overflow-hidden transition-all duration-300 bg-[#1C3D69]">
+                        <!-- Malaysia -->
+                        <li class="bg-[#132a47] z-10 relative">
+                            <button onclick="window.location.href='/src/html/machineData.html'"
+                                class="py-3 pl-8 w-full flex justify-between items-center text-sm sm:text-base text-white">
+                                <span class="flex items-center"><span data-i18n="nav_malaysia">Malaysia</span> <img class="w-7 ml-3"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                        alt=""></span>
+                            </button>
+                            <ul class="h-full bg-[#132a47] w-full transition-all duration-300 pl-12 text-xs">
+                                <li><a href="/src/html/machineData.html#LaserCutting" class="block py-2 text-white/70" data-i18n="md_laser_cutting">Laser Cutting</a></li>
+                                <li><a href="/src/html/machineData.html#CncGantry" class="block py-2 text-white/70" data-i18n="md_cnc_gantry">CNC Gantry Plasma Flame Cutting</a></li>
+                                <li><a href="/src/html/machineData.html#AluminiumCutting" class="block py-2 text-white/70" data-i18n="md_aluminium_cutting">Aluminium Cutting and Milling</a></li>
+                                <li><a href="/src/html/machineData.html#BandsawMachine" class="block py-2 text-white/70" data-i18n="md_bandsaw_machine">Bandsaw Machine</a></li>
+                                <li><a href="/src/html/machineData.html#ManualCut" class="block py-2 text-white/70" data-i18n="md_manual_cut">Manual Cut</a></li>
+                                <li><a href="/src/html/machineData.html#Milling" class="block py-2 text-white/70" data-i18n="md_milling">Milling</a></li>
+                                <li><a href="/src/html/machineData.html#RoughGrinding" class="block py-2 text-white/70" data-i18n="md_rough_grinding">Rough Grinding</a></li>
+                                <li><a href="/src/html/machineData.html#CncMachining" class="block py-2 text-white/70" data-i18n="md_cnc_machining">CNC Machining</a></li>
+                                <li><a href="/src/html/machineData.html#SurfaceGrinding" class="block py-2 text-white/70" data-i18n="md_surface_grinding">Surface Grinding</a></li>
+                                <li><a href="/src/html/machineData.html#Logistic" class="block py-2 text-white/70" data-i18n="md_logistic">Logistics</a></li>
+                                <li><a href="/src/html/machineData.html#Others" class="block py-2 text-white/70" data-i18n="md_others">Others</a></li>
+                            </ul>
+                        </li>
+                        <!-- Indonesia -->
+                        <li class="bg-[#132a47] z-10 relative">
+                            <button onclick="window.location.href='/src/html/machineDataIndo.html'"
+                                class="py-3 pl-8 w-full flex justify-between items-center text-sm sm:text-base text-white">
+                                <span class="flex items-center"><span data-i18n="nav_indonesia">Indonesia</span><img class="w-7 ml-3"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                                        alt=""></span>
+                            </button>
+                            <ul class="h-full bg-[#132a47] w-full transition-all duration-300 pl-12 text-xs">
+                                <li><a href="/src/html/machineDataIndo.html#CncGantry" class="block py-2 text-white/70" data-i18n="mdi_cnc_gantry">CNC Gantry Plasma Flame Cutting</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Aluminium" class="block py-2 text-white/70" data-i18n="mdi_aluminium_cutting">Aluminium Cutting and Milling</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Bandsaw" class="block py-2 text-white/70" data-i18n="mdi_bandsaw_machine">Bandsaw Machine</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#ManualCut" class="block py-2 text-white/70" data-i18n="mdi_manual_cut">Manual Cut</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Milling" class="block py-2 text-white/70" data-i18n="mdi_milling">Milling</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#CNCMachining" class="block py-2 text-white/70" data-i18n="mdi_cnc_machining">CNC Machining</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Surface" class="block py-2 text-white/70" data-i18n="mdi_surface_grinding">Surface Grinding</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm" href=""
+                        data-i18n="nav_events_news">Events & News</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm"
+                        href="/src/html/contact.html" data-i18n="nav_contact">Contact</a></li>
+
+                <!-- Language mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100 border-t border-white/10">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Language: <span id="mobile-current-lang-display"
+                                    class="uppercase font-medium">EN</span></span>
+                        </div>
                         <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80  sm:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual Cut</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma Flame Cutting</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser Cutting</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium Cutting and Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough Grinding</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding </button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
-                                </li>
+                        <li><button onclick="setLanguage('en');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>English
+                                    (EN)</span></button></li>
+                        <li><button onclick="setLanguage('id');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Indonesia
+                                    (ID)</span></button></li>
+                        <li><button onclick="setLanguage('ms');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Melayu
+                                    (MS)</span></button></li>
+                        <li><button onclick="setLanguage('ja');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Japan
+                                    (日本語)</span></button></li>
+                        <li><button onclick="setLanguage('zh');"
+                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>China
+                                    (中文)</span></button></li>
                     </ul>
                 </li>
-
-                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm" href="">Events & News</a></li>
-                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm"
-                        href="/src/html/contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -246,9 +363,9 @@
         <!-- Hero section | img dan text -->
         <div class="flex md:flex-row flex-col-reverse justify-between items-start  h-auto">
             <!-- text -->
-            <div  class="flex flex-col justify-between h-full md:mt-0 mt-5">
-                <h1 class="xl:text-8xl sm:text-7xl text-6xl helvetica-medium tracking-[0.15em] ">
-                    
+            <div class="flex flex-col justify-between h-full md:mt-0 mt-5">
+                <h1 class="xl:text-8xl sm:text-7xl text-6xl helvetica-medium tracking-[0.15em] " data-i18n="md_title">
+
                     MACHINE DATA & WORKING
                     CAPACITY IN MALAYSIA</h1>
                 <!-- <h3 id="cutting"
@@ -262,31 +379,38 @@
         </div>
     </section>
     <!-- part1 manualcut, cnc gantry , laser cutting , bandsaw machine-->
-    <section  class=" px-0 helvetica-medium">
-        <div  class="w-full pb-20 pt-10 px-14 bg-cover bg-center bg-no-repeat "
+    <section class=" px-0 helvetica-medium">
+        <div class="w-full pb-20 pt-10 px-14 bg-cover bg-center bg-no-repeat "
             style="background-image: linear-gradient(rgba(255, 255, 255, 0.557), rgba(255, 255, 255, 0.557)), url('/assets/img/machinedata-bg1.png')">
-            
+
             <!-- MANUAL CUT -->
-            <h1  class="lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest ">
+            <h1 class="lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest ">
                 <a href="javascript:void(0)" data-popup="popupBookManualCut"
-                                class="open-popupBook underline helvetica-medium">MANUAL CUT</a></h1>
-            
-            <div  class="mt-5 overflow-x-auto scrolling-touch ">
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_manual_cut">MANUAL CUT</a>
+            </h1>
+
+            <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
-                    <thead  id="CncGantry" class="mb-3">
+                    <thead id="CncGantry" class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
                         <!-- Data Rows -->
-                        <tr   class="text-center ">
+                        <tr class="text-center ">
                             <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">1</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs ">Gas Cutting Machine</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">VIC-2</td>
@@ -301,21 +425,28 @@
             </div>
 
             <!--  CNC GANTRY PLASMA FLAME CUTTING -->
-            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+            <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookCNCGantryPlasma"
-                                class="open-popupBook underline helvetica-medium">CNC
-                GANTRY PLASMA FLAME CUTTING</a></h1>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_cnc_gantry">CNC
+                    GANTRY PLASMA FLAME CUTTING</a>
+            </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -346,21 +477,28 @@
             </div>
 
             <!-- LASER CUTTING -->
-            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+            <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookLaserCutting"
-                                class="open-popupBook underline helvetica-medium">LASER
-                CUTTING</a></h1>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_laser_cutting">LASER
+                    CUTTING</a>
+            </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -380,21 +518,28 @@
             </div>
 
             <!-- BANDSAW MACHINE -->
-            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+            <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookBandsaw"
-                                class="open-popupBook underline helvetica-medium">BANDSAW
-                MACHINE</a></h1>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_bandsaw_machine">BANDSAW
+                    MACHINE</a>
+            </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -495,13 +640,19 @@
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3 hidden">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">TYPES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_types_of_machine">TYPES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -550,7 +701,7 @@
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">460 x 460</td>
                         </tr>
-                        <tr id="AluminiumCutting"  class="text-center border-b-[0.5px] border-white">
+                        <tr id="AluminiumCutting" class="text-center border-b-[0.5px] border-white">
                             <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light">15</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">Amada Bandsaw Machine</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">HA-460HA</td>
@@ -567,21 +718,27 @@
             <!-- ALUMINIUM CUTTING AND MILLING -->
             <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest ">
                 <a href="javascript:void(0)" data-popup="popupBookAluminiumCutting"
-                                class="open-popupBook underline helvetica-medium">ALUMINIUM
-                CUTTING AND MILLING</a>
-                
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_aluminium_cutting">ALUMINIUM
+                    CUTTING AND MILLING</a>
+
             </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -615,7 +772,7 @@
 
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">250 x 1500 x 2000</td>
                         </tr>
-                        <tr  id="Milling" class="text-center border-b-[0.5px] border-white">
+                        <tr id="Milling" class="text-center border-b-[0.5px] border-white">
                             <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">4</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">Shinx NC Face Milling</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
@@ -631,21 +788,27 @@
             </div>
 
             <!-- miling -->
-            <h1   class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+            <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookMilling"
-                                class="open-popupBook underline helvetica-medium">MILLING</a>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_milling">MILLING</a>
             </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">TYPES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_types_of_machine">TYPES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -815,27 +978,33 @@
     </section>
 
     <!-- part3  -->
-    <section   class=" px-0  helvetica-medium">
+    <section class=" px-0  helvetica-medium">
         <div class="w-full pb-20 pt-14 px-14  bg-cover bg-center bg-no-repeat"
             style="background-image: linear-gradient(rgba(255, 255, 255, 0.557), rgba(255, 255, 255, 0.557)), url('/assets/img/milling-img.png')">
 
 
             <!-- ROUGH GRINDING-->
-            <h1  class=" lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+            <h1 class=" lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookRoughGrinding"
-                                class="open-popupBook underline helvetica-medium">ROUGH GRINDING</a>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_rough_grinding">ROUGH GRINDING</a>
             </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -862,29 +1031,35 @@
             </div>
 
             <!-- CNC MACHINING -->
-            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+            <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookCNCMachining"
-                                class="open-popupBook underline helvetica-medium">CNC
-                MACHINING</a>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_cnc_machining">CNC
+                    MACHINING</a>
             </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="text-center border-b-[0.5px] border-white">
                             <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">1</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">Harford CNC
-Machining Center</td>
+                                Machining Center</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">HB-3150SG</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">Taiwan</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">3654</td>
@@ -900,7 +1075,7 @@ Machining Center</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">5000</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">780 x 1450 x 2100</td>
                         </tr>
-                                                <tr class="text-center border-b-[0.5px] border-white">
+                        <tr class="text-center border-b-[0.5px] border-white">
                             <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">3</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">Okuma (CNC Machining Center)</td>
                             <td class="px-4 md:py-2 py-1 md:text-base text-xs">MCV-All</td>
@@ -915,22 +1090,28 @@ Machining Center</td>
             </div>
 
             <!-- SURFACE GRINDING -->
-            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+            <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookSurfaceGrinding"
-                                class="open-popupBook underline helvetica-medium">SURFACE
-                GRINDING</a>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_surface_grinding">SURFACE
+                    GRINDING</a>
             </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1030,21 +1211,27 @@ Machining Center</td>
             </div>
 
             <!-- LOGISTIC -->
-            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+            <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookLogistic"
-                                class="open-popupBook underline helvetica-medium">LOGISTIC</a>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_logistic">LOGISTIC</a>
             </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1065,19 +1252,25 @@ Machining Center</td>
             <!-- OTHERS -->
             <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
                 <a href="javascript:void(0)" data-popup="popupBookOthers"
-                                class="open-popupBook underline helvetica-medium">OTHERS</a>
+                    class="open-popupBook underline helvetica-medium" data-i18n="md_others">OTHERS</a>
             </h1>
             <div class="mt-5 overflow-x-auto scrolling-touch ">
                 <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
                     <thead class="mb-3">
                         <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
-                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
-                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL
+                            </th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">
+                                SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal"
+                                data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">
+                                WORK AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1114,7 +1307,7 @@ Machining Center</td>
 
         <!-- title -->
         <div class="flex justify-center items-center w-full mb-14">
-            <h3 class="text-2xl text-navBlue tracking-widest">CERTIFICATIONS</h3>
+            <h3 class="text-2xl text-navBlue tracking-widest" data-i18n="certifications_title">CERTIFICATIONS</h3>
         </div>
 
         <!-- Certificate List -->
@@ -1160,14 +1353,14 @@ Machining Center</td>
     </div>
 
     <!-- Footer Section -->
-    <footer
-        class=" lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white  bg-navBlue ">
+    <footer class=" lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white  bg-navBlue ">
 
         <div class="flex md:flex-row flex-col justify-between items-end  space-x-10 ">
             <!-- Malaysia left -->
-            <div class="md:w-[700px] w-full h-[120px]   relative border-b-[0.5px] md:border-white/80 border-white/0  flex justify-between items-end text-white font-light">
+            <div
+                class="md:w-[700px] w-full h-[120px]   relative border-b-[0.5px] md:border-white/80 border-white/0  flex justify-between items-end text-white font-light">
                 <div class="pb-5">
-                    <h4 class="text-sm mb-3"> HEADQUARTER</h4>
+                    <h4 class="text-sm mb-3" data-i18n="footer_headquarter"> HEADQUARTER</h4>
                     <p class="font-semibold text-white">PHH METAL 1 SDN BHD <span
                             class="text-[10px]  text-white/80 font-thin">
                             (176257-T)</span></p>
@@ -1184,7 +1377,8 @@ Machining Center</td>
             </div>
 
             <!-- Malaysia 2 right -->
-            <div class="md:mt-0 mt-5  md:w-[700px] w-full md:h-[120px] h-[80px]  border-b-[0.5px]  border-white/80    flex justify-between items-end text-white font-light ">
+            <div
+                class="md:mt-0 mt-5  md:w-[700px] w-full md:h-[120px] h-[80px]  border-b-[0.5px]  border-white/80    flex justify-between items-end text-white font-light ">
                 <div class="pb-5">
                     <p class="font-semibold text-white ">PROTECH TOOL AND DIE SDN BHD <span
                             class="text-[10px] text-white/80 font-thin">(176257-T)</span>
@@ -1218,12 +1412,12 @@ Machining Center</td>
                 </div>
                 <div class="flex flex-col items-center ml-4">
                     <img class="w-12"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1920px-Flag_of_Indonesia.svg.png?_=20200822164827"
                         alt="">
                     <p class="text-xs font-light text-center mt-1">INDONESIA</p>
                 </div>
             </div>
-                        <!-- Contact, copyright, ect -->
+            <!-- Contact, copyright, ect -->
             <div class="mt-5 md:w-[700px] w-full ">
                 <p class="font-semibold">Follow Us</p>
                 <div class="flex space-x-5 py-2  text-lg">
@@ -1247,254 +1441,255 @@ Machining Center</td>
                     </a>
                 </div>
                 <div class="flex justify-between items-center mt-2 text-white">
-                    <p class="text-xs tracking-wide">© PHH Metal. All rights reserved 2023.</p>
+                    <p class="text-xs tracking-wide" data-i18n="footer_copyright">© PHH Metal. All rights reserved 2023.
+                    </p>
                     <div class="flex space-x-2">
-                        <button class="text-xs">Privacy Policy</button>
+                        <button class="text-xs" data-i18n="footer_privacy_policy">Privacy Policy</button>
                         <p>|</p>
-                        <button class="text-xs">Terms of Use</button>
+                        <button class="text-xs" data-i18n="footer_terms_of_use">Terms of Use</button>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-        <!-- pop up Book RoughGrinding -->
-        <div id="popupBookRoughGrinding" onclick="closePopupBook('popupBookRoughGrinding')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/kejfd/cetq/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/RoughGrinding.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookRoughGrinding')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    <!-- pop up Book RoughGrinding -->
+    <div id="popupBookRoughGrinding" onclick="closePopupBook('popupBookRoughGrinding')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/kejfd/cetq/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/RoughGrinding.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookRoughGrinding')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
-                                           <!-- pop up Book SurfaceGrinding -->
-        <div id="popupBookSurfaceGrinding" onclick="closePopupBook('popupBookSurfaceGrinding')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/kejfd/gryy/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/SurfaceGrinding.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookSurfaceGrinding')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    </div>
+    <!-- pop up Book SurfaceGrinding -->
+    <div id="popupBookSurfaceGrinding" onclick="closePopupBook('popupBookSurfaceGrinding')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/kejfd/gryy/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/SurfaceGrinding.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookSurfaceGrinding')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
-                                       <!-- pop up Book Logistic -->
-        <div id="popupBookLogistic" onclick="closePopupBook('popupBookLogistic')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/lpunw/sfos/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/Logistic.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookLogistic')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    </div>
+    <!-- pop up Book Logistic -->
+    <div id="popupBookLogistic" onclick="closePopupBook('popupBookLogistic')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/lpunw/sfos/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/Logistic.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookLogistic')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
-                                   <!-- pop up Book Machinedata -->
-        <div id="popupBookMachineData" onclick="closePopupBook('popupBookMachineData')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/lpunw/datl/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/MachineDataWithPhoto2025_(D) All.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookMachineData')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    </div>
+    <!-- pop up Book Machinedata -->
+    <div id="popupBookMachineData" onclick="closePopupBook('popupBookMachineData')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/lpunw/datl/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/MachineDataWithPhoto2025_(D) All.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookMachineData')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
-                                           <!-- pop up Book Machinedata -->
-        <div id="popupBookManualCut" onclick="closePopupBook('popupBookManualCut')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/lpunw/qasg/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/ManualCut.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookManualCut')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    </div>
+    <!-- pop up Book Machinedata -->
+    <div id="popupBookManualCut" onclick="closePopupBook('popupBookManualCut')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/lpunw/qasg/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/ManualCut.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookManualCut')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
+    </div>
 
 
-                           <!-- pop up Book Milling -->
-        <div id="popupBookMilling" onclick="closePopupBook('popupBookMilling')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/lpunw/eugw/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/Miling.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookMilling')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    <!-- pop up Book Milling -->
+    <div id="popupBookMilling" onclick="closePopupBook('popupBookMilling')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/lpunw/eugw/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/Miling.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookMilling')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
+    </div>
 
-                       <!-- pop up Book OThers -->
-        <div id="popupBookOthers" onclick="closePopupBook('popupBookOthers')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/lpunw/vulj/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/Others.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookOthers')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    <!-- pop up Book OThers -->
+    <div id="popupBookOthers" onclick="closePopupBook('popupBookOthers')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/lpunw/vulj/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/Others.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookOthers')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
+    </div>
 
-                   <!-- pop up Book Laser Cutting -->
-        <div id="popupBookLaserCutting" onclick="closePopupBook('popupBookLaserCutting')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/nalcs/dwhq/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/LaserCutting.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookLaserCutting')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    <!-- pop up Book Laser Cutting -->
+    <div id="popupBookLaserCutting" onclick="closePopupBook('popupBookLaserCutting')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/nalcs/dwhq/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/LaserCutting.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookLaserCutting')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
+    </div>
 
-                <!-- pop up Book CNC Machining -->
-        <div id="popupBookCNCMachining" onclick="closePopupBook('popupBookCNCMachining')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/nalcs/lbty/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/CNCMachining.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookCNCMachining')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    <!-- pop up Book CNC Machining -->
+    <div id="popupBookCNCMachining" onclick="closePopupBook('popupBookCNCMachining')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/nalcs/lbty/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/CNCMachining.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookCNCMachining')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
+    </div>
 
-            <!-- pop up Book CNC Gantry Plasma -->
-        <div id="popupBookCNCGantryPlasma" onclick="closePopupBook('popupBookCNCGantryPlasma')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/nalcs/vfnd/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/CNCGantryplasmaflamecutting.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookCNCGantryPlasma')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    <!-- pop up Book CNC Gantry Plasma -->
+    <div id="popupBookCNCGantryPlasma" onclick="closePopupBook('popupBookCNCGantryPlasma')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/nalcs/vfnd/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/CNCGantryplasmaflamecutting.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookCNCGantryPlasma')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
+    </div>
 
-        <!-- pop up Book Bandsaw -->
-        <div id="popupBookBandsaw" onclick="closePopupBook('popupBookBandsaw')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/nalcs/wnsa/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/Bandsaw.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookBandsaw')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    <!-- pop up Book Bandsaw -->
+    <div id="popupBookBandsaw" onclick="closePopupBook('popupBookBandsaw')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/nalcs/wnsa/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/Bandsaw.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookBandsaw')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
+    </div>
 
-      <!-- pop up Book Aluminium Cutting -->
-        <div id="popupBookAluminiumCutting" onclick="closePopupBook('popupBookAluminiumCutting')"
-            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
-            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
-                <!-- Flipbook Embed -->
-                <div>
-                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
-                        src="https://online.fliphtml5.com/nalcs/ncrs/" seamless="seamless" scrolling="no"
-                        frameborder="0" allowtransparency="true" allowfullscreen="true">
-                    </iframe>
-                </div>
-                <div class="w-full mt-3 text-center">
-                    <a href="/assets/pdf/AluminiumCuttingAndMilling.pdf" download
-                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
-                    <button onclick="closePopupBook('popupBookAluminiumCutting')"
-                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
-                </div>
+    <!-- pop up Book Aluminium Cutting -->
+    <div id="popupBookAluminiumCutting" onclick="closePopupBook('popupBookAluminiumCutting')"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <!-- Flipbook Embed -->
+            <div>
+                <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                    src="https://online.fliphtml5.com/nalcs/ncrs/" seamless="seamless" scrolling="no" frameborder="0"
+                    allowtransparency="true" allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="w-full mt-3 text-center">
+                <a href="/assets/pdf/AluminiumCuttingAndMilling.pdf" download
+                    class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                <button onclick="closePopupBook('popupBookAluminiumCutting')"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
             </div>
         </div>
+    </div>
 
-            <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('.open-popupBook').forEach(button => {
                 button.addEventListener('click', () => {

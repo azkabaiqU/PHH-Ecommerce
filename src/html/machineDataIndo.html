@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHH 1 stop metal solutions</title>
+    <link rel="icon" href="/assets/img/phh-icon.png" type="image/png" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Javascript & Css-Style -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/script.js" defer></script>
+</head>
+
+<body class=" text-navBlue">
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden transition-opacity duration-300"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="fixed z-40 top-0 left-0 w-full noscroll duration-200 overflow-visible text-white bg-[#1C3D69] ">
+        <div class="relative flex justify-between items-center lg:px-16 md:px-8 px-4  sm:py-3 py-0">
+            <!-- logo -->
+            <button onclick="window.location.href='/index.html'" class="flex items-center | overflow-hidden h-[40px] ">
+                <img src="/assets/img/white-logo.png" alt="Logo" class="sm:w-32 w-20">
+            </button>
+
+            <!-- desktop menu -->
+            <div class="hidden md:flex items-center | text-white font-light ">
+                <!-- list -->
+                <ul class=" flex justify-center items-center ">
+                    <!-- about -->
+                    <li>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]" href="/src/html/about.html" data-i18n="nav_about">About</a>
+                    </li>
+                    <!-- Products -->
+                    <li class="dropdown-group group relative">
+                        <a href="#"
+                            class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                            <span data-i18n="nav_products">Products</span>
+                            <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                            <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <div
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            <ul>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/hakudo.html'">Hakudo</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/nipponKoshuha.html'">Nippon Koshuha
+                                        Steel</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/globalLeader.html'">Global Leader
+                                        Carbon
+                                        Material</button></li>
+                                <li><button
+                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
+                                        onclick="window.location.href='/src/html/metalProduct.html'">Metal
+                                        Material</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Services -->
+                    <li class="dropdown-group group relative">
+                        <a href="#"
+                            class="dropdown-toggle bg-[#132a47]/0 group-hover:bg-[#132a47] duration-200 px-4 py-4 flex items-center space-x-2">
+                            <span data-i18n="nav_services">Services</span>
+                            <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                            <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <!-- dropdown utama -->
+                        <div
+                            class="dropdown-content absolute left-0 hidden group-hover:block bg-[#132a47] w-[220px] z-50">
+                            <ul>
+                                <!-- Malaysia -->
+                                <li class="relative group/child">
+                                    <a href="/src/html/machineData.html"
+                                        class="w-full py-3 px-4 flex items-center text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100">
+                                        <span data-i18n="nav_malaysia">Malaysia</span>
+                                        <span><img class="w-7 ml-3"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                                alt=""></span>
+                                    </a>
+                                    <!-- Submenu Malaysia -->
+                                    <ul
+                                        class="absolute left-full top-0 hidden group-hover/child:block bg-[#132a47] w-[250px] shadow-lg z-50">
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser
+                                                Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#CncGantry'">CNC
+                                                Gantry Plasma Flame Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium
+                                                Cutting and Milling</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw
+                                                Machine</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual
+                                                Cut</button></li>
+
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough
+                                                Grinding</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#CncMachining'">CNC
+                                                Machining</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistics</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- Indonesia -->
+                                <li class="relative group/child">
+                                    <a href="/src/html/machineDataIndo.html"
+                                        class="w-full py-3 px-4 flex items-center text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100">
+                                        <span data-i18n="nav_indonesia">Indonesia</span>
+                                        <span><img class="w-7 ml-3"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                                                alt=""></span>
+                                    </a>
+                                    <!-- Submenu Indonesia -->
+                                    <ul
+                                        class="absolute left-full top-0 hidden group-hover/child:block bg-[#132a47] w-[250px] shadow-lg z-50">
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#CncGantry'">CNC
+                                                Gantry Plasma Flame Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Aluminium'">Aluminium
+                                                Cutting and Milling</button></li>
+                                                                                <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Bandsaw'">Bandsaw
+                                                Machine</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#ManualCut'">Manual
+                                                Cut</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Milling'">Milling</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#CNCMachining'">CNC
+                                                Machining</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Surface'">Surface
+                                                Grinding</button></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <a class="px-4 py-4 bg-[#132a47]/0 hover:bg-[#132a47]" href="#" data-i18n="nav_events_news">Events & News</a>
+                    </li>
+                    <li>
+                        <a class="px-4 py-4  bg-[#132a47]/0 hover:bg-[#132a47]"
+                            href="/src/html/contact.html" data-i18n="nav_contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- shop,profile, lang dropdown -->
+                <div class="flex items-center space-x-6 ml-6 ">
+                    <i class="fa-solid fa-cart-shopping cursor-pointer"></i>
+                    <i class="fa-solid fa-user cursor-pointer"></i>
+                    <!-- Language Selector -->
+                    <div class="dropdown-group group relative">
+                        <button class="flex items-center space-x-1 cursor-pointer dropdown-toggle hover:text-white/80 transition" id="lang-selector-btn">
+                            <i class="fa-solid fa-globe"></i>
+                            <span id="current-lang-display" class="uppercase text-sm font-medium">EN</span>
+                        </button>
+                        <div class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute right-0 top-full mt-4 w-48 z-50">
+                            <ul class="py-2 text-sm text-white/90">
+                                <li><button onclick="setLanguage('en')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>English (EN)</span></button></li>
+                                <li><button onclick="setLanguage('id')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Indonesia (ID)</span></button></li>
+                                <li><button onclick="setLanguage('ms')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Melayu (MS)</span></button></li>
+                                <li><button onclick="setLanguage('ja')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Japan (日本語)</span></button></li>
+                                <li><button onclick="setLanguage('zh')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>China (中文)</span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Burger -->
+            <button id="mobileMenuToggle" class="py-4 md:hidden">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+        <!-- mobile navbar -->
+        <div id="mobileMenu"
+            class="overflow-y-scroll max-h-0  relative w-full  top-18 bg-[#1C3D69] overflow-hidden  duration-500">
+            <ul class=" w-full m:text-base text-sm">
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47]"
+                        href="/src/html/about.html" data-i18n="nav_about">About</a></li>
+                <!-- Products mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <span data-i18n="nav_products">Products</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                href="/src/html/hakudo.html">Hakudo</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                href="/src/html/nipponKoshuha.html">Nippon Koshuha Steel</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                href="/src/html/globalLeader.html">Global Leader Carbon
+                                Material</a></li>
+                        <li><a class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
+                                href="/src/html/metalProduct.html">Metal
+                                Material</a></li>
+                    </ul>
+                </li>
+
+                <!-- Services mobile nav -->
+                <li class="dropdown-group bg-[#1C3D69] hover:bg-[#132a47] h-full">
+                    <a class="dropdown-toggle py-3 px-4 w-full block flex justify-between items-center text-sm sm:text-base cursor-pointer">
+                        <span data-i18n="nav_services">Services</span>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content relative max-h-0 overflow-hidden transition-all duration-300 bg-[#1C3D69]">
+                        <!-- Malaysia -->
+                        <li class="bg-[#132a47] z-10 relative">
+                            <button onclick="window.location.href='/src/html/machineData.html'"
+                                class="py-3 pl-8 w-full flex justify-between items-center text-sm sm:text-base text-white">
+                                <span class="flex items-center"><span data-i18n="nav_malaysia">Malaysia</span> <img class="w-7 ml-3"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                        alt=""></span>
+                            </button>
+                            <ul class="h-full bg-[#132a47] w-full transition-all duration-300 pl-12 text-xs">
+                                <li><a href="/src/html/machineData.html#LaserCutting" class="block py-2 text-white/70">Laser Cutting</a></li>
+                                <li><a href="/src/html/machineData.html#CncGantry" class="block py-2 text-white/70">CNC Gantry Plasma Flame Cutting</a></li>
+                                <li><a href="/src/html/machineData.html#AluminiumCutting" class="block py-2 text-white/70">Aluminium Cutting and Milling</a></li>
+                                <li><a href="/src/html/machineData.html#BandsawMachine" class="block py-2 text-white/70">Bandsaw Machine</a></li>
+                                <li><a href="/src/html/machineData.html#ManualCut" class="block py-2 text-white/70">Manual Cut</a></li>
+                                <li><a href="/src/html/machineData.html#Milling" class="block py-2 text-white/70">Milling</a></li>
+                                <li><a href="/src/html/machineData.html#RoughGrinding" class="block py-2 text-white/70">Rough Grinding</a></li>
+                                <li><a href="/src/html/machineData.html#CncMachining" class="block py-2 text-white/70">CNC Machining</a></li>
+                                <li><a href="/src/html/machineData.html#SurfaceGrinding" class="block py-2 text-white/70">Surface Grinding</a></li>
+                                <li><a href="/src/html/machineData.html#Logistic" class="block py-2 text-white/70">Logistics</a></li>
+                                <li><a href="/src/html/machineData.html#Others" class="block py-2 text-white/70">Others</a></li>
+                            </ul>
+                        </li>
+                        <!-- Indonesia -->
+                        <li class="bg-[#132a47] z-10 relative">
+                            <button onclick="window.location.href='/src/html/machineDataIndo.html'"
+                                class="py-3 pl-8 w-full flex justify-between items-center text-sm sm:text-base text-white">
+                                <span class="flex items-center"><span data-i18n="nav_indonesia">Indonesia</span><img class="w-7 ml-3"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                                        alt=""></span>
+                            </button>
+                            <ul class="h-full bg-[#132a47] w-full transition-all duration-300 pl-12 text-xs">
+                                <li><a href="/src/html/machineDataIndo.html#CncGantry" class="block py-2 text-white/70">CNC Gantry Plasma Flame Cutting</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Aluminium" class="block py-2 text-white/70">Aluminium Cutting and Milling</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Bandsaw" class="block py-2 text-white/70">Bandsaw Machine</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#ManualCut" class="block py-2 text-white/70">Manual Cut</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Milling" class="block py-2 text-white/70">Milling</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#CNCMachining" class="block py-2 text-white/70">CNC Machining</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Surface" class="block py-2 text-white/70">Surface Grinding</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm" href="" data-i18n="nav_events_news">Events & News</a></li>
+                <li><a class="py-3 px-4 w-full block bg-[#132a47]/0 hover:bg-[#132a47] m:text-base text-sm"
+                        href="/src/html/contact.html" data-i18n="nav_contact">Contact</a></li>
+                
+                <!-- Language mobile nav -->
+                <li class="dropdown-group hover:bg-[#132a47] duration-100 border-t border-white/10">
+                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Language: <span id="mobile-current-lang-display" class="uppercase font-medium">EN</span></span>
+                        </div>
+                        <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
+                        <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
+                        <li><button onclick="setLanguage('en');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>English (EN)</span></button></li>
+                        <li><button onclick="setLanguage('id');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Indonesia (ID)</span></button></li>
+                        <li><button onclick="setLanguage('ms');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Melayu (MS)</span></button></li>
+                        <li><button onclick="setLanguage('ja');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Japan (日本語)</span></button></li>
+                        <li><button onclick="setLanguage('zh');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>China (中文)</span></button></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Whats App Icon -->
+    <a href="https://wa.link/s20edj" target="_blank" class="fixed bottom-7 right-7 | z-50">
+        <img src="/assets/img/whatsapp-icon.png" alt="" class="w-10">
+    </a>
+
+    <!-- content section -->
+    <!-- part1 CUTTING -->
+    <section id="CncGantry" class="lg:px-14 md:px-8 px-4 pb-10 sm:pt-28 pt-20">
+        <!-- Hero section | img dan text -->
+        <div class="flex md:flex-row flex-col-reverse justify-between items-start  h-auto">
+            <!-- text -->
+            <div  class="flex flex-col  h-full md:mt-0 mt-5">
+                <h1 class="xl:text-8xl sm:text-7xl text-6xl helvetica-medium tracking-[0.15em] " data-i18n="mdi_title">
+                    
+                    MACHINE DATA & WORKING
+                    CAPACITY IN INDONESIA</h1>
+                <!-- <h3 id="cutting"
+                    class="lg:text-5xl sm:text-4xl text-3xl tracking-widest md:mt-0 mt-10 scroll-mt-[100px] ">CUTTING
+                </h3> -->
+            </div>
+        </div>
+    </section>
+    <!-- part1 manualcut, cnc gantry , laser cutting , bandsaw machine-->
+    <section  class=" px-0 helvetica-medium">
+        <div  class="w-full pb-20 pt-10 px-14 bg-cover bg-center bg-no-repeat "
+            style="background-image: linear-gradient(rgba(255, 255, 255, 0.557), rgba(255, 255, 255, 0.557)), url('/assets/img/machinedata-bg1.png')">
+            
+                        <!--  CNC GANTRY PLASMA FLAME CUTTING -->
+            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+                <a href="javascript:void(0)" data-popup="popupBookCNCGantryPlasma"
+                                class="open-popupBook underline helvetica-medium" data-i18n="mdi_cnc_gantry">CNC
+                GANTRY PLASMA FLAME CUTTING</a></h1>
+            <div class="mt-5 overflow-x-auto scrolling-touch ">
+                <table  id="Aluminium" class="table-auto border-collapse w-full shadow-lg bg-white/80">
+                    <thead class="mb-3">
+                        <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal" data-i18n="md_th_no">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_names_of_machine">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_model">MODEL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_country_of_origin">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_serial">SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_max_table_load">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_work_area">WORK AREA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data Rows -->
+                        <tr class="text-center border-b bprder-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">1</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">SATO CNC Gantry
+                                Flame Cutting</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">S-3500</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Germany</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">10.000</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">200 x 3000 x 6000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+                                    <!-- ALUMINIUM CUTTING AND MILLING -->
+            <h1 class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest ">
+                <a href="javascript:void(0)" data-popup="popupBookAluminiumCutting"
+                                class="open-popupBook underline helvetica-medium" data-i18n="mdi_aluminium_cutting">ALUMINIUM
+                CUTTING AND MILLING</a>
+                
+            </h1>
+            <div class="mt-5 overflow-x-auto scrolling-touch ">
+                <table  class="table-auto border-collapse w-full shadow-lg bg-white/80">
+                    <thead class="mb-3">
+                        <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">1</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Metabo (Aluminium Cutting Machine)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Germany</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">1000</td>
+
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">40 x 1,525 x 3,050</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">2</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Sliding Table Saw</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Malaysia</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">1000</td>
+
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">40 x 600 x 1,500</td>
+                        </tr>
+                        <tr id="Bandsaw" class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">3</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Yamamoto Kikai Side Milling</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Y283</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">FBC1650B</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">3000</td>
+
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">80 x 1,500 x 2,000</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- BANDSAW MACHINE -->
+            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+                <a href="javascript:void(0)" data-popup="popupBookBandsaw"
+                                class="open-popupBook underline helvetica-medium" data-i18n="mdi_bandsaw_machine">BANDSAW
+                MACHINE</a></h1>
+            <div class="mt-5 overflow-x-auto scrolling-touch ">
+                <table   class="table-auto border-collapse w-full shadow-lg bg-white/80">
+                    <thead class="mb-3">
+                        <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data Rows -->
+                        <tr class="text-center border-b border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light">1</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Amada Bandsaw Machine (HA-250W)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">HA-250W </td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">25650004</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">100 x 300 x -</td>
+                        </tr>
+                        
+                               <tr class="text-center border-b border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light">2</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Weiren Bandsaw Machine</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">GB4235 </td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">China</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">80116</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">300 x 700 x -</td>
+                        </tr>
+                                                       <tr class="text-center border-b border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light">3</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Weiren Bandsaw Machine</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">GB4235 </td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">China</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">80117</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">300 x 700 x -</td>
+                        </tr>
+                        <tr id="ManualCut" class="text-center border-b border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light">4</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Amada Bandsaw Machine (H-1080)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">H-1080 </td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">750356</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">800 x 1000 x -</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- MANUAL CUT -->
+            <h1   class="mt-20  lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest ">
+                <a href="javascript:void(0)" data-popup="popupBookManualCut"
+                                class="open-popupBook underline helvetica-medium" data-i18n="mdi_manual_cut">MANUAL CUT</a></h1>
+            <div  class="mt-5 overflow-x-auto scrolling-touch ">
+                <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
+                    <thead  id="Milling" class="mb-3">
+                        <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data Rows -->
+                        <tr   class="text-center ">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">1</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs ">Gas Cutting Machine</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!-- miling -->
+            <h1   class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+                <a href="javascript:void(0)" data-popup="popupBookMilling"
+                                class="open-popupBook underline helvetica-medium" data-i18n="mdi_milling">MILLING</a>
+            </h1>
+            <div class="mt-5 overflow-x-auto scrolling-touch ">
+                <table  class="table-auto border-collapse w-full shadow-lg bg-white/80">
+                    <thead class="mb-3">
+                        <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal" data-i18n="md_th_types_of_machine">TYPES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">1</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">OKK (Surface Milling)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">MH-4V</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">1000</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">200 x 400 x 700</td>
+                        </tr>
+                                                <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">2</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">OKK (Surface Milling)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">MH-4V</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">-</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">1000</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">200 x 400 x 700</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">3</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Chuo-Seiki Double Head Milling (Duplex Milling)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">CS 300 LIGHT</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">209168</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">100</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">100 x 300 x 300</td>
+                        </tr>
+                                                <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">4</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Chuo-Seiki Double Head Milling (Duplex Milling)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">DAI 500</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">398111</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">400</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">150 x 500 x 500</td>
+                        </tr>
+
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">5</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Hamai (Duplex Milling )</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">2MP-DS-NC</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">A-3120</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">1000</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">150 x 700 x 700</td>
+                        </tr>
+
+                         <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">6</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Clamix Turning</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">SP4101</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">China</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">161202251</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">400</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Ø 250 x - x 1000</td>
+                        </tr>
+
+                        <tr id="CNCMachining" class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">7</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Lagun Vertical Knee Milling</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">FT-1S</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">USA</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">27063</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">300</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">300 x 200 x 600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+                        <!-- CNC MACHINING -->
+            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+                <a href="javascript:void(0)" data-popup="popupBookCNCMachining"
+                                class="open-popupBook underline helvetica-medium" data-i18n="mdi_cnc_machining">CNC
+                MACHINING</a>
+            </h1>
+            <div class="mt-5 overflow-x-auto scrolling-touch ">
+                <table id="Surface" class="table-auto border-collapse w-full shadow-lg bg-white/80">
+                    <thead class="mb-3">
+                        <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">1</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Makino</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">PS 95</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">V130517 </td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">3,000</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">450 x 500 x 950</td>
+                        </tr>
+
+                                                <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">2</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Quantum</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">K-11</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">taiwan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">130614 </td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">5,000</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">490 x 600 x 1200</td>
+                        </tr>
+
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">3</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Kitamura</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">3XCF</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">- </td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">3,000</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">380 x 410 x 650</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- SURFACE GRINDING -->
+            <h1  class="mt-20 lg:text-5xl sm:text-4xl text-3xl text-[#1C3D69] tracking-widest helvetica-medium">
+                <a href="javascript:void(0)" data-popup="popupBookSurfaceGrinding"
+                                class="open-popupBook underline helvetica-medium" data-i18n="mdi_surface_grinding">SURFACE
+                GRINDING</a>
+            </h1>
+            <div class="mt-5 overflow-x-auto scrolling-touch ">
+                <table class="table-auto border-collapse w-full shadow-lg bg-white/80">
+                    <thead class="mb-3">
+                        <tr class="bg-navBlue text-white border-b-[0.5px] border-white font-light">
+                            <th class="px-2 md:py-4 py-1 md:text-base text-xs font-normal">NO.</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">NAMES OF MACHINE</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MODEL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">COUNTRY OF ORIGIN</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">SERIAL</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">MAX. TABLE LOAD (KG)</th>
+                            <th class="px-4 md:py-2 py-1 md:text-base text-xs font-normal">WORK AREA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">1</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Okamoto (Surface Grinding)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">PSG63DX</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Japan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">S8005</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">300</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">350 x 350 x 650</td>
+                        </tr>
+                        <tr class="text-center border-b-[0.5px] border-white">
+                            <td class="px-2 md:py-4 py-1 text-white bg-navBlue font-light text-center">2</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs"> EME (Surface Grinding)</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">PFG D4080AH</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">Taiwan</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">1345067 </td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">500</td>
+                            <td class="px-4 md:py-2 py-1 md:text-base text-xs">550 x 400 x 800</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- part2 MILNG -->
+    <!-- <section id="Aluminium" class=" px-0  helvetica-medium">
+        <div class="w-full pb-20 pt-14 px-14  bg-cover bg-center bg-no-repeat"
+            style="background-image: linear-gradient(rgba(255, 255, 255, 0.288), rgba(255, 255, 255, 0.288)), url('/assets/img/machinedata-bg2.png')">
+        </div>
+    </section> -->
+
+    <!-- part3  -->
+    <!-- <section  id="CNCMachining" class=" px-0  helvetica-medium">
+        <div class="w-full pb-20 pt-14 px-14  bg-cover bg-center bg-no-repeat"
+            style="background-image: linear-gradient(rgba(255, 255, 255, 0.557), rgba(255, 255, 255, 0.557)), url('/assets/img/milling-img.png')">
+        </div>
+    </section> -->
+
+
+
+    <!-- Certificate Section -->
+    <section class="w-full  mx-auto px-4 py-32 bg-white">
+
+        <!-- title -->
+        <div class="flex justify-center items-center w-full mb-14">
+            <h3 class="text-2xl text-navBlue tracking-widest" data-i18n="certifications_title">CERTIFICATIONS</h3>
+        </div>
+
+        <!-- Certificate List -->
+        <div class="flex flex-col md:flex-row flex-wrap justify-center items-center gap-y-12 gap-x-14 xl:gap-x-52">
+
+            <!-- Sertifikat AS9100D -->
+            <button class="open-popup flex flex-col items-center text-end w-[300px] bg-white p-1"
+                data-img='["/assets/img/novostar2015-img.png","/assets/img/novostar2016-img.png"]'
+                data-pdf='["/assets/pdf/NovaStar2015-Certificate.pdf","/assets/pdf/NovaStar2016-Certificate.pdf"]'>
+                <img src="/assets/img/AS9100D-img.png" alt="AS9100D Certificate" class="  ">
+                <h3 class="mt-5 font-medium text-2xl text-[#002E5F]">AS 9100:2016</h3>
+            </button>
+
+            <!-- GCL International -->
+            <button class="open-popup flex flex-col items-center text-center w-[300px] bg-white p-1"
+                data-img='["/assets/img/gcl2015-img.png", "/assets/img/gcl2015-img-no2.png"]'
+                data-pdf='["/assets/pdf/GCL-Certificate.pdf", "/assets/pdf/SERTIFIKAT-ISO9001-PTPRO-TECH-TOOL-AND-DIE.pdf"]'>
+                <img src="/assets/img/CGL-img.png" alt="GCL Certificate" class=" ">
+                <h3 class="mt-5 font-medium text-2xl text-[#005097]">ISO 9001:2015</h3>
+            </button>
+        </div>
+    </section>
+
+    <!-- pop up Certificate before Download -->
+    <div id="popup" onclick="closePopup()"
+        class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+
+        <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+            <div class="overflow-x-scroll md:w-auto w-80 h-auto">
+                <div id="popup-content" class="flex items-center space-x-5 mb-5 w-max">
+                    <!-- Gambar akan dimasukkan lewat JavaScript -->
+                </div>
+            </div>
+
+            <div id="popup-buttons" class="flex flex-wrap justify-center items-center gap-5">
+                <!-- Tombol download juga dari JavaScript -->
+            </div>
+            <div class="w-full mt-3 text-center">
+                <button onclick="closePopup()"
+                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer
+        class=" lg:px-16 md:px-10 px-4 py-7 text-xs font-light text-white  bg-navBlue ">
+
+        <div class="flex md:flex-row flex-col justify-between items-end  space-x-10 ">
+            <!-- Malaysia left -->
+            <div class="md:w-[700px] w-full h-[120px]   relative border-b-[0.5px] md:border-white/80 border-white/0  flex justify-between items-end text-white font-light">
+                <div class="pb-5">
+                    <h4 class="text-sm mb-3" data-i18n="footer_headquarter"> HEADQUARTER</h4>
+                    <p class="font-semibold text-white">PHH METAL 1 SDN BHD <span
+                            class="text-[10px]  text-white/80 font-thin">
+                            (176257-T)</span></p>
+                    <p class=""><span class="font-semibold text-white">T</span> +60 3 8068 7000 | <span
+                            class="font-semibold text-white">E</span> sales@phh.com.my
+                        | <span class="font-semibold text-white">W</span> www.phh.com.my</p>
+                    <p>Wisma PHH, Jalan PPU 3, Taman Perindustrian Puchong Utama, 47100 Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4 pt-5 md:h-[120px] h-[80px]">
+                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light mt-1">MALAYSIA</p>
+                </div>
+            </div>
+
+            <!-- Malaysia 2 right -->
+            <div class="md:mt-0 mt-5  md:w-[700px] w-full md:h-[120px] h-[80px]  border-b-[0.5px]  border-white/80    flex justify-between items-end text-white font-light ">
+                <div class="pb-5">
+                    <p class="font-semibold text-white ">PROTECH TOOL AND DIE SDN BHD <span
+                            class="text-[10px] text-white/80 font-thin">(176257-T)</span>
+                    </p>
+                    <p><span class="font-semibold text-white">T</span> +62 3 5102 9505 | <span
+                            class="font-semibold text-white">E</span>
+                        info@phhmetal1.com
+                        | <span class="font-semibold text-white">W</span> www.protechdm.com.my</p>
+                    <p>No.7, Jalan Mandolin 33/5, Seksyen 33, 40400 Shah Alam, Selangor, Malaysia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4 md:h-[120px] h-[80px]  pt-5">
+                    <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                        alt="">
+                    <p class="text-xs font-light mt-1">MALAYSIA</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex md:flex-row flex-col justify-between  md:space-x-10 space-x-0 ">
+            <!-- Indonesia -->
+            <div class="md:w-[700px] w-full relative pt-5 flex justify-between text-white">
+                <div class="">
+                    <p class="font-semibold text-white">PT PHH SPECIAL STEEL <span
+                            class="text-[10px] text-white/80 font-thin">(18835/BH 05
+                            09/VM/2011)</span></p>
+                    <p><span class="font-semibold text-white">T</span> +62 21 2808 5200 | <span
+                            class="font-semibold text-white">E</span>
+                        sales@phh.co.id
+                        | <span class="font-semibold text-white ">W</span> www.phh.co.id</p>
+                    <p>Blok F25-09J, Jl.Sungkai, Delta Silicon 3, Lippo Cikarang, Bekasi 17550, Indonesia.</p>
+                </div>
+                <div class="flex flex-col items-center ml-4">
+                    <img class="w-12"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                        alt="">
+                    <p class="text-xs font-light text-center mt-1">INDONESIA</p>
+                </div>
+            </div>
+                        <!-- Contact, copyright, ect -->
+            <div class="mt-5 md:w-[700px] w-full ">
+                <p class="font-semibold" data-i18n="footer_follow_us">Follow Us</p>
+                <div class="flex space-x-5 py-2  text-lg">
+                    <a href="https://www.instagram.com/phhmetal1sdnbhd/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61553394089567" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@phhmetal1" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@MarketingPHH" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/phh-metal-1-47537b317/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.link/s20edj" target="_blank" class="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="flex justify-between items-center mt-2 text-white">
+                    <p class="text-xs tracking-wide" data-i18n="footer_copyright">© PHH Metal. All rights reserved 2023.</p>
+                    <div class="flex space-x-2">
+                        <button class="text-xs" data-i18n="footer_privacy_policy">Privacy Policy</button>
+                        <p>|</p>
+                        <button class="text-xs" data-i18n="footer_terms_of_use">Terms of Use</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- pop up Book SurfaceGrinding -->
+        <div id="popupBookSurfaceGrinding" onclick="closePopupBook('popupBookSurfaceGrinding')"
+            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+                <!-- Flipbook Embed -->
+                <div>
+                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                        src="https://online.fliphtml5.com/kejfd/drqa/" seamless="seamless" scrolling="no"
+                        frameborder="0" allowtransparency="true" allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="w-full mt-3 text-center">
+                    <a href="/assets/pdf/SurfaceGrinding(INDO).pdf" download
+                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                    <button onclick="closePopupBook('popupBookSurfaceGrinding')"
+                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                </div>
+            </div>
+        </div>
+
+                                           <!-- pop up Book Machinedata -->
+        <div id="popupBookManualCut" onclick="closePopupBook('popupBookManualCut')"
+            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+                <!-- Flipbook Embed -->
+                <div>
+                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                        src="https://online.fliphtml5.com/nalcs/ofcl/" seamless="seamless" scrolling="no"
+                        frameborder="0" allowtransparency="true" allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="w-full mt-3 text-center">
+                    <a href="/assets/pdf/ManualCut(INDO).pdf" download
+                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                    <button onclick="closePopupBook('popupBookManualCut')"
+                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                </div>
+            </div>
+        </div>
+
+
+                           <!-- pop up Book Milling -->
+        <div id="popupBookMilling" onclick="closePopupBook('popupBookMilling')"
+            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+                <!-- Flipbook Embed -->
+                <div>
+                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                        src="https://online.fliphtml5.com/kejfd/lmqs/" seamless="seamless" scrolling="no"
+                        frameborder="0" allowtransparency="true" allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="w-full mt-3 text-center">
+                    <a href="/assets/pdf/Milling(INDO).pdf" download
+                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                    <button onclick="closePopupBook('popupBookMilling')"
+                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                </div>
+            </div>
+        </div>
+
+
+                <!-- pop up Book CNC Machining -->
+        <div id="popupBookCNCMachining" onclick="closePopupBook('popupBookCNCMachining')"
+            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+                <!-- Flipbook Embed -->
+                <div>
+                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                        src="https://online.fliphtml5.com/nalcs/wgiz/" seamless="seamless" scrolling="no"
+                        frameborder="0" allowtransparency="true" allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="w-full mt-3 text-center">
+                    <a href="/assets/pdf/CNCMachining(INDO).pdf" download
+                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                    <button onclick="closePopupBook('popupBookCNCMachining')"
+                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- pop up Book CNC Gantry Plasma -->
+        <div id="popupBookCNCGantryPlasma" onclick="closePopupBook('popupBookCNCGantryPlasma')"
+            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+                <!-- Flipbook Embed -->
+                <div>
+                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                        src="https://online.fliphtml5.com/nalcs/wmjz/" seamless="seamless" scrolling="no"
+                        frameborder="0" allowtransparency="true" allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="w-full mt-3 text-center">
+                    <a href="/assets/pdf/CNCGantryPlasmaFlameCutting(INDO).pdf" download
+                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                    <button onclick="closePopupBook('popupBookCNCGantryPlasma')"
+                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- pop up Book Bandsaw -->
+        <div id="popupBookBandsaw" onclick="closePopupBook('popupBookBandsaw')"
+            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+                <!-- Flipbook Embed -->
+                <div>
+                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                        src="https://online.fliphtml5.com/nalcs/dnpw/" seamless="seamless" scrolling="no"
+                        frameborder="0" allowtransparency="true" allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="w-full mt-3 text-center">
+                    <a href="/assets/pdf/BandsawMachine(INDO).pdf" download
+                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                    <button onclick="closePopupBook('popupBookBandsaw')"
+                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                </div>
+            </div>
+        </div>
+
+      <!-- pop up Book Aluminium Cutting -->
+        <div id="popupBookAluminiumCutting" onclick="closePopupBook('popupBookAluminiumCutting')"
+            class="fixed hidden flex justify-center items-center z-50 inset-0 bg-black/50">
+            <div onclick="event.stopPropagation()" class="p-5 bg-black/60">
+                <!-- Flipbook Embed -->
+                <div>
+                    <iframe class="md:w-[700px] w-auto  md:h-[750px] h-[600px]"
+                        src="https://online.fliphtml5.com/nalcs/bnhu/" seamless="seamless" scrolling="no"
+                        frameborder="0" allowtransparency="true" allowfullscreen="true">
+                    </iframe>
+                </div>
+                <div class="w-full mt-3 text-center">
+                    <a href="/assets/pdf/AluminiumCuttingandMilling(INDO).pdf" download
+                        class="text-blue-500 hover:text-white/40 text-lg underline">Download</a>
+                    <button onclick="closePopupBook('popupBookAluminiumCutting')"
+                        class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                </div>
+            </div>
+        </div>
+
+            <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.open-popupBook').forEach(button => {
+                button.addEventListener('click', () => {
+                    const popupId = button.getAttribute('data-popup');
+                    document.getElementById(popupId).classList.remove('hidden');
+                    document.body.classList.add('overflow-hidden');
+                });
+            });
+
+            window.closePopupBook = function (popupId) {
+                document.getElementById(popupId).classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

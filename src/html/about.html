@@ -79,52 +79,90 @@
                             <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                             <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
+                        <!-- dropdown utama -->
                         <div
-                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute  w-[220px] z-50">
+                            class="dropdown-content absolute left-0 hidden group-hover:block bg-[#132a47] w-[220px] z-50">
                             <ul>
-                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual Cut</button>
+                                <!-- Malaysia -->
+                                <li class="relative group/child">
+                                    <a href="/src/html/machineData.html"
+                                        class="w-full py-3 px-4 flex items-center text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100">
+                                        <span data-i18n="nav_malaysia">Malaysia</span>
+                                        <span><img class="w-7 ml-3"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                                alt=""></span>
+                                    </a>
+                                    <!-- Submenu Malaysia -->
+                                    <ul
+                                        class="absolute left-full top-0 hidden group-hover/child:block bg-[#132a47] w-[250px] shadow-lg z-50">
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#LaserCutting'" data-i18n="md_laser_cutting">Laser
+                                                Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#CncGantry'" data-i18n="md_cnc_gantry">CNC
+                                                Gantry Plasma Flame Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'" data-i18n="md_aluminium_cutting">Aluminium
+                                                Cutting and Milling</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#BandsawMachine'" data-i18n="md_bandsaw_machine">Bandsaw
+                                                Machine</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#ManualCut'" data-i18n="md_manual_cut">Manual
+                                                Cut</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Milling'" data-i18n="md_milling">Milling</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#RoughGrinding'" data-i18n="md_rough_grinding">Rough
+                                                Grinding</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#CncMachining'" data-i18n="md_cnc_machining">CNC
+                                                Machining</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'" data-i18n="md_surface_grinding">Surface Grinding</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Logistic'" data-i18n="md_logistic">Logistics</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineData.html#Others'" data-i18n="md_others">Others</button>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma Flame Cutting</button>
-                                </li>
-                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser Cutting</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium Cutting and Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough Grinding</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding </button>
-                                </li>
-                                                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
-                                </li>
-                                <li><button
-                                        class="w-full py-3 px-4 text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100"
-                                        onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
+                                <!-- Indonesia -->
+                                <li class="relative group/child">
+                                    <a href="/src/html/machineDataIndo.html"
+                                        class="w-full py-3 px-4 flex items-center text-left hover:bg-[#1b3b5f] hover:pl-7 duration-100">
+                                        <span data-i18n="nav_indonesia">Indonesia</span>
+                                        <span><img class="w-7 ml-3"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                                                alt=""></span>
+                                    </a>
+                                    <!-- Submenu Indonesia -->
+                                    <ul
+                                        class="absolute left-full top-0 hidden group-hover/child:block bg-[#132a47] w-[250px] shadow-lg z-50">
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#CncGantry'" data-i18n="mdi_cnc_gantry">CNC
+                                                Gantry Plasma Flame Cutting</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Aluminium'" data-i18n="mdi_aluminium_cutting">Aluminium
+                                                Cutting and Milling</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Bandsaw'" data-i18n="mdi_bandsaw_machine">Bandsaw
+                                                Machine</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#ManualCut'" data-i18n="mdi_manual_cut">Manual
+                                                Cut</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Milling'" data-i18n="mdi_milling">Milling</button>
+                                        </li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#CNCMachining'" data-i18n="mdi_cnc_machining">CNC
+                                                Machining</button></li>
+                                        <li><button class="w-full py-2 px-4 text-left hover:bg-[#1b3b5f]"
+                                                onclick="window.location.href='/src/html/machineDataIndo.html#Surface'" data-i18n="mdi_surface_grinding">Surface
+                                                Grinding</button></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -194,57 +232,53 @@
                 </li>
 
                 <!-- Services mobile nav -->
-                <li class="dropdown-group overflow-y-scroll hover:bg-[#132a47] duration-100">
-                    <a class="py-3 px-4 w-full block flex justify-between items-center cursor-pointer dropdown-toggle m:text-base text-sm">
+                <li class="dropdown-group bg-[#1C3D69] hover:bg-[#132a47] h-full">
+                    <a class="dropdown-toggle py-3 px-4 w-full block flex justify-between items-center text-sm sm:text-base cursor-pointer">
                         <span data-i18n="nav_services">Services</span>
                         <span class="angle-up inline"><i class="fa-solid fa-angle-up"></i></span>
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
-                    <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80  sm:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#ManualCut'">Manual Cut</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#CncGantry'">Cnc Gantry Plasma Flame Cutting</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#LaserCutting'">Laser Cutting</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#BandsawMachine'">Bandsaw Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#AluminiumCutting'">Aluminium Cutting and Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Milling'">Milling</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#RoughGrinding'">Rough Grinding</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#CncMachining'">Cnc Machine</button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#SurfaceGrinding'">Surface Grinding </button>
-                                </li>
-                                                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Logistic'">Logistic</button>
-                                </li>
-                                <li><button
-                                        class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full block text-white/80 m:text-base text-sm"
-                                        onclick="window.location.href='/src/html/machineData.html#Others'">Others</button>
-                                </li>
+                    <ul class="dropdown-content relative max-h-0 overflow-hidden transition-all duration-300 bg-[#1C3D69]">
+                        <!-- Malaysia -->
+                        <li class="bg-[#132a47] z-10 relative">
+                            <button onclick="window.location.href='/src/html/machineData.html'"
+                                class="py-3 pl-8 w-full flex justify-between items-center text-sm sm:text-base text-white">
+                                <span class="flex items-center"><span data-i18n="nav_malaysia">Malaysia</span> <img class="w-7 ml-3"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+                                        alt=""></span>
+                            </button>
+                            <ul class="h-full bg-[#132a47] w-full transition-all duration-300 pl-12 text-xs">
+                                <li><a href="/src/html/machineData.html#LaserCutting" class="block py-2 text-white/70" data-i18n="md_laser_cutting">Laser Cutting</a></li>
+                                <li><a href="/src/html/machineData.html#CncGantry" class="block py-2 text-white/70" data-i18n="md_cnc_gantry">CNC Gantry Plasma Flame Cutting</a></li>
+                                <li><a href="/src/html/machineData.html#AluminiumCutting" class="block py-2 text-white/70" data-i18n="md_aluminium_cutting">Aluminium Cutting and Milling</a></li>
+                                <li><a href="/src/html/machineData.html#BandsawMachine" class="block py-2 text-white/70" data-i18n="md_bandsaw_machine">Bandsaw Machine</a></li>
+                                <li><a href="/src/html/machineData.html#ManualCut" class="block py-2 text-white/70" data-i18n="md_manual_cut">Manual Cut</a></li>
+                                <li><a href="/src/html/machineData.html#Milling" class="block py-2 text-white/70" data-i18n="md_milling">Milling</a></li>
+                                <li><a href="/src/html/machineData.html#RoughGrinding" class="block py-2 text-white/70" data-i18n="md_rough_grinding">Rough Grinding</a></li>
+                                <li><a href="/src/html/machineData.html#CncMachining" class="block py-2 text-white/70" data-i18n="md_cnc_machining">CNC Machining</a></li>
+                                <li><a href="/src/html/machineData.html#SurfaceGrinding" class="block py-2 text-white/70" data-i18n="md_surface_grinding">Surface Grinding</a></li>
+                                <li><a href="/src/html/machineData.html#Logistic" class="block py-2 text-white/70" data-i18n="md_logistic">Logistics</a></li>
+                                <li><a href="/src/html/machineData.html#Others" class="block py-2 text-white/70" data-i18n="md_others">Others</a></li>
+                            </ul>
+                        </li>
+                        <!-- Indonesia -->
+                        <li class="bg-[#132a47] z-10 relative">
+                            <button onclick="window.location.href='/src/html/machineDataIndo.html'"
+                                class="py-3 pl-8 w-full flex justify-between items-center text-sm sm:text-base text-white">
+                                <span class="flex items-center"><span data-i18n="nav_indonesia">Indonesia</span><img class="w-7 ml-3"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/800px-Flag_of_Indonesia.svg.png"
+                                        alt=""></span>
+                            </button>
+                            <ul class="h-full bg-[#132a47] w-full transition-all duration-300 pl-12 text-xs">
+                                <li><a href="/src/html/machineDataIndo.html#CncGantry" class="block py-2 text-white/70" data-i18n="mdi_cnc_gantry">CNC Gantry Plasma Flame Cutting</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Aluminium" class="block py-2 text-white/70" data-i18n="mdi_aluminium_cutting">Aluminium Cutting and Milling</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Bandsaw" class="block py-2 text-white/70" data-i18n="mdi_bandsaw_machine">Bandsaw Machine</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#ManualCut" class="block py-2 text-white/70" data-i18n="mdi_manual_cut">Manual Cut</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Milling" class="block py-2 text-white/70" data-i18n="mdi_milling">Milling</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#CNCMachining" class="block py-2 text-white/70" data-i18n="mdi_cnc_machining">CNC Machining</a></li>
+                                <li><a href="/src/html/machineDataIndo.html#Surface" class="block py-2 text-white/70" data-i18n="mdi_surface_grinding">Surface Grinding</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
@@ -290,8 +324,8 @@
         <!-- Hero Text -->
         <div class="flex justify-center items-center w-full py-24 lg:px-16 md:px-10 px-4 text-center">
             <div class="w-[1200px]">
-                <h3 class="md:text-4xl text-3xl tracking-widest">A HISTORY OF STEEL, FORGED IN EXCELLENCE</h3>
-                <p class="mt-8 text-base leading-loose lg:px-16 md:px-10 px-4">
+                <h3 class="md:text-4xl text-3xl tracking-widest" data-i18n="about_hero_title">A HISTORY OF STEEL, FORGED IN EXCELLENCE</h3>
+                <p class="mt-8 text-base leading-loose lg:px-16 md:px-10 px-4" data-i18n="about_hero_desc">
                     The PHH Group of Companies was established in 1975, specialising in hardware metal trading. Over the
                     past 48 years, the Group’s capabilities
                     in ferrous and non-ferrous metal solutions has grown by leaps and bounds, allowing it to now deliver
@@ -305,19 +339,19 @@
                 <div class="flex justify-between items-start mt-10 space-x-5 ">
                     <div class="text-center">
                         <h1 class="md:text-6xl text-5xl">2900</h1>
-                        <p class="md:text-base text-xs">tonnes metal production</p>
+                        <p class="md:text-base text-xs" data-i18n="about_stat_tonnes_label">tonnes metal production</p>
                     </div>
                     <div class="text-center">
                         <h1 class="md:text-6xl text-5xl">50</h1>
-                        <p class="md:text-base text-xs">years of experience</p>
+                        <p class="md:text-base text-xs" data-i18n="about_stat_years_label">years of experience</p>
                     </div>
                     <div class="text-center">
                         <h1 class="md:text-6xl text-5xl">3</h1>
-                        <p class="md:text-base text-xs">locations</p>
+                        <p class="md:text-base text-xs" data-i18n="about_stat_locations_label">locations</p>
                     </div>
                     <div class="text-center">
                         <h1 class="md:text-6xl text-5xl">200</h1>
-                        <p class="md:text-base text-xs">number of employees</p>
+                        <p class="md:text-base text-xs" data-i18n="about_stat_employees_label">number of employees</p>
                     </div>
                 </div>
             </div>
@@ -335,8 +369,8 @@
             <div class="absolute inset-0 bg-[#09131f] bg-opacity-30"></div>
 
             <div class="absolute bottom-0 xl:p-10 p-5   md:h-[290px] lg:h-[250px] h-[190px] w-full">
-                <h1 class="xl:text-4xl text-3xl tracking-widest">PHH METAL 1 SDN. BHD. MALAYSIA</h1>
-                <p class="mt-3">Wisma PHH, Jalan PPU 3,<br> Taman Perindustrian Puchong<br> Utama, 47100 Selangor,
+                <h1 class="xl:text-4xl text-3xl tracking-widest" data-i18n="about_loc_phh_malaysia">PHH METAL 1 SDN. BHD. MALAYSIA</h1>
+                <p class="mt-3" data-i18n="about_loc_phh_malaysia_addr">Wisma PHH, Jalan PPU 3,<br> Taman Perindustrian Puchong<br> Utama, 47100 Selangor,
                     Malaysia.</p>
             </div>
         </div>
@@ -349,8 +383,8 @@
             style="background-image: url('/assets/img/protech-building.jpg'); background-position: 35% 100%;">
             <div class="absolute inset-0 bg-[#09131f] bg-opacity-30"></div>
             <div class="absolute bottom-0 xl:p-10 p-5   md:h-[290px] lg:h-[250px] h-[190px] w-full">
-                <h1 class="xl:text-4xl text-3xl  tracking-widest">PRO TECH TOOL AND DIE SDN. BHD. MALAYSIA</h1>
-                <p class="mt-3">7, Jalan Mandolin 33/5, Seksyen 33,<br> 40400 Shah Alam, Selangor</p>
+                <h1 class="xl:text-4xl text-3xl  tracking-widest" data-i18n="about_loc_protech_malaysia">PRO TECH TOOL AND DIE SDN. BHD. MALAYSIA</h1>
+                <p class="mt-3" data-i18n="about_loc_protech_malaysia_addr">7, Jalan Mandolin 33/5, Seksyen 33,<br> 40400 Shah Alam, Selangor</p>
             </div>
         </div>
 
@@ -362,8 +396,8 @@
             style="background-image: url('/assets/img/indonesia-building.png')">
             <div class="absolute inset-0 bg-[#09131f] bg-opacity-30"></div>
             <div class="absolute bottom-0 xl:p-10 p-5   md:h-[290px] lg:h-[250px] h-[190px] w-full">
-                <h1 class="lg:text-4xl text-3xl  tracking-widest">PT PHH SPECIAL STEEL INDONESIA</h1>
-                <p class="mt-3">Blok F25-09J, Jl. Sungkai, Delta Silicon 3,<br> Lippo Cikarang, Bekasi 17550, Indonesia.
+                <h1 class="lg:text-4xl text-3xl  tracking-widest" data-i18n="about_loc_phh_indonesia">PT PHH SPECIAL STEEL INDONESIA</h1>
+                <p class="mt-3" data-i18n="about_loc_phh_indonesia_addr">Blok F25-09J, Jl. Sungkai, Delta Silicon 3,<br> Lippo Cikarang, Bekasi 17550, Indonesia.
                 </p>
             </div>
         </div>
@@ -397,7 +431,7 @@
 
         <!-- title -->
         <div class="flex justify-center items-center w-full mb-14">
-            <h3 class="text-2xl text-navBlue tracking-widest">CERTIFICATIONS</h3>
+            <h3 class="text-2xl text-navBlue tracking-widest" data-i18n="certifications_title">CERTIFICATIONS</h3>
         </div>
 
         <!-- Certificate List -->
@@ -437,7 +471,7 @@
             </div>
             <div class="w-full mt-3 text-center">
                 <button onclick="closePopup()"
-                    class="text-white/80 hover:text-white/40 text-lg underline">close</button>
+                    class="text-white/80 hover:text-white/40 text-lg underline" data-i18n="cert_close_btn">close</button>
             </div>
         </div>
     </div>
@@ -450,7 +484,7 @@
             <!-- Malaysia left -->
             <div class="md:w-[700px] w-full h-[120px]   relative border-b-[0.5px] md:border-white/80 border-white/0  flex justify-between items-end text-white font-light">
                 <div class="pb-5">
-                    <h4 class="text-sm mb-3"> HEADQUARTER</h4>
+                    <h4 class="text-sm mb-3" data-i18n="footer_headquarter"> HEADQUARTER</h4>
                     <p class="font-semibold text-white">PHH METAL 1 SDN BHD <span
                             class="text-[10px]  text-white/80 font-thin">
                             (176257-T)</span></p>
@@ -508,7 +542,7 @@
             </div>
                         <!-- Contact, copyright, ect -->
             <div class="mt-5 md:w-[700px] w-full ">
-                <p class="font-semibold">Follow Us</p>
+                <p class="font-semibold" data-i18n="footer_follow_us">Follow Us</p>
                 <div class="flex space-x-5 py-2  text-lg">
                     <a href="https://www.instagram.com/phhmetal1sdnbhd/" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
@@ -530,11 +564,11 @@
                     </a>
                 </div>
                 <div class="flex justify-between items-center mt-2 text-white">
-                    <p class="text-xs tracking-wide">© PHH Metal. All rights reserved 2023.</p>
+                    <p class="text-xs tracking-wide" data-i18n="footer_copyright">© PHH Metal. All rights reserved 2023.</p>
                     <div class="flex space-x-2">
-                        <button class="text-xs">Privacy Policy</button>
+                        <button class="text-xs" data-i18n="footer_privacy_policy">Privacy Policy</button>
                         <p>|</p>
-                        <button class="text-xs">Terms of Use</button>
+                        <button class="text-xs" data-i18n="footer_terms_of_use">Terms of Use</button>
                     </div>
                 </div>
             </div>
@@ -555,19 +589,28 @@
             box.addEventListener('click', () => {
                 // Ambil data dari box yang diklik
                 const title = box.getAttribute('data-title');
+                const i18nKey = box.querySelector('h1').getAttribute('data-i18n'); // Ambil key dari h1 di dalamnya
                 const imgSrc1 = box.getAttribute('data-img1');
                 const imgSrc2 = box.getAttribute('data-img2');
                 const imgSrc3 = box.getAttribute('data-img3');
                 const imgSrc4 = box.getAttribute('data-img4');
 
-                // Ganti title
+                // Ganti title & i18n key
                 mainTitle.textContent = title;
+                if (i18nKey) {
+                    mainTitle.setAttribute('data-i18n', i18nKey);
+                } else {
+                    mainTitle.removeAttribute('data-i18n');
+                }
 
                 // Ganti gambar besar
                 img1.src = imgSrc1;
                 img2.src = imgSrc2;
                 img3.src = imgSrc3;
                 img4.src = imgSrc4;
+
+                // Scroll ke section banner agar perubahan terlihat
+                // mainTitle.scrollIntoView({ behavior: 'smooth' });
             });
         });
         document.addEventListener("DOMContentLoaded", () => {
