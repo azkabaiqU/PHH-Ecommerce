@@ -190,33 +190,13 @@
                             <span id="current-lang-display" class="uppercase text-sm font-medium">EN</span>
                         </button>
                         <div
-                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute right-0 top-full mt-4 w-48 z-50">
+                            class="dropdown-content overflow-hidden max-h-0 transition-all duration-300 bg-[#132a47] absolute right-0 top-full mt-4 w-[240px] z-50">
                             <ul class="py-2 text-sm text-white/90">
-                                <li><button onclick="setLanguage('en')"
-                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
-                                            src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
-                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
-                                        <span>English (EN)</span></button></li>
-                                <li><button onclick="setLanguage('id')"
-                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
-                                            src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
-                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
-                                        <span>Indonesia (ID)</span></button></li>
-                                <li><button onclick="setLanguage('ms')"
-                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
-                                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
-                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
-                                        <span>Melayu (MS)</span></button></li>
-                                <li><button onclick="setLanguage('ja')"
-                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
-                                            src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
-                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
-                                        <span>Japan (日本語)</span></button></li>
-                                <li><button onclick="setLanguage('zh')"
-                                        class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img
-                                            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
-                                            class="w-5 h-[14px] object-cover rounded-sm border border-white/20">
-                                        <span>China (中文)</span></button></li>
+                                <li><button onclick="setLanguage('ms')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span class="whitespace-nowrap">BAHASA MALAYSIA</span></button></li>
+                                <li><button onclick="setLanguage('en')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>ENGLISH</span></button></li>
+                                <li><button onclick="setLanguage('zh')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>CHINESE</span></button></li>
+                                <li><button onclick="setLanguage('ja')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>JAPANESE</span></button></li>
+                                <li><button onclick="setLanguage('id')" class="w-full flex items-center space-x-3 px-4 py-3 hover:bg-[#1b3b5f]"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>INDONESIA</span></button></li>
                             </ul>
                         </div>
                     </div>
@@ -322,31 +302,11 @@
                         <span class="angle-down hidden"><i class="fa-solid fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-content overflow-hidden max-h-0 transition-all duration-300">
-                        <li><button onclick="setLanguage('en');"
-                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
-                                    src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
-                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>English
-                                    (EN)</span></button></li>
-                        <li><button onclick="setLanguage('id');"
-                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
-                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Indonesia
-                                    (ID)</span></button></li>
-                        <li><button onclick="setLanguage('ms');"
-                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
-                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Melayu
-                                    (MS)</span></button></li>
-                        <li><button onclick="setLanguage('ja');"
-                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
-                                    src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
-                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>Japan
-                                    (日本語)</span></button></li>
-                        <li><button onclick="setLanguage('zh');"
-                                class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
-                                    class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>China
-                                    (中文)</span></button></li>
+                        <li><button onclick="setLanguage('ms');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span class="whitespace-nowrap">BAHASA MALAYSIA</span></button></li>
+                        <li><button onclick="setLanguage('en');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>ENGLISH</span></button></li>
+                        <li><button onclick="setLanguage('zh');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>CHINESE</span></button></li>
+                        <li><button onclick="setLanguage('ja');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>JAPANESE</span></button></li>
+                        <li><button onclick="setLanguage('id');" class="py-3 pr-4 pl-10 hover:pl-14 duration-200 w-full flex items-center space-x-3 block text-white/80 m:text-base text-sm"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" class="w-5 h-[14px] object-cover rounded-sm border border-white/20"> <span>INDONESIA</span></button></li>
                     </ul>
                 </li>
             </ul>
