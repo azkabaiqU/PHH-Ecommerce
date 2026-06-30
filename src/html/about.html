@@ -500,25 +500,53 @@
         </div>
     </section>
 
-    <!-- Big Banner Section -->
-    <section class="pb-10 sm:pt-28 pt-20 px-4 sm:px-16">
-        <h3 id="mainTitle" class="mt-10 mb-5 text-3xl text-center tracking-widest ">
-            PHH METAL 1 SDN. BHD. MALAYSIA
-        </h3>
+    <!-- Galeri Foto per Lokasi (3 section bertumpuk, semua tampil tanpa klik) -->
+    <!-- PHH METAL 1 SDN. BHD. MALAYSIA -->
+    <section class="pt-16 sm:pt-24 pb-4 px-4 sm:px-12">
+        <h3 class="mb-6 sm:mb-8 text-2xl sm:text-3xl text-center tracking-widest"
+            data-i18n="about_loc_phh_malaysia">PHH METAL 1 SDN. BHD. MALAYSIA</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-5xl mx-auto">
+            <img src="/assets/img/phhmetal-aboutimg1.jpeg" alt="PHH Metal 1 SDN BHD" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <img src="/assets/img/phhmetal-aboutimg2.jpeg" alt="PHH Metal 1 SDN BHD" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <img src="/assets/img/phhmetal-aboutimg3.jpeg" alt="PHH Metal 1 SDN BHD" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <img src="/assets/img/phhmetal-aboutimg4.jpeg" alt="PHH Metal 1 SDN BHD" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+        </div>
+    </section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2  w-full bg-slate-200">
-            <div>
-                <img id="bigImg1" src="" alt="Image 1" class="w-full h-[350px] object-cover">
-            </div>
-            <div>
-                <img id="bigImg2" src="" alt="Image 2" class="w-full h-[350px] object-cover">
-            </div>
-            <div>
-                <img id="bigImg3" src="" alt="Image 3" class="w-full h-[350px] object-cover">
-            </div>
-            <div>
-                <img id="bigImg4" src="" alt="Image 4" class="w-full h-[350px] object-cover">
-            </div>
+    <!-- PRO TECH TOOL AND DIE SDN. BHD. MALAYSIA -->
+    <section class="pt-10 sm:pt-14 pb-4 px-4 sm:px-12">
+        <h3 class="mb-6 sm:mb-8 text-2xl sm:text-3xl text-center tracking-widest"
+            data-i18n="about_loc_protech_malaysia">PRO TECH TOOL AND DIE SDN. BHD. MALAYSIA</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-5xl mx-auto">
+            <img src="/assets/img/proteach-aboutimg1.jpeg" alt="Pro Tech Tool and Die" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <img src="/assets/img/proteach-aboutimg2.jpeg" alt="Pro Tech Tool and Die" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <img src="/assets/img/proteach-aboutimg3.jpeg" alt="Pro Tech Tool and Die" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <!-- TODO: ganti dengan foto pabrik/CNC Pro Tech yang asli (belum ada di repo) -->
+            <img src="/assets/img/proteach-aboutimg1.jpeg" alt="Pro Tech Tool and Die" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+        </div>
+    </section>
+
+    <!-- PT PHH SPECIAL STEEL INDONESIA -->
+    <section class="pt-10 sm:pt-14 pb-10 px-4 sm:px-12">
+        <h3 class="mb-6 sm:mb-8 text-2xl sm:text-3xl text-center tracking-widest"
+            data-i18n="about_loc_phh_indonesia">PT PHH SPECIAL STEEL INDONESIA</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-5xl mx-auto">
+            <img src="/assets/img/ptPhhSpecial-aboutimg1.jpeg" alt="PT PHH Special Steel Indonesia" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <img src="/assets/img/ptPhhSpecial-aboutimg2.jpeg" alt="PT PHH Special Steel Indonesia" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <img src="/assets/img/ptPhhSpecial-aboutimg3.jpeg" alt="PT PHH Special Steel Indonesia" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
+            <img src="/assets/img/ptPhhSpecial-aboutimg4.png" alt="PT PHH Special Steel Indonesia" loading="lazy"
+                class="w-full h-[240px] sm:h-[300px] object-cover">
         </div>
     </section>
 
@@ -675,52 +703,6 @@
 
     </footer>
 
-    <script>
-        const img1 = document.getElementById('bigImg1');
-        const img2 = document.getElementById('bigImg2');
-        const img3 = document.getElementById('bigImg3');
-        const img4 = document.getElementById('bigImg4');
-
-        const mainTitle = document.getElementById('mainTitle');
-        const smallBoxes = document.querySelectorAll('.imgButton');
-
-        smallBoxes.forEach(box => {
-            box.addEventListener('click', () => {
-                // Ambil data dari box yang diklik
-                const title = box.getAttribute('data-title');
-                const i18nKey = box.querySelector('h1').getAttribute('data-i18n'); // Ambil key dari h1 di dalamnya
-                const imgSrc1 = box.getAttribute('data-img1');
-                const imgSrc2 = box.getAttribute('data-img2');
-                const imgSrc3 = box.getAttribute('data-img3');
-                const imgSrc4 = box.getAttribute('data-img4');
-
-                // Ganti title & i18n key
-                mainTitle.textContent = title;
-                if (i18nKey) {
-                    mainTitle.setAttribute('data-i18n', i18nKey);
-                } else {
-                    mainTitle.removeAttribute('data-i18n');
-                }
-
-                // Ganti gambar besar
-                img1.src = imgSrc1;
-                img2.src = imgSrc2;
-                img3.src = imgSrc3;
-                img4.src = imgSrc4;
-
-                // Scroll ke section banner agar perubahan terlihat
-                // mainTitle.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-        document.addEventListener("DOMContentLoaded", () => {
-            // Set gambar awal PHH METAL
-            mainTitle.textContent = "PHH METAL 1 SDN. BHD. MALAYSIA";
-            img1.src = "/assets/img/phhmetal-aboutimg1.jpeg";
-            img2.src = "/assets/img/phhmetal-aboutimg2.jpeg";
-            img3.src = "/assets/img/phhmetal-aboutimg3.jpeg";
-            img4.src = "/assets/img/phhmetal-aboutimg4.jpeg";
-        });
-    </script>
 
 </body>
 
