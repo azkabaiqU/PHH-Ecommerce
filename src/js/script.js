@@ -154,7 +154,7 @@ const translations = {
 
     // --- TRANSLASI ABOUT.HTML ---
     about_hero_title: "A HISTORY OF STEEL, FORGED IN EXCELLENCE",
-    about_hero_desc: "The PHH Group of Companies was established in 1975, specialising in hardware metal trading. Over the past 48 years, the Group’s capabilities in ferrous and non-ferrous metal solutions has grown by leaps and bounds, allowing it to now deliver the most comprehensive range of quality steel products to customers. Apart from its reputable local presence, the Group has, through strategic alliances and collaborations with exceptional partners, expanded into the global marketplace, bringing its brand of high-quality, purpose-designed metal solutions to an international clientele.",
+    about_hero_desc: "The PHH Group of Companies was established in 1975, specialising in hardware metal trading. Over the past {years} years, the Group’s capabilities in ferrous and non-ferrous metal solutions has grown by leaps and bounds, allowing it to now deliver the most comprehensive range of quality steel products to customers. Apart from its reputable local presence, the Group has, through strategic alliances and collaborations with exceptional partners, expanded into the global marketplace, bringing its brand of high-quality, purpose-designed metal solutions to an international clientele.",
     about_stat_tonnes_label: "tonnes metal production",
     about_stat_years_label: "years of experience",
     about_stat_locations_label: "locations",
@@ -188,7 +188,7 @@ const translations = {
     nav_events_news: "Acara & Berita",
     nav_contact: "Kontak",
     home_about_title: "TENTANG KAMI",
-    home_about_desc: "PHH Group memiliki pondasi yang kuat dipasar Malaysia selama 51 tahun dan merupakan perusahaan yang menyediakan bahan logam dan jasa precision machining dengan motto 'One Stop Metal Solution'. Perusahaan ini telah memiliki Sertifikasi Mutu International AS9100 dan ISO9001. Dengan perlengkapan yang terbaru, proses pemeriksaan kualitas yang ketat, serta tim teknis profesional, PHH berkomitmen untuk memberikan produk logam berkualitas tinggi yang stabil dan dapat diandalkan,serta menyediakan solusi untuk keperluan machining kepada semua pelanggan. PHH Group menyediakan material Aerospace, Aluminium Semikonduktor, Cold Work Tool Steel, Plastic Mould Steel, Hot Work Tool Steel, Engineering Steel, Stainless Steel, Aluminium, Kuningan, Tembaga, Perunggu, serta berbagai macam material lainnya. Produk produknya banyak digunakan di industri Aerospace, Semikonduktor, Otomotif, dan Industri Mold Manufaktur, serta diekspor ke Indonesia dan negara Asia Tenggara lainnya. Dengan 51 tahun pengalaman di industri, serta kualitas yang unggul, PHH Group telah menjadi mitra jangka panjang yang dipercaya oleh para pelanggan, serta menjadi penyedia solusi logam yang terkemuka..",
+    home_about_desc: "PHH Group memiliki pondasi yang kuat dipasar Malaysia selama {years} tahun dan merupakan perusahaan yang menyediakan bahan logam dan jasa precision machining dengan motto 'One Stop Metal Solution'. Perusahaan ini telah memiliki Sertifikasi Mutu International AS9100 dan ISO9001. Dengan perlengkapan yang terbaru, proses pemeriksaan kualitas yang ketat, serta tim teknis profesional, PHH berkomitmen untuk memberikan produk logam berkualitas tinggi yang stabil dan dapat diandalkan,serta menyediakan solusi untuk keperluan machining kepada semua pelanggan. PHH Group menyediakan material Aerospace, Aluminium Semikonduktor, Cold Work Tool Steel, Plastic Mould Steel, Hot Work Tool Steel, Engineering Steel, Stainless Steel, Aluminium, Kuningan, Tembaga, Perunggu, serta berbagai macam material lainnya. Produk produknya banyak digunakan di industri Aerospace, Semikonduktor, Otomotif, dan Industri Mold Manufaktur, serta diekspor ke Indonesia dan negara Asia Tenggara lainnya. Dengan {years} tahun pengalaman di industri, serta kualitas yang unggul, PHH Group telah menjadi mitra jangka panjang yang dipercaya oleh para pelanggan, serta menjadi penyedia solusi logam yang terkemuka..",
     home_what_we_have: "APA YANG KAMI MILIKI",
     home_what_we_do: "APA YANG KAMI LAKUKAN",
     home_aerospace_div: "DIVISI DIRGANTARA",
@@ -324,7 +324,7 @@ const translations = {
 
     // --- TRANSLASI ABOUT.HTML ---
     about_hero_title: "SEJARAH BAJA, DITEMPA DALAM KEUNGGULAN",
-    about_hero_desc: "Grup PHH telah berakar kuat di pasar Malaysia selama 51 tahun dan merupakan perusahaan yang menyediakan pasokan bahan logam serta pemesinan presisi dengan layanan One-Stop Metal Solution (layanan terpadu logam). Perusahaan ini telah memperoleh sertifikasi sistem manajemen mutu internasional AS9100 dan ISO9001. Dengan dukungan peralatan canggih, sistem manajemen kualitas yang ketat, serta tim teknis profesional, PHH berkomitmen untuk memberikan produk logam berkualitas tinggi yang stabil dan dapat diandalkan serta solusi pemrosesan kepada para pelanggan. Grup PHH terutama memasok material kedirgantaraan, aluminium untuk industri semikonduktor, baja perkakas kerja dingin, baja cetakan plastik, baja perkakas kerja panas, baja mesin, baja tahan karat, aluminium, tembaga, kuningan, dan perunggu, serta berbagai jenis material lainnya. Produk-produk ini banyak digunakan dalam industri kedirgantaraan, semikonduktor, otomotif, dan pembuatan cetakan, serta diekspor ke Indonesia dan pasar Asia Tenggara. Dengan 51 tahun pengalaman di industri serta kualitas yang unggul, Grup PHH telah menjadi mitra jangka panjang yang terpercaya bagi para pelanggan serta pemasok solusi logam terkemuka.",
+    about_hero_desc: "Grup PHH telah berakar kuat di pasar Malaysia selama {years} tahun dan merupakan perusahaan yang menyediakan pasokan bahan logam serta pemesinan presisi dengan layanan One-Stop Metal Solution (layanan terpadu logam). Perusahaan ini telah memperoleh sertifikasi sistem manajemen mutu internasional AS9100 dan ISO9001. Dengan dukungan peralatan canggih, sistem manajemen kualitas yang ketat, serta tim teknis profesional, PHH berkomitmen untuk memberikan produk logam berkualitas tinggi yang stabil dan dapat diandalkan serta solusi pemrosesan kepada para pelanggan. Grup PHH terutama memasok material kedirgantaraan, aluminium untuk industri semikonduktor, baja perkakas kerja dingin, baja cetakan plastik, baja perkakas kerja panas, baja mesin, baja tahan karat, aluminium, tembaga, kuningan, dan perunggu, serta berbagai jenis material lainnya. Produk-produk ini banyak digunakan dalam industri kedirgantaraan, semikonduktor, otomotif, dan pembuatan cetakan, serta diekspor ke Indonesia dan pasar Asia Tenggara. Dengan {years} tahun pengalaman di industri serta kualitas yang unggul, Grup PHH telah menjadi mitra jangka panjang yang terpercaya bagi para pelanggan serta pemasok solusi logam terkemuka.",
     about_stat_tonnes_label: "ton produksi logam",
     about_stat_years_label: "tahun pengalaman",
     about_stat_locations_label: "lokasi",
@@ -358,7 +358,7 @@ const translations = {
     nav_events_news: "Acara & Berita",
     nav_contact: "Hubungi",
     home_about_title: "TENTANG KAMI",
-    home_about_desc: "PHH Group telah bertapak kukuh dalam pasaran Malaysia selama lebih daripada 51 tahun. Syarikat ini mengkhusus dalam pembekalan bahan logam dan pemesinan ketepatan, serta menyediakan perkhidmatan Penyelesaian Logam Sehenti (One-Stop Metal Solution) kepada para pelanggan. PHH Group telah memperoleh pensijilan sistem pengurusan kualiti antarabangsa, iaitu AS9100 dan ISO 9001, yang membuktikan komitmen syarikat terhadap piawaian kualiti dan kecemerlangan operasi yang tinggi. Dengan kemudahan peralatan yang canggih, sistem pengurusan kualiti yang ketat, serta pasukan teknikal yang profesional dan berpengalaman, PHH sentiasa menyediakan produk logam dan penyelesaian pemesinan yang stabil, boleh dipercayai dan berkualiti tinggi kepada pelanggan. PHH Group membekalkan pelbagai jenis bahan termasuk bahan aeroangkasa, bahan aluminium untuk industri semikonduktor, keluli alat kerja sejuk, keluli acuan plastik, keluli alat kerja panas, keluli kejuruteraan, keluli tahan karat, aluminium, tembaga, loyang dan gangsa, serta pelbagai bahan lain. Produk-produk PHH Group digunakan secara meluas dalam industri seperti aeroangkasa, semikonduktor, automotif dan pembuatan acuan, serta dieksport ke Indonesia dan negara-negara lain di Asia Tenggara. Dengan pengalaman industri melebihi lima dekad serta komitmen terhadap kualiti yang cemerlang, PHH Group telah menjadi rakan kerjasama jangka panjang yang dipercayai oleh pelanggan serta peneraju dalam penyediaan penyelesaian logam di rantau ini..",
+    home_about_desc: "PHH Group telah bertapak kukuh dalam pasaran Malaysia selama lebih daripada {years} tahun. Syarikat ini mengkhusus dalam pembekalan bahan logam dan pemesinan ketepatan, serta menyediakan perkhidmatan Penyelesaian Logam Sehenti (One-Stop Metal Solution) kepada para pelanggan. PHH Group telah memperoleh pensijilan sistem pengurusan kualiti antarabangsa, iaitu AS9100 dan ISO 9001, yang membuktikan komitmen syarikat terhadap piawaian kualiti dan kecemerlangan operasi yang tinggi. Dengan kemudahan peralatan yang canggih, sistem pengurusan kualiti yang ketat, serta pasukan teknikal yang profesional dan berpengalaman, PHH sentiasa menyediakan produk logam dan penyelesaian pemesinan yang stabil, boleh dipercayai dan berkualiti tinggi kepada pelanggan. PHH Group membekalkan pelbagai jenis bahan termasuk bahan aeroangkasa, bahan aluminium untuk industri semikonduktor, keluli alat kerja sejuk, keluli acuan plastik, keluli alat kerja panas, keluli kejuruteraan, keluli tahan karat, aluminium, tembaga, loyang dan gangsa, serta pelbagai bahan lain. Produk-produk PHH Group digunakan secara meluas dalam industri seperti aeroangkasa, semikonduktor, automotif dan pembuatan acuan, serta dieksport ke Indonesia dan negara-negara lain di Asia Tenggara. Dengan pengalaman industri melebihi lima dekad serta komitmen terhadap kualiti yang cemerlang, PHH Group telah menjadi rakan kerjasama jangka panjang yang dipercayai oleh pelanggan serta peneraju dalam penyediaan penyelesaian logam di rantau ini..",
     home_what_we_have: "APA YANG KAMI ADA",
     home_what_we_do: "PERKHIDMATAN KAMI",
     home_aerospace_div: "BAHAGIAN AEROANGKASA",
@@ -494,7 +494,7 @@ const translations = {
 
     // --- TRANSLASI ABOUT.HTML ---
     about_hero_title: "SEJARAH KELULI, DITEMPA DALAM KECEMERLANGAN",
-    about_hero_desc: "PHH Group ditubuhkan pada tahun 1975, yang mengkhusus dalam perdagangan logam perkakasan. Selama 48 tahun yang lalu, keupayaan Kumpulan dalam penyelesaian logam ferus dan bukan ferus telah berkembang pesat, membolehkannya kini menyampaikan rangkaian produk keluli berkualiti yang paling komprehensif kepada pelanggan. Selain kehadiran tempatannya yang bereputasi, Kumpulan telah, melalui pakatan strategik dan kerjasama dengan rakan kongsi yang luar biasa, berkembang ke pasaran global, membawa jenama penyelesaian logam berkualiti tinggi dan direka khas kepada pelanggan antarabangsa.",
+    about_hero_desc: "PHH Group ditubuhkan pada tahun 1975, yang mengkhusus dalam perdagangan logam perkakasan. Selama {years} tahun yang lalu, keupayaan Kumpulan dalam penyelesaian logam ferus dan bukan ferus telah berkembang pesat, membolehkannya kini menyampaikan rangkaian produk keluli berkualiti yang paling komprehensif kepada pelanggan. Selain kehadiran tempatannya yang bereputasi, Kumpulan telah, melalui pakatan strategik dan kerjasama dengan rakan kongsi yang luar biasa, berkembang ke pasaran global, membawa jenama penyelesaian logam berkualiti tinggi dan direka khas kepada pelanggan antarabangsa.",
     about_stat_tonnes_label: "tan pengeluaran logam",
     about_stat_years_label: "tahun pengalaman",
     about_stat_locations_label: "lokasi",
@@ -528,7 +528,7 @@ const translations = {
     nav_events_news: "イベントとニュース",
     nav_contact: "お問い合わせ ",
     home_about_title: "PHH の強み",
-    home_about_desc: "金属製品に依存する業界が絶えず進化を続ける中、50年以上にわたり、品質と革新の象徴として輝きを放ち続けている企業があります。PHHグループは、最高品質の金属製品、サービス、そしてソリューションの提供という揺るぎないコミットメントにより、時の試練を乗り越えてきただけでなく、世界的にも認められる存在へと成長を遂げてきました。.",
+    home_about_desc: "金属製品に依存する業界が絶えず進化を続ける中、{years}年以上にわたり、品質と革新の象徴として輝きを放ち続けている企業があります。PHHグループは、最高品質の金属製品、サービス、そしてソリューションの提供という揺るぎないコミットメントにより、時の試練を乗り越えてきただけでなく、世界的にも認められる存在へと成長を遂げてきました。.",
     home_what_we_have: "私たちが持っているもの",
     home_what_we_do: "私たちの活動",
     home_aerospace_div: "航空宇宙部門",
@@ -664,7 +664,7 @@ const translations = {
 
     // --- TRANSLASI ABOUT.HTML ---
     about_hero_title: "卓越の中で鍛えられた鋼の歴史",
-    about_hero_desc: "PHHグループは、マレーシア市場において51年にわたり深く事業を展開してきた、金属材料供給および精密加工を一体化したワンストップ・メタルソリューション企業です。当社はAS9100およびISO9001の国際品質マネジメントシステム認証を取得しており、先進的な設備、厳格な品質管理体制、そして専門的な技術チームを基盤に、お客様へ安定かつ信頼性の高い高品質な金属製品および加工ソリューションを提供しています。主な取扱分野には、航空宇宙材料、半導体用アルミ材料、冷間工具鋼、プラスチック金型用鋼、熱間工具鋼、機械構造用鋼、ステンレス鋼、アルミニウム、銅、真鍮および青銅など多岐にわたる金属材料が含まれます。これらの製品は、航空産業、半導体、自動車、金型分野などに幅広く採用されており、インドネシアをはじめ東南アジア市場へも輸出されています。51年にわたる業界での蓄積と卓越した品質を背景に、PHHグループはお客様から信頼される長期的なパートナーであり、先進的な金属ソリューションプロバイダーとしての地位を確立しています。",
+    about_hero_desc: "PHHグループは、マレーシア市場において{years}年にわたり深く事業を展開してきた、金属材料供給および精密加工を一体化したワンストップ・メタルソリューション企業です。当社はAS9100およびISO9001の国際品質マネジメントシステム認証を取得しており、先進的な設備、厳格な品質管理体制、そして専門的な技術チームを基盤に、お客様へ安定かつ信頼性の高い高品質な金属製品および加工ソリューションを提供しています。主な取扱分野には、航空宇宙材料、半導体用アルミ材料、冷間工具鋼、プラスチック金型用鋼、熱間工具鋼、機械構造用鋼、ステンレス鋼、アルミニウム、銅、真鍮および青銅など多岐にわたる金属材料が含まれます。これらの製品は、航空産業、半導体、自動車、金型分野などに幅広く採用されており、インドネシアをはじめ東南アジア市場へも輸出されています。{years}年にわたる業界での蓄積と卓越した品質を背景に、PHHグループはお客様から信頼される長期的なパートナーであり、先進的な金属ソリューションプロバイダーとしての地位を確立しています。",
     about_stat_tonnes_label: "トンの金属生産",
     about_stat_years_label: "年の経験",
     about_stat_locations_label: "拠点",
@@ -834,7 +834,7 @@ const translations = {
 
     // --- TRANSLASI ABOUT.HTML ---
     about_hero_title: "卓越铸就的钢铁历史",
-    about_hero_desc: "PHH集团成立于1975年，专门从事五金金属贸易。在过去的48年里，集团在黑色和有色金属解决方案方面的能力取得了长足的进步，使其现在能够为客户提供最全面的优质钢铁产品。除了享有盛誉的本地业务外，集团还通过与杰出合作伙伴的战略联盟和协作，扩展到全球市场，将其高品质、专门设计的金属解决方案品牌带给国际客户。",
+    about_hero_desc: "PHH集团成立于1975年，专门从事五金金属贸易。在过去的{years}年里，集团在黑色和有色金属解决方案方面的能力取得了长足的进步，使其现在能够为客户提供最全面的优质钢铁产品。除了享有盛誉的本地业务外，集团还通过与杰出合作伙伴的战略联盟和协作，扩展到全球市场，将其高品质、专门设计的金属解决方案品牌带给国际客户。",
     about_stat_tonnes_label: "吨金属产量",
     about_stat_years_label: "年经验",
     about_stat_locations_label: "地点",
@@ -859,10 +859,25 @@ const translations = {
   }
 };
 
+// ==========================================
+// AUTO TAHUN PENGALAMAN (otomatis tiap tahun)
+// ==========================================
+// PHH Group berdiri tahun 1975. Jumlah "tahun pengalaman" dihitung otomatis
+// dari tahun sekarang, jadi TIDAK perlu diganti manual setiap tahun.
+//   - Angka stat: tulis <... data-years>50</...>  -> diisi otomatis (mis. 51)
+//   - Di dalam teks terjemahan: tulis {years}      -> diganti otomatis
+const PHH_FOUNDED_YEAR = 1975;
+function getPhhYears() {
+  return new Date().getFullYear() - PHH_FOUNDED_YEAR;
+}
+
 // Fungsi untuk mengganti bahasa
 function setLanguage(lang) {
   // 1. Simpan pilihan bahasa di dalam browser komputer pengguna
   localStorage.setItem('selectedLang', lang);
+
+  // Jumlah tahun pengalaman saat ini (mis. 2026 - 1975 = 51)
+  const years = getPhhYears();
 
   // 2. Ubah UI tulisan di HTML (Element yang punya data-i18n)
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -870,9 +885,14 @@ function setLanguage(lang) {
 
     // Cek apakah translasi ada untuk bahasa & key ini
     if (translations[lang] && translations[lang][key]) {
-      // Gunakan innerHTML atau textContent sesuai kebutuhan (textContent lebih aman)
-      el.innerHTML = translations[lang][key];
+      // Gunakan innerHTML; token {years} diganti otomatis dengan jumlah tahun pengalaman
+      el.innerHTML = translations[lang][key].replace(/\{years\}/g, years);
     }
+  });
+
+  // 2b. Isi otomatis semua angka tahun pengalaman (elemen ber-atribut data-years)
+  document.querySelectorAll('[data-years]').forEach(el => {
+    el.textContent = years;
   });
 
   // 3. Update Text Dropdown yg menandakan bahasa sekarang (Desktop & Mobile)
