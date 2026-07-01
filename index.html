@@ -404,8 +404,17 @@
     <section class="grid md:grid-cols-5 grid-flow-cols-1 w-full md:h-screen  h-auto bg-slate-200">
         <!-- number 1 -> 50 years = 1Page -->
         <a href="/src/html/about.html" class="relative overflow-hidden group md:h-full h-[300px]">
-            <img class="object-cover w-full h-full md:object-[70%_80%] object-[70%_100%]"
-                src="/assets/img/50 years since 1975.png" alt="PHH — 50 years since 1975">
+            <img class="object-cover w-full h-full object-[60%_center]"
+                src="/assets/img/aboutUs-img.png" alt="PHH — years since 1975">
+            <!-- Badge tahun otomatis (selalu tampil penuh, angka dari data-years di script.js) -->
+            <div class="absolute z-10 left-1/2 -translate-x-1/2 bottom-10 md:bottom-14 text-white text-center leading-none pointer-events-none select-none"
+                style="text-shadow: 0 2px 12px rgba(0,0,0,.9), 0 0 6px rgba(0,0,0,.7);">
+                <div class="flex items-end justify-center">
+                    <span class="font-extrabold italic tracking-tighter text-6xl leading-[0.8]" data-years>50</span>
+                    <span class="font-bold italic text-base ml-1 mb-1">YEARS</span>
+                </div>
+                <div class="font-bold italic text-xs tracking-[0.3em] mt-1">SINCE 1975</div>
+            </div>
             <div
                 class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
                 <div class="w-[200px] text-center text-white">
