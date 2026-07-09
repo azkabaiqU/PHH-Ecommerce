@@ -396,9 +396,10 @@
     <!-- Menu on Section = 8Page -->
     <section class="grid md:grid-cols-5 grid-flow-cols-1 w-full md:h-screen  h-auto bg-slate-200">
         <!-- number 1 -> 50 years = 1Page -->
-        <a href="/src/html/about.html" class="relative overflow-hidden group md:h-full h-[300px]">
-            <!-- Gambar anniversary otomatis per tahun (diisi oleh script.js: anniv-<tahun>.jpg) -->
-            <img class="object-cover w-full h-full object-[85%_center]" data-anniv-img
+        <a href="/src/html/about.html" class="relative overflow-hidden group md:h-full h-[300px] bg-[#0c1c33]">
+            <!-- Gambar anniversary otomatis per tahun (diisi oleh script.js: anniv-<tahun>.jpg).
+                 Mobile: object-cover (muat penuh). Desktop kolom sempit: object-contain (seluruh desain, bingkai navy). -->
+            <img class="w-full h-full object-cover object-[85%_center] md:object-contain" data-anniv-img
                 src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975">
             <div
                 class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
