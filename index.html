@@ -372,22 +372,25 @@
     </section>
 
     <!-- About Us Section -->
-    <section class=" flex items-center justify-center relative h-[850px] w-full overflow-hidden">
-        <!-- Desain resmi anniversary (gedung + logo PHH + '51 YEARS SINCE 1975'), auto ganti per tahun -->
-        <img data-anniv-img src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975"
-            class="absolute inset-0 w-full h-full object-cover object-right">
-        <h1 class="absolute z-10 top-10 lg:left-16 left-10  text-4xl text-navBlue font-bold" data-i18n="home_about_title">
-            ABOUT US </h1>
+    <!-- Mobile: gambar desain resmi tampil PENUH (logo + badge) lalu deskripsi di bawahnya.
+         Desktop: gambar penuh 1 layar + judul & deskripsi menimpa (overlay). -->
+    <section class="relative w-full md:h-[850px] bg-navBlue overflow-hidden">
+        <!-- Gambar desain resmi anniversary (gedung + logo PHH + '51 YEARS SINCE 1975'), auto ganti per tahun -->
+        <div class="relative w-full h-[300px] sm:h-[430px] md:h-full md:absolute md:inset-0">
+            <img data-anniv-img src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975"
+                class="w-full h-full object-cover object-right">
+            <h1 class="absolute z-10 top-6 md:top-10 left-6 lg:left-16 text-3xl md:text-4xl text-navBlue font-bold"
+                data-i18n="home_about_title">ABOUT US</h1>
+        </div>
 
         <div
-            class="absolute z-10 bottom-5 left-0  bg-navBlue md:w-[650px] sm:w-[500px] w-full py-3 lg:pl-16 sm:pl-10 pl-3 pr-3 text-white/80 font-light text-sm">
+            class="relative z-10 md:absolute md:bottom-5 md:left-0  bg-navBlue md:w-[650px] sm:w-[500px] w-full py-4 lg:pl-16 sm:pl-10 px-4 text-white/80 font-light text-sm">
             <p data-i18n="home_about_desc">In an ever-evolving landscape of industries reliant on metal products, one
                 name has consistently shone as
                 a beacon of quality and innovation for over five decades. The PHH Group of Companies, with its
                 unwavering commitment to delivering top-notch metal products, services, and solutions, has not only
                 weathered the test of time but has also evolved into a global force to be reckoned with.</p>
         </div>
-        <!-- <div class="absolute inset-0 bg-black bg-opacity-40"></div> -->
     </section>
 
     <!-- Menu on Section = 8Page -->
