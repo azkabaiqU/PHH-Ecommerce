@@ -872,8 +872,14 @@ const translations = {
 //   - Angka stat: tulis <... data-years>50</...>  -> diisi otomatis (mis. 51)
 //   - Di dalam teks terjemahan: tulis {years}      -> diganti otomatis
 const PHH_FOUNDED_YEAR = 1975;
+const PHH_ANNIV_MONTH = 7; // Ulang tahun PHH jatuh di bulan Juli
 function getPhhYears() {
-  return new Date().getFullYear() - PHH_FOUNDED_YEAR;
+  const now = new Date();
+  let years = now.getFullYear() - PHH_FOUNDED_YEAR;
+  // Sebelum bulan Juli, ulang tahun tahun ini BELUM lewat -> pakai angka tahun sebelumnya.
+  // (getMonth() 0-indeks: Januari=0 ... Juli=6). Jadi tiap Juli angka + gambar naik otomatis.
+  if (now.getMonth() < PHH_ANNIV_MONTH - 1) years -= 1;
+  return years;
 }
 
 // Fungsi untuk mengganti bahasa
