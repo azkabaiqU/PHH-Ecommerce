@@ -378,40 +378,37 @@
             <img data-anniv-img src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975" class="block w-full h-auto">
             <h1 class="absolute z-10 top-6 md:top-10 left-6 lg:left-16 text-3xl md:text-5xl text-navBlue font-bold"
                 data-i18n="home_about_title">ABOUT US</h1>
-        </div>
 
-        <div
-            class="bg-navBlue w-full md:w-[650px] py-4 px-4 lg:pl-16 sm:pl-10 text-white/80 font-light text-sm md:text-base">
-            <p data-i18n="home_about_desc">In an ever-evolving landscape of industries reliant on metal products, one
-                name has consistently shone as
-                a beacon of quality and innovation for over five decades. The PHH Group of Companies, with its
-                unwavering commitment to delivering top-notch metal products, services, and solutions, has not only
-                weathered the test of time but has also evolved into a global force to be reckoned with.</p>
+            <!-- Deskripsi: desktop = kotak overlay kiri-bawah pada gambar; mobile = blok di bawah gambar -->
+            <div
+                class="bg-navBlue w-full md:w-[620px] py-4 px-4 lg:pl-16 sm:pl-10 text-white/80 font-light text-sm md:text-base md:absolute md:bottom-0 md:left-0 md:z-10">
+                <p data-i18n="home_about_desc">In an ever-evolving landscape of industries reliant on metal products,
+                    one name has consistently shone as
+                    a beacon of quality and innovation for over five decades. The PHH Group of Companies, with its
+                    unwavering commitment to delivering top-notch metal products, services, and solutions, has not only
+                    weathered the test of time but has also evolved into a global force to be reckoned with.</p>
+            </div>
         </div>
     </section>
 
     <!-- Menu on Section = 8Page -->
     <section class="grid md:grid-cols-5 grid-flow-cols-1 w-full md:h-screen  h-auto bg-slate-200">
         <!-- number 1 -> 50 years = 1Page -->
-        <!-- Kolom navy: tile 'History' jadi kartu portrait (di-tengah) supaya seluruh desain (logo+badge) muat -->
-        <div class="md:h-full md:flex md:items-center md:justify-center md:bg-[#0c1c33]">
-            <a href="/src/html/about.html"
-                class="relative overflow-hidden group block w-full h-[300px] md:h-auto md:aspect-[2/5]">
-                <!-- Auto ganti per tahun. Mobile: gambar landscape (tile lebar-pendek).
-                     Desktop: crop PORTRAIT (anniv-<n>-p.jpg, rasio 2/5) yang mengisi penuh kartu. -->
-                <img class="w-full h-full object-cover object-[85%_center] md:hidden" data-anniv-img
-                    src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975">
-                <img class="w-full h-full object-cover object-center hidden md:block" data-anniv-tile
-                    src="/assets/img/anniv-51-p.jpg" alt="PHH — years since 1975">
-                <div
-                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
-                    <div class="w-[200px] text-center text-white">
-                        <p>A HISTORY OF STEEL, FORGED IN EXCELLENCE</p>
-                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
-                    </div>
+        <a href="/src/html/about.html" class="relative overflow-hidden group md:h-full h-[300px]">
+            <!-- Auto ganti per tahun. Isi PENUH kolom (object-cover, tanpa bingkai).
+                 Mobile: gambar landscape. Desktop kolom tinggi: crop PORTRAIT (anniv-<n>-p.jpg). -->
+            <img class="w-full h-full object-cover object-[85%_center] md:hidden" data-anniv-img
+                src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975">
+            <img class="w-full h-full object-cover object-[78%_center] hidden md:block" data-anniv-tile
+                src="/assets/img/anniv-51-p.jpg" alt="PHH — years since 1975">
+            <div
+                class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                <div class="w-[200px] text-center text-white">
+                    <p>A HISTORY OF STEEL, FORGED IN EXCELLENCE</p>
+                    <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
 
         <!-- number 2 -> hakudo What we have, nippon Koshuha, global Leader, metal Product = 4Page -->
         <div class="flex flex-col h-full ">
