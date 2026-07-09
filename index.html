@@ -371,20 +371,17 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <!-- Mobile: gambar desain resmi tampil PENUH (logo + badge) lalu deskripsi di bawahnya.
-         Desktop: gambar penuh 1 layar + judul & deskripsi menimpa (overlay). -->
-    <section class="relative w-full md:h-[850px] bg-navBlue overflow-hidden">
-        <!-- Gambar desain resmi anniversary (gedung + logo PHH + '51 YEARS SINCE 1975'), auto ganti per tahun -->
-        <div class="relative w-full h-[300px] sm:h-[430px] md:h-full md:absolute md:inset-0">
-            <img data-anniv-img src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975"
-                class="w-full h-full object-cover object-right">
-            <h1 class="absolute z-10 top-6 md:top-10 left-6 lg:left-16 text-3xl md:text-4xl text-navBlue font-bold"
+    <!-- About Us Section: gambar desain resmi ditampilkan PENUH (tidak di-crop / tidak dikecilkan). Deskripsi di bawah. -->
+    <section class="relative w-full bg-navBlue">
+        <div class="relative w-full">
+            <!-- Gambar desain resmi anniversary (gedung + logo PHH + 'NN YEARS SINCE 1975'), auto ganti per tahun -->
+            <img data-anniv-img src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975" class="block w-full h-auto">
+            <h1 class="absolute z-10 top-6 md:top-10 left-6 lg:left-16 text-3xl md:text-5xl text-navBlue font-bold"
                 data-i18n="home_about_title">ABOUT US</h1>
         </div>
 
         <div
-            class="relative z-10 md:absolute md:bottom-5 md:left-0  bg-navBlue md:w-[650px] sm:w-[500px] w-full py-4 lg:pl-16 sm:pl-10 px-4 text-white/80 font-light text-sm">
+            class="bg-navBlue w-full md:w-[650px] py-4 px-4 lg:pl-16 sm:pl-10 text-white/80 font-light text-sm md:text-base">
             <p data-i18n="home_about_desc">In an ever-evolving landscape of industries reliant on metal products, one
                 name has consistently shone as
                 a beacon of quality and innovation for over five decades. The PHH Group of Companies, with its
@@ -396,19 +393,25 @@
     <!-- Menu on Section = 8Page -->
     <section class="grid md:grid-cols-5 grid-flow-cols-1 w-full md:h-screen  h-auto bg-slate-200">
         <!-- number 1 -> 50 years = 1Page -->
-        <a href="/src/html/about.html" class="relative overflow-hidden group md:h-full h-[300px] bg-[#0c1c33]">
-            <!-- Gambar anniversary otomatis per tahun (diisi oleh script.js: anniv-<tahun>.jpg).
-                 Mobile: object-cover (muat penuh). Desktop kolom sempit: object-contain (seluruh desain, bingkai navy). -->
-            <img class="w-full h-full object-cover object-[85%_center] md:object-contain" data-anniv-img
-                src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975">
-            <div
-                class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
-                <div class="w-[200px] text-center text-white">
-                    <p>A HISTORY OF STEEL, FORGED IN EXCELLENCE</p>
-                    <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+        <!-- Kolom navy: tile 'History' jadi kartu portrait (di-tengah) supaya seluruh desain (logo+badge) muat -->
+        <div class="md:h-full md:flex md:items-center md:justify-center md:bg-[#0c1c33]">
+            <a href="/src/html/about.html"
+                class="relative overflow-hidden group block w-full h-[300px] md:h-auto md:aspect-[2/5]">
+                <!-- Auto ganti per tahun. Mobile: gambar landscape (tile lebar-pendek).
+                     Desktop: crop PORTRAIT (anniv-<n>-p.jpg, rasio 2/5) yang mengisi penuh kartu. -->
+                <img class="w-full h-full object-cover object-[85%_center] md:hidden" data-anniv-img
+                    src="/assets/img/anniv-51.jpg" alt="PHH — years since 1975">
+                <img class="w-full h-full object-cover object-center hidden md:block" data-anniv-tile
+                    src="/assets/img/anniv-51-p.jpg" alt="PHH — years since 1975">
+                <div
+                    class="absolute flex justify-center items-center inset-0 opacity-0 group-hover:opacity-100 duration-100 bg-black/60">
+                    <div class="w-[200px] text-center text-white">
+                        <p>A HISTORY OF STEEL, FORGED IN EXCELLENCE</p>
+                        <i class="mt-2 fa-solid fa-arrow-right  text-xl rotate-0  duration-200"></i>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
 
         <!-- number 2 -> hakudo What we have, nippon Koshuha, global Leader, metal Product = 4Page -->
         <div class="flex flex-col h-full ">

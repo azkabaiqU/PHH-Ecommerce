@@ -924,8 +924,13 @@ const ANNIV_MIN = 51;
 const ANNIV_MAX = 56;
 function updateAnnivImages() {
   const n = Math.min(ANNIV_MAX, Math.max(ANNIV_MIN, getPhhYears()));
+  // Gambar landscape (mis. hero & tile mobile)
   document.querySelectorAll('[data-anniv-img]').forEach(el => {
     el.src = '/assets/img/anniv-' + n + '.jpg';
+  });
+  // Gambar portrait/crop (mis. tile kolom sempit di desktop): anniv-<n>-p.jpg
+  document.querySelectorAll('[data-anniv-tile]').forEach(el => {
+    el.src = '/assets/img/anniv-' + n + '-p.jpg';
   });
 }
 
