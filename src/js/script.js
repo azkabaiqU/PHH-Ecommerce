@@ -908,10 +908,26 @@ function setLanguage(lang) {
   if (mobileCurrLangDisplay) mobileCurrLangDisplay.textContent = lang.toUpperCase();
 }
 
+// ==========================================
+// GAMBAR ANNIVERSARY OTOMATIS PER TAHUN
+// ==========================================
+// Elemen <img data-anniv-img> diisi gambar sesuai tahun berjalan:
+// 2026 -> anniv-51.jpg, 2027 -> anniv-52.jpg, dst.
+// Gambar tersedia untuk tahun ke-ANNIV_MIN..ANNIV_MAX (tambah file baru + naikkan ANNIV_MAX untuk tahun berikutnya).
+const ANNIV_MIN = 51;
+const ANNIV_MAX = 56;
+function updateAnnivImages() {
+  const n = Math.min(ANNIV_MAX, Math.max(ANNIV_MIN, getPhhYears()));
+  document.querySelectorAll('[data-anniv-img]').forEach(el => {
+    el.src = '/assets/img/anniv-' + n + '.jpg';
+  });
+}
+
 // Saat halaman direload, cek bahasa terakhir yang dipilih user. Jika tidak ada, pakai 'en'
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem('selectedLang') || 'en';
   setLanguage(savedLang);
+  updateAnnivImages();
 });
 
 
